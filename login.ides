@@ -1,0 +1,116 @@
+﻿// 举例说明：
+// 获取登陆模块文字：LanguageManager.getLogin("ERROR_LOGIN_PLAYER_DATA_ERROR");
+// 获取登陆模块文字并替换其中的参数：LanguageManager.getLogin("ERROR_LOGIN_FAIL", 20011);   （替换前：登陆失败[{@0:错误代码}]  替换后：登陆失败[20011]）
+// 命名举例：CONTENT_LOADER_SECURITY_ERROR 其中CONTENT代表语句类型，LOADER代表模块，SECURITY_ERROR代表含义（也可以用数字ID表示）
+// "//"为注释符号， 后面的语句都将会忽略；每个语句以行为单位， "="号左右可以用空格或TAB排版
+// 搜索工程中所有包括中文的地方:".*[\u4e00-\u9fa5]+.*"
+
+// 内容(CONTENT) ----------------------------------------------------------
+GAME_FONT					=	_san
+
+// 模块加载上面的信息提示
+CONTENT_GAME_INIT_COMPLETE			=	初始化完毕					
+CONTENT_LOADER_LOADING				=	数据加载中...
+CONTENT_LOADER_FILE_ERROR			=	文件地址错误:
+CONTENT_LOADER_SECURITY_ERROR		=	安全策略错误:
+CONTENT_LOADER_COMPLETE				=	加载完毕
+CONTENT_LOADER_INIT					=	初始化...
+CONTENT_LOADER_INIT_DATA			=	初始化游戏数据中，请稍等...
+CONTENT_LOADER_DEFAULT				=	正在准备进入游戏：
+CONTENT_LOADER_LOAD_CONFIG_FAIL		=	读取模块配置文件失败!
+CONTENT_LOADER_HELPGUIDE			=	新手帮助模块
+CONTENT_LOADER_LANGUAGE				=	加载语言模块
+CONTENT_LOADER_FAIL					=	加载失败
+CONTENT_LOADER_SPEED				=	加载进度:{@0}kb/{@1}kb,下载速度{@2}kb
+TIPS_NUM=19
+TIPS_1=小提示：去副本完成主线任务可以快速提升等级
+TIPS_2=小提示：每次进入副本将会消耗5点活力
+TIPS_3=小提示：活力不足时可以点击头像面板上的加号按钮购买
+TIPS_4=小提示：进入副本，不进行战斗退出副本可以返还5点活力
+TIPS_5=小提示：记得打开福利大礼，里面有丰富的奖励
+TIPS_6=小提示：在副本里面获取材料后，打开技艺面板合成高级装备和丹药
+TIPS_7=小提示：主角装备真灵后能够极大提高战斗力
+TIPS_8=小提示：使用聚宝盆可以获得大量银两
+TIPS_9=小提示：使用声望号角可以获得大量声望
+TIPS_10=小提示：在马帮里可以获得大量银两
+TIPS_11=小提示：强化装备能快速提升战斗能力
+TIPS_12=小提示：积极参加每日活动，有丰富的奖励等你来拿
+TIPS_13=小提示：法宝可以自定义法宝技能和阵型哦
+TIPS_14=小提示：每天去竞技场与其他玩家PK可以获得大量银两和声望
+TIPS_15=小提示：好的随从需要较多的声望
+TIPS_16=小提示：赶紧加入一个家族，每日有丰厚的福利等着你
+TIPS_17=小提示：背包不够用了？试试随身仓库！
+TIPS_18=小提示：找不到奖励？去邮箱看看吧
+TIPS_19=小提示：邮件的有效期只有7天，超过时间后会被删除
+
+// 标签(LABEL) ------------------------------------------------------------
+
+
+// 提示(TIP) --------------------------------------------------------------
+TIPS_LOADFAIL_REFRESH				=	如果加载太慢，请点击此处刷新页面重新加载
+
+// 错误(ERROR) ------------------------------------------------------------
+// 选择服务器界面
+ERROR_SERVER_SELECT					=	请选择您要进入的服务器！
+
+// 登陆界面
+ERROR_LOGIN_STARTUP_PARAM			=	启动参数验证错误！
+
+ERROR_LOGIN_SERVER_URL				=	服务器请求地址错误。
+ERROR_LOGIN_LOGINING				=	正在登陆游戏，请稍等...
+
+ERROR_LOGIN_REQUEST_FAIL			=	服务器连接失败，请稍后重试。
+ERROR_LOGIN_NAME_NOT_EMPTY			=	用户名不能为空
+ERROR_LOGIN_PASSWORD_NOT_EMPTY		=	密码不能为空
+
+ERROR_LOGIN_FAIL					=	登陆失败[{@0:错误代码}]
+
+ERROR_LOGIN_ACCOUNTS_INEXISTENCE	=	帐号不存在
+ERROR_LOGIN_AP_ERROR				=	帐号或密码错误
+ERROR_LOGIN_FREEZE					=	此帐号已被冻结
+ERROR_LOGIN_LIMIT_GREEN				=	实名帐号只能登录绿色服
+ERROR_LOGIN_ALREADY_LOGIN			=	此帐号已经登陆此游戏服务器
+ERROR_LOGIN_ALREADY_SUBAREA			=	此帐号已在分区内其他服务器登录
+ERROR_LOGIN_DEACTIVATE				=	此帐号尚未激活
+ERROR_LOGIN_NOT_FIND_ROLE			=	人物没找到
+ERROR_LOGIN_LAWLESSWORD				=	名字包含非法字符
+ERROR_LOGIN_SERVER_FULL				=	名字包含非法字符或服务器已满
+ERROR_LOGIN_SUCCESS_ENTERING		=	登陆成功，正在进入游戏...
+
+ERROR_LOGIN_REPEAT_LOGIN			=	重复登陆, 对方已被您踢下线
+ERROR_LOGIN_PLAYER_DATA_ERROR		=	玩家数据获取失败
+ERROR_LOGIN_QUEUE					=	服务器繁忙。请您排队进入游戏：剩余<font color='#00FF00'>{@0:排队号}</font>位，请等待...
+
+// 创建角色界面
+ERROR_ROLE_LAWLESSWORD				=	角色名称中包含非法字符"{@0:非法字符}"
+ERROR_ROLE_EMPTY					=	角色名称不能为空
+ERROR_ROLE_TOO_LONG					=	角色名称太长
+ERROR_ROLE_SELECT					=	请选择角色
+
+ERROR_ROLE_CREATE_FAIL				=	创建角色失败[{@0:错误代码}]
+ERROR_ROLE_ALREADY_EXIST			=	角色已经存在
+ERROR_ROLE_REPEAT_NAME				=	人物重名
+ERROR_ROLE_LAWLESS_NAME				=	名字包含非法字符
+ERROR_ROLE_SERVER_FULL				=	名字重名或名字含非法字符或服务器已满
+ERROR_ROLE_SAVE_DATA_FAIL			=	人物数据保存失败
+ERROR_ROLE_NO_NAME					=	无角色名称
+ERROR_ROLE_NO_ID					=	无角色ID
+
+// 创建城池界面
+ERROR_CITY_LAWLESSWORD				=	城池名称中包含非法字符"{@0:非法字符}"
+ERROR_CITY_EMPTY					=	城池名称不能为空
+ERROR_CITY_TOO_LONG					=	城池名称太长
+ERROR_CITY_CREATE_FAIL				=	创建城池失败[{@0:错误代码}]
+ERROR_CITY_KICK						=	被系统踢下线
+ERROR_CITY_SUCCESS					=	创建成功
+ERROR_CITY_EXIST					=	已存在主城
+ERROR_CITY_NO_SPACE					=	找不到空城
+ERROR_CITY_LAWLESS_NAME				=	非法的城堡名称
+ERROR_CITY_OTHER					=	其他错误
+
+// 目录(MENU) -------------------------------------------------------------
+MENU_CAPTION_HOMEPAGE				=	官方主页
+MENU_CAPTION_BBS					=	官方论坛
+MENU_CAPTION_FULL_SCREEN			=	全屏
+MENU_CAPTION_EXIT_FULL_SCREEN		=	退出全屏
+

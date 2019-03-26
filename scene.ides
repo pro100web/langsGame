@@ -1,0 +1,2659 @@
+﻿// 举例说明：
+// 获取登陆模块文字：LanguageManager.getLogin("ERROR_LOGIN_PLAYER_DATA_ERROR");
+// 获取登陆模块文字并替换其中的参数：LanguageManager.getLogin("ERROR_LOGIN_FAIL", 20011);   （替换前：登陆失败[{@0:错误代码}]  替换后：登陆失败[20011]）
+// 命名举例：CONTENT_LOADER_SECURITY_ERROR 其中CONTENT代表语句类型，LOADER代表模块，SECURITY_ERROR代表含义（也可以用数字ID表示）
+// "//"为注释符号， 后面的语句都将会忽略；每个语句以行为单位， "="号左右可以用空格或TAB排版
+// 搜索工程中所有包括中文的地方:".*[\u4e00-\u9fa5]+.*"
+CONTENT_OS_test=系统类型前缀
+TIP_str=tips类型前缀
+LABEL_str=前缀
+GAME_FONT = _sans
+//	公用(CM)
+ERROR_CM_SYSTEM_INFO					=	系统信息
+ERROR_CM_SYSTEM_RIMIND					=	系统提醒
+ERROR_CM_SEND_ERROR					=	系统错误,发送失败!
+ERROR_CM_PROMPT						=	系统提示
+ERROR_SMT_OBJECT					=	接收对象属性失败：对象ID - 
+//========每个人分隔符==========
+// 标签(LABEL) ------------------------------------------------------------
+
+
+// 提示(TIP) --------------------------------------------------------------
+
+
+// 错误(ERROR) ------------------------------------------------------------
+//========每个人分隔符==========
+//闲置时任务提示
+TASK_NOTICE_TIME                                        =10
+TASK_NOTICE_CLOSE_TIME                                  =30
+LABEL_TASK_NOTICE_UNFINISH                              =您当前还有任务
+LABEL_TASK_NOTICE_TASKSTATE_1                           =未提交
+LABEL_TASK_NOTICE_TASKSTATE_2                           =未完成
+LABEL_TASK_NOTICE_TASKSTATE_3                           =未接
+
+//万宝窟界面标签
+WANBAOKU_AWARD_TIPS						= <FONT COLOR='#00FF00'>关卡中随机掉落法宝残片 </FONT>\n<FONT COLOR='#33CCFF'>点击此处，开启法宝界面</FONT>
+WANBAOKU_CHONGZHI_TIPS					= 将重置到第{@0:关数}关
+
+//（用于原先的每日奖励按钮）
+WANBAOKU_GUIZE_TIPS						= <font color='#ED9255'>每日奖励规则：</FONT>\n根据通关记录，相邻的\n上一层洞窟每天会提供\n<FONT COLOR='#00FF00'>  1 次【每日奖励】</FONT>，\n<FONT COLOR='#5DD5F3'>每晚12点后重新登录，\n即可刷新当日的奖励。</FONT>
+
+//洗练
+LABEL_EQUIP_PROPERTY_LOCK_TIPS				=	<font color='#FFDD66'>属性锁定</font>
+LABEL_EQUIP_PROPERTY_OPEN_TIPS				=	<font color='#FFDD66'>属性解锁</font>
+LABEL_EQUIP_NUM_LOCK_TIPS				=	<font color='#FFDD66'>数值锁定</font>
+LABEL_EQUIP_NUM_OPEN_TIPS				=	<font color='#FFDD66'>数值解锁</font>
+
+//副魂槽对应的星劫关卡序号
+CONTENT_OS_SHENHUN_GUANQIA						=	0,5,10,15,20
+OPEN_TIP_1										=	战胜星劫第5关后开启
+OPEN_TIP_2										=	战胜星劫第10关后开启
+OPEN_TIP_3										=	战胜星劫第15关后开启
+OPEN_TIP_4										=	战胜星劫第20关后开启
+OPEN_TIP										=	星劫第{@0:关数}关开启
+
+//6种职业的神魂界面属性排序
+CONTENT_OS_ORDER_1								= 生命,5;物攻,1;命中,7;暴击,9;破击,12;物防,3;术防,4;闪避,8;抗暴,10;格挡,11;速度,6
+CONTENT_OS_ORDER_2								= 生命,5;物攻,1;命中,7;暴击,9;破击,12;物防,3;术防,4;闪避,8;抗暴,10;格挡,11;速度,6
+CONTENT_OS_ORDER_3								= 生命,5;物攻,1;命中,7;暴击,9;破击,12;物防,3;术防,4;闪避,8;抗暴,10;格挡,11;速度,6
+CONTENT_OS_ORDER_4								= 生命,5;术攻,2;命中,7;暴击,9;破击,12;物防,3;术防,4;闪避,8;抗暴,10;格挡,11;速度,6
+CONTENT_OS_ORDER_5								= 生命,5;物攻,1;命中,7;暴击,9;破击,12;物防,3;术防,4;闪避,8;抗暴,10;格挡,11;速度,6
+CONTENT_OS_ORDER_6								= 生命,5;术攻,2;命中,7;暴击,9;破击,12;物防,3;术防,4;闪避,8;抗暴,10;格挡,11;速度,6
+
+//祭拜按钮TIP
+CLOSE_JIBAI_TIP									= 主角达到60级时开启
+OPEN_JIBAI										=60
+
+//经验卡
+CONTENT_OS_EXP_CARD_ID							=350026
+CONTENT_OS_EXP_CARD_MAX							=99
+CONTENT_OS_EXP_CARD_LS							=100
+CONTENT_OS_EXP_CARD_NPCID						=1056
+
+//========神魂操作相关提示==========
+CONTENT_OS_SHENHUNBAG_OPEN_LOCK					=	是否花费<font color='#FF9900'>{@0}玄石或礼券</font>开启<font color='#FF9900'>{@1}个</font>背包栏
+OPEN_SHENHUNBAG_MONEY							=	2
+OPEN_FREE_SHENHUNBAG							=	25
+CONTENT_OS_TUNSHI								=	<font color='#00FF00'>点击按钮</font><font color='#00FFFF'>后选中右侧背包中的副魂进行吞噬</font>\n<font color='#FF0000'>吞噬后副魂消失并增加主魂经验</font>
+CONTENT_OS_YIJIANTUNSHI							=	点击按钮，把所有未装备的副魂转为主魂的升级经验
+CONTENT_OS_HECHENG								=	<font color='#00FF00'>点击按钮</font><font color='#00FFFF'>后打开副魂合成界面进行合成</font>\n<font color='#00FFFF'>低级副魂可通过合成升级为更高级副魂</font>
+CONTENT_OS_ZHENGLI								=	<font color='#00FF00'>点击按钮</font><font color='#00FFFF'>整理背包内副魂排列</font>\n	
+CONTENT_OS_JIBAI								=	祭拜神魂和吞噬副魂可快速提升主魂等级。	
+CONTENT_OS_HECHENGNUM							=	4
+CONTENT_OS_HECHENGTALK1							=	（单击放入副魂）
+CONTENT_OS_HECHENGTALK2							=	（4个合成1个）
+CONTENT_OS_JIBAI2								=	<font color='#00FF00'>点击按钮</font><font color='#00FFFF'>后可提升主魂经验</font>\n<font color='#FF9900'>本次需求花费：</font><font color='#00FF00'>{@0}玄石或礼券</font>\n<font color='#FF9900'>本次可以获得：</font><font color='#00FF00'>{@1}神魂经验</font>\n<font color='#FF9900'>剩余祭拜次数：</font><font color='#00FF00'>{@2}次</font>
+CONTENT_OS_TUNSHITISHI							= 将消耗掉被吞噬的副魂
+
+//========xcz==========
+CONTENT_OB_BATTLE_END_NEXT                                              =       直接挑战下1关
+CONTENT_OB_BATTLE_END_REPLAY                                            =       战斗录象回播
+CONTENT_OB_BATTLE_END_GIVEUP                                            =       退出挑战
+CONTENT_OS_FIRST_COPY_ID                                                =       61003
+//========plume==========
+//提示框内文本
+CONTENT_OS_BATTLE_REQUEST						=	您确认要攻击{@0}吗？
+CONTENT_OS_ARRAY_SUBMIT							=	该阵法启用成功！
+CONTENT_OS_ARRAY_FAIL							=	该阵法启用失败！
+CONTENT_OS_FOLLOW_NOW							=	您正处于跟随状态！
+CONTENT_OS_PAIHANG_NONE							=	总排行榜暂无信息！
+CONTENT_OS_PAIHANG_NONE2						=	个人排行榜暂无信息！
+
+
+//NPC类型悬浮信息
+CONTENT_OS_NPCTYPE_1							=	防御
+CONTENT_OS_NPCTYPE_2							=	攻击
+CONTENT_OS_NPCTYPE_3							=	控制
+CONTENT_OS_NPCTYPE_4							=	祝福
+CONTENT_OS_NPCTYPE_5							=	诅咒
+CONTENT_OS_NPCTYPE_6							=	术防
+CONTENT_OS_NPCTYPE_7							=	高血
+CONTENT_OS_NPCTYPE_8							=	闪避
+CONTENT_OS_NPCTYPE_9							=	BOSS
+CONTENT_OS_NPCTYPE_98							=	物理攻击
+CONTENT_OS_NPCTYPE_99							=	法术攻击
+
+//战斗结束提示文本
+CONTENT_OS_ENDBATTLE_1					                =	<FONT COLOR='#FFED8B'>通过装备改造、融丹、洗灵、洗髓等提升战斗能力。</FONT>
+CONTENT_OS_ENDBATTLE_2							=	<FONT COLOR='#FFED8B'>您击败了</FONT><FONT COLOR='#00FF00'>{@0:角色名}</FONT><FONT COLOR='#FFED8B'>成功取得</FONT><FONT COLOR='#00FF00'>{@1:连胜数}</FONT><FONT COLOR='#FFED8B'>连胜，获得</FONT><FONT COLOR='#00FF00'>{@2:积分}</FONT><FONT COLOR='#FFED8B'>积分。</FONT>
+CONTENT_OS_ENDBATTLE_3							=	<FONT COLOR='#FFED8B'>您技高一筹顺利降伏了</FONT><FONT COLOR='#00FF00'>{@0:角色名}。</FONT>
+CONTENT_OS_ENDBATTLE_4							=	<FONT COLOR='#FFED8B'>您实力不济还是再苦练10年吧。</FONT>
+CONTENT_OS_ENDBATTLE_5							=	<FONT COLOR='#00FF00'>{@0:角色名}</FONT><FONT COLOR='#FFED8B'>成功击败了您。</FONT>
+
+//高级拍卖行相关
+CONTENT_OS_HIGHAUCTION_JOIN						=	您是否愿意花费50万银两参加高级拍卖行的拍卖!
+CONTENT_OS_HIGHAUCTION_JOINBACK					=	报名参加高级拍卖行成功！
+CONTENT_OS_HIGHAUCTION_START					=	我们拍卖的第{@0}件物品是{@1}，请大家可以开始加价
+CONTENT_OS_HIGHAUCTION_WELCO					=	各位先生，女士，欢迎参加本次拍卖场，这次拍卖的东西一定会让您心动不已!
+CONTENT_OS_HIGHAUCTION_JING						=	{@0}玩家加价一次，机会难得啊
+CONTENT_OS_HIGHAUCTION_ONE						=	{@0}玩家，第一次
+CONTENT_OS_HIGHAUCTION_TWO						=	{@0}玩家，第二次
+CONTENT_OS_HIGHAUCTION_THREE					=	{@0}玩家，第三次
+CONTENT_OS_HIGHAUCTION_CON						=	恭喜{@0}玩家，以{@1}价格获得了{@2}
+CONTENT_OS_HIGHAUCTION_OVER						=	尊敬的各位客人，本次拍卖的物品已经售完，感谢大家的光临
+CONTENT_OS_HIGHAUCTION_JIANGE					=	尊敬的各位客人，物品{@0}竞拍结束，即将开始下一件物品的拍卖
+CONTENT_OS_HIGHAUCTION_MSG1						=	{@0}出价{@1}玄石竞拍{@2}
+CONTENT_OS_HIGHAUCTION_MSG2						=	{@0}以{@1}玄石购买了{@2}
+
+//VIP
+CONTENT_OS_VIP_UIMSG01                                                               =累计充值  <FONT COLOR='#00CCFF' SIZE='14'><B>{@0:冲值玄石}</B></FONT>  玄石您即可拥有  <FONT COLOR='#00CCFF' SIZE='14'><B>{@1:当前页签VIP级别}</B></FONT>  级VIP特权
+CONTENT_OS_VIP_UIMSG02                                                               =继续充值  <FONT COLOR='#00CCFF' SIZE='14'><B>{@0:冲值玄石}</B></FONT>  玄石您将拥有  <FONT COLOR='#00CCFF' SIZE='14'><B>{@1:下1级VIP级别}</B></FONT>  级VIP特权(包含低级VIP特权)
+CONTENT_OS_VIP_UIMSG03                                                               =<FONT COLOR='#FFF600'>提示信息</FONT>
+CONTENT_OS_VIP_GIFTPIC                                                               =VIP01,354084:2|354033:1;VIP02,354084:4|354033:1;VIP03,354084:6|354033:1|354074:1;VIP04,354084:8|354033:2|354074:2;VIP05,354084:10|354033:2|354074:3;VIP06,354084:12|354033:3|354075:2;VIP07,354084:14|354033:3|354075:3;VIP08,354084:16|354033:4|354075:4;VIP09,354084:18|354033:4|354075:5;VIP10,354084:20|354033:5|354075:6;
+//战斗单位悬停
+TIP_BLOOD										=	生命
+TIP_FORCE										=	真气
+TIP_ANGER										=	怒气
+TIP_SKILL										=	绝技
+
+//势力编号
+CLASS_OS_SHILI_1								=摇光
+CLASS_OS_SHILI_2								=开阳
+CLASS_OS_SHILI_3								=玉衡
+CLASS_OS_SHILI_4								=天权
+CLASS_OS_SHILI_5								=天玑
+CLASS_OS_SHILI_6								=天枢
+CLASS_OS_SHILI_7								=天璇
+CLASS_OS_SHILI_NEW								=未加入
+//门派编号
+CLASS_TYPE_MENPAITYPE_0=无门派
+CLASS_TYPE_MENPAITYPE_1=火焰山
+CLASS_TYPE_MENPAITYPE_2=化生寺
+CLASS_TYPE_MENPAITYPE_3=蓬莱岛
+CLASS_TYPE_MENPAITYPE_4=方寸山
+CLASS_TYPE_MENPAITYPE_5=盘丝洞
+CLASS_TYPE_MENPAITYPE_6=五庄观
+CLASS_TYPE_MENPAITYPE_NEW=新手
+
+
+//帮助系统,单位：秒
+CONTENT_OS_HELP				=	60
+//剧情字幕
+CONTENT_OS_TIANGONG_NAME_1		=	5
+//任务指引
+CONTENT_OS_TIANGONG_NAME_2		=	60
+//任务指引等级限制
+TASK_NEW_LEAD_END_LEVEL                 =       18
+//打坐提示
+CONTENT_OS_REST_EXP										=	打坐调息结束\n累计获得经验：{@0}
+CONTENT_OS_REST_EXP2										=	打坐调息结束\n累计获得经验：{@0}\n累计获得灵气：{@1}
+//自动开始打坐时间，单位：分钟
+CONTENT_OS_REST_AUTO_TIME=5
+//自动新手指引时间，单位：秒
+CONTENT_OS_NEWLEAD_AUTO_TIME=120
+//气泡自动消失时间，单位：秒
+CONTENT_OS_NEWLEAD_LOST_TIME=30
+//剧情副本第一次过关引导
+CONTENT_OS_COPYDIRECT=61003;61002;60001;60002;60003;
+//打坐获取经验，数值配置（每分钟）
+CONTENT_OS_REST_EXPINFO=1:20;2:40;3:60;4:80;5:100;6:120;7:140;8:160;9:180;10:200;11:220;12:240;13:260;14:280;15:300;16:320;17:340;18:360;19:380;20:400;21:420;22:440;23:460;24:480;25:500;26:520;27:540;28:560;29:580;30:600;31:620;32:640;33:660;34:680;35:700;36:720;37:740;38:760;39:780;40:800;41:820;42:840;43:860;44:880;45:900;46:920;47:940;48:960;49:980;50:1000;51:1020;52:1040;53:1060;54:1080;55:1100;56:1120;57:1140;58:1160;59:1180;60:1200;61:1220;62:1240;63:1260;64:1280;65:1300;66:1320;67:1340;68:1360;69:1380;70:1400;71:1420;72:1440;73:1460;74:1480;75:1500;76:1520;77:1540;78:1560;79:1580;80:1600;81:1620;82:1640;83:1660;84:1680;85:1700;86:1720;87:1740;88:1760;89:1780;90:1800;91:1820;92:1840;93:1860;94:1880;95:1900;96:1920;97:1940;98:1960;99:1980;100:2000;101:2020;102:2040;103:2060;104:2080;105:2100;106:2120;107:2140;108:2160;109:2180;110:2200;111:2220;112:2240;113:2260;114:2280;115:2300;116:2320;117:2340;118:2360;119:2380;120:2400;121:2420;122:2440;123:2460;124:2480;125:2500;126:2520;127:2540;128:2560;129:2580;130:2600;131:2620;132:2640;133:2660;134:2680;135:2700;136:2720;137:2740;138:2760;139:2780;140:2800;141:2820;142:2840;143:2860;144:2880;145:2900;146:2920;147:2940;148:2960;149:2980;150:3000;
+//BOSS战鼓舞：鼓舞层数,伤害加成千分率,花费玄石数量
+CONTENT_OS_BOSSBATTLE_INSPIRE=1,200,10;2,400,20;3,600,30;4,800,40;5,1000,50;
+//BOSS战相关文字显示
+CONTENT_OS__INSPIRE_STATUS=<FONT COLOR='#ffed8b' SIZE='12'>鼓舞 攻击力+{@0}%</FONT>
+CONTENT_OS__INSPIRE_BTNTIP=花费{@0}玄石或礼券，鼓舞攻击力+{@1}%
+CONTENT_OS__INSPIRE_LIMIT=鼓舞已达上限
+CONTENT_OS__RELIVE_COST=花费{@0}玄石或礼券立即复活
+CONTENT_OS__BOSSOVER=本次降魔战结束
+
+//首充奖励
+CONTENT_OS_QQSCPRIZE=8:10;7:100000;9:50;23:100;
+//黄钻奖励
+CONTENT_OS_QQHZPRIZE=7:500000;8:10;350022:1;9:100;23:100;
+//年费黄钻奖励
+CONTENT_OS_QQYearHZPRIZE=7:1000000;8:50;350022:5;9:200;23:200;
+//模块外部数字提示说明
+CONTENT_OS_MODULESNUMTIPS_3=阵型中还可以出阵{@0}个随从
+CONTENT_OS_MODULESNUMTIPS_48=出阵随从中还可以封印{@0}个真灵
+CONTENT_OS_MODULESNUMTIPS_50=今日凝聚还剩余{@0}轮
+CONTENT_OS_MODULESNUMTIPS_64=出阵随从中还可以镶嵌{@0}个副魂
+CONTENT_OS_MODULESNUMTIPS_2=还有{@0}封邮件没有查看
+CONTENT_OS_MODULESNUMTIPS_58=还有{@0}个活跃度礼包没有领取
+CONTENT_OS_MODULESNUMTIPS_22=今日还剩余{@0}次打劫其他玩家
+CONTENT_OS_MODULESNUMTIPS_53=今日还剩余{@0}次使用声望号角获得声望
+CONTENT_OS_MODULESNUMTIPS_52=今日还剩余{@0}次使用聚宝盆获得银两
+CONTENT_OS_MODULESNUMTIPS_59=今日还未签到
+CONTENT_OS_MODULESNUMTIPS_21=今日还剩余{@0}次调教仆从
+CONTENT_OS_MODULESNUMTIPS_70=法宝还能升级{@0}次
+CONTENT_OS_MODULESNUMTIPS_69=今日还剩余{@0}个日常任务
+CONTENT_OS_MODULESNUMTIPS_75=今日还可博天命{@0}次
+CONTENT_OS_MODULESNUMTIPS_60=今日还可挑战星劫{@0}轮
+CONTENT_OS_MODULESNUMTIPS_8=今日还可挑战万宝窟{@0}轮
+CONTENT_OS_MODULESNUMTIPS_20=今日还可在竞技场中挑战{@0}次
+
+
+//========plume==========
+LABEL_COLOR_GROW							=已摇出{@0}或更高品质的随从
+LABEL_COLOR_GROW_0							=绿色
+LABEL_COLOR_GROW_1							=蓝色
+LABEL_COLOR_GROW_2							=紫色
+LABEL_COLOR_GROW_3							=金色
+LABEL_COLOR_GROW_4							=红色
+LABEL_TUIMO_DAY								=限时够买还剩{@0}天结束，抓紧抢购哦!
+//摇将
+LABEL_PUB_ROCK_GROW							=哇塞，亲您有紫将也决定刷掉吗？
+LABEL_PUB_ROCK_GROW_NUMBER						=1900
+LABEL_PUB_LINGSHISHI							=灵石摇将
+LABEL_PUB_XUANSHI							=玄石摇将	
+LABEL_PUB_3								=	<font color='#FFFFFF'>通过</font><a href='event:1'><font color='#15F053'><u>博天命</u></font></a><font color='#FFFFFF'>获得灵石和声望，灵石还可以用于</font><a href='event:2'><font color='#15F053'><u>购买经验卡</u></font></a>
+//==========洗髓卡对应洗髓选项配置============
+PLAYER_CLEAN_ID_354000							=2
+PLAYER_CLEAN_ID_354001							=3
+PLAYER_CLEAN_ID_354002							=4
+//==========坐骑按钮============
+MOUNT_HOURSE_1								=仙梦灵荷\n完成开启坐骑系统的任务后给予!
+MOUNT_HOURSE_2								=太极宝轮\nVIP2级赠送,点击后进入VIP礼包界面领取太极宝轮卡,使用后激活相应坐骑!
+MOUNT_HOURSE_3								=幻世血莲\n点击进入商城购买幻世血莲卡,使用后激活相应坐骑!
+MOUNT_HOURSE_4								=绝世好剑\nVIP4级赠送,点击后进入VIP礼包界面领取绝世好剑卡,使用后激活相应坐骑!
+MOUNT_HOURSE_5								=紫金仙毯\nVIP6级赠送,点击后进入VIP礼包界面领取紫金仙毯卡,使用后激活相应坐骑!
+MOUNT_HOURSE_6								=凌空扇\n目标系统给予，尚未开放,尽情期待!
+MOUNT_HOURSE_7								=九州山河图\nVIP8级赠送,点击后进入VIP礼包界面领取九州山河图卡,使用后激活相应坐骑!
+MOUNT_HOURSE_8								=玲珑葫芦\n点击进入商城购买玲珑葫芦卡,使用后激活相应坐骑!
+MOUNT_HOURSE_9								=麒麟神兽\nVIP10级赠送,点击后进入VIP礼包界面领取麒麟神兽卡,使用后激活相应坐骑!
+MOUNT_HOURSE_10								=轩辕神笔\n尚未开放,尽请期待!
+//========坐骑按钮/商城界面1
+//========坐骑按钮/VIP礼包2
+//========坐骑按钮/目标系统3
+MOUNT_HOURSE_OPENWIN_1							=0
+MOUNT_HOURSE_OPENWIN_2							=2
+MOUNT_HOURSE_OPENWIN_3							=1
+MOUNT_HOURSE_OPENWIN_4							=2
+MOUNT_HOURSE_OPENWIN_5							=2
+MOUNT_HOURSE_OPENWIN_6							=3
+MOUNT_HOURSE_OPENWIN_7							=2
+MOUNT_HOURSE_OPENWIN_8							=1
+MOUNT_HOURSE_OPENWIN_9							=2
+MOUNT_HOURSE_OPENWIN_10							=0
+//========坐骑未激活时的TIPS
+MOUNT_HOURSE_FIRST_1							=点击预览主角乘骑仙梦灵荷的效果：\n主角力量+10\n主角元气+10\n主角体质+10\n主角身法+10
+MOUNT_HOURSE_FIRST_2							=点击预览主角乘骑太极宝轮的效果：\n主角力量+30\n主角元气+30\n主角体质+30\n主角身法+30
+MOUNT_HOURSE_FIRST_3							=点击预览主角乘骑幻世血莲的效果：\n主角力量+50\n主角元气+50\n主角体质+50\n主角身法+50
+MOUNT_HOURSE_FIRST_4							=点击预览主角乘骑绝世好剑的效果：\n主角力量+80\n主角元气+80\n主角体质+80\n主角身法+80
+MOUNT_HOURSE_FIRST_5							=点击预览主角乘骑紫金仙毯的效果：\n主角力量+120\n主角元气+120\n主角体质+120\n主角身法+120
+MOUNT_HOURSE_FIRST_6							=点击预览主角乘骑凌空扇的效果：\n主角力量+200\n主角元气+200\n主角体质+200\n主角身法+200
+MOUNT_HOURSE_FIRST_7							=点击预览主角乘骑九州山河图的效果：\n主角力量+300\n主角元气+300\n主角体质+300\n主角身法+300
+MOUNT_HOURSE_FIRST_8							=点击预览主角乘骑玲珑葫芦的效果：\n主角力量+500\n主角元气+500\n主角体质+500\n主角身法+500
+MOUNT_HOURSE_FIRST_9							=点击预览主角乘骑麒麟神兽的效果：\n主角力量+800\n主角元气+800\n主角体质+800\n主角身法+800
+MOUNT_HOURSE_FIRST_10							=点击预览主角乘骑轩辕神笔的效果：\n主角力量+1200\n主角元气+1200\n主角体质+1200\n主角身法+1200
+//========坐骑激活时的TIPS
+MOUNT_HOURSE_OK_1							=乘骑仙梦灵荷后：\n主角力量+10\n主角元气+10\n主角体质+10\n主角身法+10
+MOUNT_HOURSE_OK_2							=乘骑太极宝轮后：\n主角力量+30\n主角元气+30\n主角体质+30\n主角身法+30
+MOUNT_HOURSE_OK_3							=乘骑幻世血莲后：\n主角力量+50\n主角元气+50\n主角体质+50\n主角身法+50
+MOUNT_HOURSE_OK_4							=乘骑绝世好剑后：\n主角力量+80\n主角元气+80\n主角体质+80\n主角身法+80
+MOUNT_HOURSE_OK_5							=乘骑紫金仙毯后：\n主角力量+120\n主角元气+120\n主角体质+120\n主角身法+120
+MOUNT_HOURSE_OK_6							=乘骑凌空扇后：\n主角力量+200\n主角元气+200\n主角体质+200\n主角身法+200
+MOUNT_HOURSE_OK_7							=乘骑九州山河图后：\n主角力量+300\n主角元气+300\n主角体质+300\n主角身法+300
+MOUNT_HOURSE_OK_8							=乘骑玲珑葫芦后：\n主角力量+500\n主角元气+500\n主角体质+500\n主角身法+500
+MOUNT_HOURSE_OK_9							=乘骑麒麟神兽后：\n主角力量+800\n主角元气+800\n主角体质+800\n主角身法+800
+MOUNT_HOURSE_OK_10							=乘骑轩辕神笔后：\n主角力量+1200\n主角元气+1200\n主角体质+1200\n主角身法+1200
+//==========神仙推磨============
+CONTENT_OS_TUIMO_GOLD							=是否花费{@0}玄石购买【{@1}】*{@2}？
+//新洗灵
+NEW_CLEANSOUL_GET_BTN							=激活一颗骰子,获取10点境界\n激活两颗骰子,获取15点境界\n激活三颗骰子,获取20点境界\n激活四颗骰子,获取30点境界\n激活五颗骰子,获取100点境界\n激活六颗骰子,获取400点境界
+NEW_CLEANSOUL_MONEYBTN_1						=花费10000银两
+NEW_CLEANSOUL_MONEYBTN_2						=花费10000银两
+NEW_CLEANSOUL_MONEYBTN_3						=花费10000银两
+NEW_CLEANSOUL_MONEYBTN_4						=花费10000银两
+NEW_CLEANSOUL_MONEYBTN_5						=花费10000银两
+NEW_CLEANSOUL_MONEYBTN_6						=花费10000银两
+NEW_CLEANSOUL_GOLDBTN_1							=花费5玄石或点卷
+NEW_CLEANSOUL_GOLDBTN_2							=花费10玄石或点卷
+NEW_CLEANSOUL_GOLDBTN_3							=花费15玄石或点卷
+NEW_CLEANSOUL_GOLDBTN_4							=花费20玄石或点卷
+NEW_CLEANSOUL_GOLDBTN_5							=花费50玄石或点卷
+NEW_CLEANSOUL_GOLDBTN_6							=花费0玄石或点卷
+NEW_CLEANSOUL_GOLD_1							=5
+NEW_CLEANSOUL_GOLD_2							=10
+NEW_CLEANSOUL_GOLD_3							=15
+NEW_CLEANSOUL_GOLD_4							=20
+NEW_CLEANSOUL_GOLD_5							=50
+NEW_CLEANSOUL_GOLD_6							=0
+NEW_CLEANSOUL_TODAY_1							=今日金行,升级境界几率不消耗
+NEW_CLEANSOUL_TODAY_2							=今日木行,升级境界返还部分境界点
+NEW_CLEANSOUL_TODAY_3							=今日水行,获取境界得到额外境界点
+NEW_CLEANSOUL_TODAY_4							=今日火行,获取境界几率暴击
+NEW_CLEANSOUL_TODAY_5							=今日土行,万事大吉
+NEW_CLEANSOUL_MOVETIME							=3
+NEW_CLEANSOUL_GROW_1							=300
+NEW_CLEANSOUL_GROW_2							=900
+NEW_CLEANSOUL_GROW_3							=1800
+NEW_CLEANSOUL_GROW_4							=3000
+NEW_CLEANSOUL_GROW_COLOR_0							=<FONT COLOR='#00FF00'>1300成长潜力升级蓝色</FONT>
+NEW_CLEANSOUL_GROW_COLOR_1							=<FONT COLOR='#00FFFF'>1900成长潜力升级紫色</FONT>
+NEW_CLEANSOUL_GROW_COLOR_2							=<FONT COLOR='#FFFFFF'>2800成长潜力升级金色</FONT>
+NEW_CLEANSOUL_GROW_COLOR_3							=<FONT COLOR='#FFFF00'>4000成长潜力升级红色</FONT>
+NEW_CLEANSOUL_GROW_COLOR_4							=<FONT COLOR='#0FFFF0'>突破玄仙境，达到最高品质</FONT>
+NEW_CLEANSOUL_ATT_1							=力量+{@0}
+NEW_CLEANSOUL_ATT_2							=元气+{@0}
+NEW_CLEANSOUL_ATT_3							=体质+{@0}
+NEW_CLEANSOUL_ATT_4							=身法+{@0}
+NEW_CLEANSOUL_ATT_5							=命中+{@0}
+NEW_CLEANSOUL_ATT_6							=闪避+{@0}
+NEW_CLEANSOUL_ATT_7							=暴击+{@0}
+NEW_CLEANSOUL_ATT_8							=抗暴+{@0}
+NEW_CLEANSOUL_ATT_9							=格挡+{@0}
+NEW_CLEANSOUL_ATT_10							=破击+{@0}
+NEW_CLEANSOUL_GROW							=成长潜力：+{@0}
+NEW_CLEANSOUL_NEED_DOT							=<FONT COLOR='#FF0000'>需境界点:{@0}</FONT>\n{@1}
+NEW_CLEANSOUL_MAX_ADD							=最大点数上限
+NEW_CLEANSOUL_NAME							=练气初期一阶:练气初期二阶:练气初期三阶:练气初期四阶:练气初期五阶:练气初期六阶:练气初期七阶:练气初期八阶:练气初期九阶:练气初期十阶:练气中期一阶:练气中期二阶:练气中期三阶:练气中期四阶:练气中期五阶:练气中期六阶:练气中期七阶:练气中期八阶:练气中期九阶:练气中期十阶:练气末期一阶:练气末期二阶:练气末期三阶:练气末期四阶:练气末期五阶:练气末期六阶:练气末期七阶:练气末期八阶:练气末期九阶:练气末期十阶:筑基初期一阶:筑基初期二阶:筑基初期三阶:筑基初期四阶:筑基初期五阶:筑基初期六阶:筑基初期七阶:筑基初期八阶:筑基初期九阶:筑基初期十阶:筑基中期一阶:筑基中期二阶:筑基中期三阶:筑基中期四阶:筑基中期五阶:筑基中期六阶:筑基中期七阶:筑基中期八阶:筑基中期九阶:筑基中期十阶:筑基末期一阶:筑基末期二阶:筑基末期三阶:筑基末期四阶:筑基末期五阶:筑基末期六阶:筑基末期七阶:筑基末期八阶:筑基末期九阶:筑基末期十阶:结丹初期一阶:结丹初期二阶:结丹初期三阶:结丹初期四阶:结丹初期五阶:结丹初期六阶:结丹初期七阶:结丹初期八阶:结丹初期九阶:结丹初期十阶:结丹中期一阶:结丹中期二阶:结丹中期三阶:结丹中期四阶:结丹中期五阶:结丹中期六阶:结丹中期七阶:结丹中期八阶:结丹中期九阶:结丹中期十阶:结丹末期一阶:结丹末期二阶:结丹末期三阶:结丹末期四阶:结丹末期五阶:结丹末期六阶:结丹末期七阶:结丹末期八阶:结丹末期九阶:结丹末期十阶:元婴初期一阶:元婴初期二阶:元婴初期三阶:元婴初期四阶:元婴初期五阶:元婴初期六阶:元婴初期七阶:元婴初期八阶:元婴初期九阶:元婴初期十阶:元婴中期一阶:元婴中期二阶:元婴中期三阶:元婴中期四阶:元婴中期五阶:元婴中期六阶:元婴中期七阶:元婴中期八阶:元婴中期九阶:元婴中期十阶:元婴末期一阶:元婴末期二阶:元婴末期三阶:元婴末期四阶:元婴末期五阶:元婴末期六阶:元婴末期七阶:元婴末期八阶:元婴末期九阶:元婴末期十阶:化神初期一阶:化神初期二阶:化神初期三阶:化神初期四阶:化神初期五阶:化神初期六阶:化神初期七阶:化神初期八阶:化神初期九阶:化神初期十阶:化神中期一阶:化神中期二阶:化神中期三阶:化神中期四阶:化神中期五阶:化神中期六阶:化神中期七阶:化神中期八阶:化神中期九阶:化神中期十阶:化神末期一阶:化神末期二阶:化神末期三阶:化神末期四阶:化神末期五阶:化神末期六阶:化神末期七阶:化神末期八阶:化神末期九阶:化神末期十阶:练虚初期一阶:练虚初期二阶:练虚初期三阶:练虚初期四阶:练虚初期五阶:练虚初期六阶:练虚初期七阶:练虚初期八阶:练虚初期九阶:练虚初期十阶:练虚中期一阶:练虚中期二阶:练虚中期三阶:练虚中期四阶:练虚中期五阶:练虚中期六阶:练虚中期七阶:练虚中期八阶:练虚中期九阶:练虚中期十阶:练虚末期一阶:练虚末期二阶:练虚末期三阶:练虚末期四阶:练虚末期五阶:练虚末期六阶:练虚末期七阶:练虚末期八阶:练虚末期九阶:练虚末期十阶:合体初期一阶:合体初期二阶:合体初期三阶:合体初期四阶:合体初期五阶:合体初期六阶:合体初期七阶:合体初期八阶:合体初期九阶:合体初期十阶:合体中期一阶:合体中期二阶:合体中期三阶:合体中期四阶:合体中期五阶:合体中期六阶:合体中期七阶:合体中期八阶:合体中期九阶:合体中期十阶:合体末期一阶:合体末期二阶:合体末期三阶:合体末期四阶:合体末期五阶:合体末期六阶:合体末期七阶:合体末期八阶:合体末期九阶:合体末期十阶:大乘初期一阶:大乘初期二阶:大乘初期三阶:大乘初期四阶:大乘初期五阶:大乘初期六阶:大乘初期七阶:大乘初期八阶:大乘初期九阶:大乘初期十阶:大乘中期一阶:大乘中期二阶:大乘中期三阶:大乘中期四阶:大乘中期五阶:大乘中期六阶:大乘中期七阶:大乘中期八阶:大乘中期九阶:大乘中期十阶:大乘末期一阶:大乘末期二阶:大乘末期三阶:大乘末期四阶:大乘末期五阶:大乘末期六阶:大乘末期七阶:大乘末期八阶:大乘末期九阶:大乘末期十阶:渡劫初期一阶:渡劫初期二阶:渡劫初期三阶:渡劫初期四阶:渡劫初期五阶:渡劫初期六阶:渡劫初期七阶:渡劫初期八阶:渡劫初期九阶:渡劫初期十阶:渡劫中期一阶:渡劫中期二阶:渡劫中期三阶:渡劫中期四阶:渡劫中期五阶:渡劫中期六阶:渡劫中期七阶:渡劫中期八阶:渡劫中期九阶:渡劫中期十阶
+NEW_CLEANSOUL_NEED_DOT_OK						=<FONT COLOR='#00FF00'>需境界点：{@0}</FONT>
+NEW_CLEANSOUL_NEED_DOT_NO						=<FONT COLOR='#FF0000'>需境界点：{@0}</FONT>
+NEW_CLEANSOUL_RULELAB							=点击【掷骰子】，激活1-6号骰子位\n每个骰子位的点数，后一位肯定大于前一位\n点击【更改当前】，修改当前位的点数\n激活一颗骰子,获取10点境界\n激活两颗骰子,获取15点境界\n激活三颗骰子,获取20点境界\n激活四颗骰子,获取30点境界\n激活五颗骰子,获取100点境界\n激活六颗骰子,获取400点境界
+//秘术CD时间说明
+MISHU_CD_INFO								=<FONT COLOR='#00FF00' SIZE='12'> </FONT>
+MISHU_PAOPAO_INFO							=升级秘术到10级
+//区域说明文字
+STRONG_MC_TIPS								=您可以通过右边各功能\n      提升自己的能力
+CHALLENGE_MC_TIPS							=每天参加左边的各种活动\n    将获得各种珍贵宝物
+RICHES_MC_TIPS								=您可以通过左边各功能获得\n      各种资源和珍贵宝物
+//CD区气泡显示等级限制
+CD_TIME_LEVEL_LIMIT							=20
+//技艺界面快捷借口
+CONTENT_OS_NEWLEAD_CRAF							=1:{@0}:349043#1:349043%1
+//技艺界面快捷借口
+
+CONTENT_OS_CD_INFO_TIME							=30
+CONTENT_OS_CD_INFO							=这里空着呢，大爷，来点一下嘛
+CONTENT_OS_JY_FB							=该状态下不能打开。
+//人物界面洗灵入口
+CONTENT_OS_CLEAN_SOUL_OFF						=随从成长值不能增长。
+CONTENT_OS_CLEAN_SOUL_ON						=进入洗灵增加成长潜力。
+CONTENT_OS_CLEAN_SOUL_GROW						=(不能增长)
+CONTENT_OS_CLEAN_SOUL_CLICK						=请先点击凝聚按钮。
+CONTENT_OS_CLEAN_SOUL_GROW_1						=通过凡体境后\n品质变成<FONT COLOR='#33ccff' SIZE='12'>蓝色</FONT>
+CONTENT_OS_CLEAN_SOUL_GROW_2						=通过通灵境后\n品质变成<FONT COLOR='#ff66ff' SIZE='12'>紫色</FONT>
+CONTENT_OS_CLEAN_SOUL_GROW_3						=通过先天境后\n品质变成<FONT COLOR='#ffff00' SIZE='12'>金色</FONT>
+CONTENT_OS_CLEAN_SOUL_GROW_4						=通过大乘境后\n品质变成<FONT COLOR='#f55028' SIZE='12'>橙色</FONT>
+//下天宫超级大礼包
+CONTENT_OS_BIGGIFT							=8:海量礼券;7:大量银两;354006:高级真灵召唤卡;354002:高级洗髓卡;354094:卷轴宝箱;354068:法宝礼包
+CONTENT_OS_BIGGIFT_INFO							=福利大礼包，海量好礼！沿主线任务升级至10级激活！仅仅需要5分钟！
+CONTENT_OS_BIGGIFT_TITLE						=西游梦迎宾大福利！总价值1288！
+//下天宫首个任务
+CONTENT_OS_OUTSKY_FIRST_TASK						=320173
+//==========QQ分享============
+CONTENT_OS_QQ_SHARE_GIFT_1						=354033:1,354037:2
+CONTENT_OS_QQ_SHARE							=轻松分享到QQ空间和朋友网，还可以领取礼物哦！
+CONTENT_OS_QQ_SHARE_NAME						=西游梦
+CONTENT_OS_QQ_SHARE_INFO						=2013仙侠最新大作，引领修仙时代，创造仙侠辉煌，独有的自创技能与阵法系统，赶快加入战斗吧！
+CONTENT_OS_QQ_SHARE_0							=【西游梦】2013仙侠题材最新大作，引领修仙时代，创造仙侠辉煌，独有的自创技能与阵法系统，赶快拿起你的武器加入战斗吧！
+CONTENT_OS_QQ_SHARE_1							=创技能，造阵法，穿越西游，诛仙弑神！免费领取超值大礼包，快来加入【西游梦】吧！
+CONTENT_OS_QQ_SHARE_2							=【西游梦】2013仙侠题材最新大作，引领修仙时代，创造仙侠辉煌，独有的自创技能与阵法系统，赶快拿起你的武器加入战斗吧！
+CONTENT_OS_QQ_SHARE_3							=英雄勇闯天劫阵，降妖除魔为真经。我在西游梦等着你，你准备好了吗？~
+CONTENT_OS_QQ_SHARE_4							=我已在【西游梦】领取了1288元的超值大礼包，更有贴身随从元芳相伴，大人英明就速速加入吧~！
+CONTENT_OS_QQ_SHARE_5							=“据说【西游梦】里面有1288元大礼包，元芳，你怎么看？”“回大人，属下正忙着招募随从呢！”“......元芳英明啊！！！”你也来试试吧！~~
+CONTENT_OS_QQ_SHARE_6							=这年头还有什么不能DIY？鼠标轻轻一点，便拥有排山倒海，山崩地裂的强烈视觉震撼，也许【西游梦】是你的最终归宿，加入即可DIY！
+CONTENT_OS_QQ_SHARE_7							=“也许我才盖不了子健，貌胜不了潘安。BUT，我拥有一颗强烈的护主和明鉴是非之心，什么？你要问我我怎么看！”嗯！【西游梦】值得加入！~
+CONTENT_OS_QQ_SHARE_8							=创技能，造阵法，穿越西游，诛仙弑神！免费领取超值大礼包，快来加入【西游梦】吧！
+CONTENT_OS_QQ_SHARE_9							=“也许我才盖不了子健，貌胜不了潘安。BUT，我拥有一颗强烈的护主和明鉴是非之心，什么？你要问我我怎么看！”嗯！【西游梦】值得加入！~
+
+//==========星辰鼎最大层数============
+CONTENT_OS_GIFT_MAX_FLOOR						=15
+//==========商城物品VIP等级使用限制============
+CONTENT_OS_MARKET_VIP_LIMIT						=VIP{@0}级后可使用
+CONTENT_OS_MARKET_MODULES_7						=洗练功能未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_8						=万宝窟系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_10						=家族系统未开启或未加入家族。
+CONTENT_OS_MARKET_MODULES_19						=聚仙阁系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_21						=仆从系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_33						=活动指引系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_48						=真灵系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_50						=洗灵系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_51						=剑灵系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_52						=聚宝盆系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_53						=声望号角系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_60						=星劫系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_64						=神魂系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_67						=洗髓系统未开启\n不能使用。
+CONTENT_OS_MARKET_MODULES_70						=法宝系统未开启\n不能使用。
+CONTENT_OS_MARKET_3001							=魔兽战活动进入后\n点击【鼓舞】消耗道具
+CONTENT_OS_MARKET_3002							=仙邪战活动进入后\n点击【增加攻击】消耗道具
+CONTENT_OS_MARKET_3003							=仙邪战活动进入后\n点击【增加暴击】消耗道具
+CONTENT_OS_MARKET_3004							=打开幻境副本\n点击【重置】消耗道具
+//==========天火熔炉============
+CONTENT_OS_SKY_FIRE_2_1							=110022:120022:130022:140022:150022:160022
+
+CONTENT_OS_SKY_FIRE_2_20						=110032:120032:130032:140032:150032:160032
+CONTENT_OS_SKY_FIRE_3_20						=110033:120033:130033:140033:150033:160033
+CONTENT_OS_SKY_FIRE_4_20						=110034:120034:130034:140034:150034:160034
+
+CONTENT_OS_SKY_FIRE_2_30						=110042:120042:130042:140042:150042:160042
+CONTENT_OS_SKY_FIRE_3_30						=110043:120043:130043:140043:150043:160043
+CONTENT_OS_SKY_FIRE_4_30						=110044:120044:130044:140044:150044:160044
+
+CONTENT_OS_SKY_FIRE_2_40						=110052:120052:130052:140052:150052:160052
+CONTENT_OS_SKY_FIRE_3_40						=110053:120053:130053:140053:150053:160053
+CONTENT_OS_SKY_FIRE_4_40						=110054:120054:130054:140054:150054:160054
+
+CONTENT_OS_SKY_FIRE_2_50						=110062:120062:130062:140062:150062:160062
+CONTENT_OS_SKY_FIRE_3_50						=110063:120063:130063:140063:150063:160063
+CONTENT_OS_SKY_FIRE_4_50						=110064:120064:130064:140064:150064:160064
+CONTENT_OS_SKY_FIRE_5_50						=110065:120065:130065:140065:150065:160065
+
+CONTENT_OS_SKY_FIRE_2_60						=110072:120072:130072:140072:150072:160072
+CONTENT_OS_SKY_FIRE_3_60						=110073:120073:130073:140073:150073:160073
+CONTENT_OS_SKY_FIRE_4_60						=110074:120074:130074:140074:150074:160074
+CONTENT_OS_SKY_FIRE_5_60						=110075:120075:130075:140075:150075:160075
+
+CONTENT_OS_SKY_FIRE_2_70						=110082:120082:130082:140082:150082:160082
+CONTENT_OS_SKY_FIRE_3_70						=110083:120083:130083:140083:150083:160083
+CONTENT_OS_SKY_FIRE_4_70						=110084:120084:130084:140084:150084:160084
+CONTENT_OS_SKY_FIRE_5_70						=110085:120085:130085:140085:150085:160085
+
+
+CONTENT_OS_SKY_FIRE_2_80						=110092:120092:130092:140092:150092:160092
+CONTENT_OS_SKY_FIRE_3_80						=110093:120093:130093:140093:150093:160093
+CONTENT_OS_SKY_FIRE_4_80						=110094:120094:130094:140094:150094:160094
+CONTENT_OS_SKY_FIRE_5_80						=110095:120095:130095:140095:150095:160095
+
+CONTENT_OS_SKY_FIRE_2_90						=110102:120102:130102:140102:150102:160102
+CONTENT_OS_SKY_FIRE_3_90						=110103:120103:130103:140103:150103:160103
+CONTENT_OS_SKY_FIRE_4_90						=110104:120104:130104:140104:150104:160104
+CONTENT_OS_SKY_FIRE_5_90						=110105:120105:130105:140105:150105:160105
+
+CONTENT_OS_SKY_FIRE_2_100						=110112:120112:130112:140112:150112:160112
+CONTENT_OS_SKY_FIRE_3_100						=110113:120113:130113:140113:150113:160113
+CONTENT_OS_SKY_FIRE_4_100						=110114:120114:130114:140114:150114:160114
+CONTENT_OS_SKY_FIRE_5_100						=110115:120115:130115:140115:150115:160115
+
+CONTENT_OS_SKY_FIRE_UP_1						= ({@0})
+CONTENT_OS_SKY_FIRE_UP_2						= (Заточка +{@0})
+CONTENT_OS_SKY_SHIBAI							=请选择熔铸后的武器!
+
+CONTENT_OS_SKY_FIRE_GOLD						=100
+CONTENT_OS_SKY_FIRE_PROP						=354116
+
+CONTENT_OS_SKY_FIRE_LACK_PROP                                           =没有足够的道具和礼券
+//==========货币============
+CONTENT_OS_HEAD_LIJUAN							= Чеки：
+CONTENT_OS_HEAD_XUANSHI							= Кристаллы：
+CONTENT_OS_HEAD_MONEY							= Серебро：
+//==========货币============
+//==========博天命============
+CONTENT_OS_ROCKAWARD_INFO						=1:1:1:1#2:2:2:1#3:3:3:1#1:1:2:2#1:2:1:2#2:1:1:2#1:1:3:2#1:3:1:2#3:1:1:2#2:2:1:2#2:1:2:2#1:2:2:2#2:2:3:2#2:3:2:2#3:2:2:2#3:3:1:2#3:1:3:2#1:3:3:2#3:3:2:2#3:2:3:2#2:3:3:2#1:2:3:3#1:3:2:3#2:1:3:3#2:3:1:3#3:1:2:3#3:2:1:3
+CONTENT_OS_ROCKAWARD_1							=15:10:2
+CONTENT_OS_ROCKAWARD_2							=10:5:1
+CONTENT_OS_ROCKAWARD_3							=5:2:0
+CONTENT_OS_ROCKAWARD_LS							=灵石：
+CONTENT_OS_ROCKAWARD_RENOWN						=声望：
+CONTENT_OS_ROCKAWARD_MONEY						=银两：
+CONTENT_OS_ROCKAWARD_LINGPAI						=令牌：
+CONTENT_OS_ROCKAWARD_TODAY						=今日剩余：
+CONTENT_OS_ROCKAWARD_BTN_NAME						=博取天命,获取灵石。消耗{@0}银两。
+CONTENT_OS_ROCKAWARD_NEED_MONEY						=10000
+CONTENT_OS_ROCKAWARD_CHANGE_NAME					=消耗{@0}玄石或礼券。\n加倍收益有几率获取<FONT COLOR='#FFFF00'>2</FONT>倍或者<FONT COLOR='#FFFF00'>3</FONT>倍基础奖励\n还有{@1}次加倍收益的机会
+CONTENT_OS_ROCKAWARD_CHANGE_1						=120
+CONTENT_OS_ROCKAWARD_CHANGE_2						=40
+CONTENT_OS_ROCKAWARD_CHANGE_3						=15
+CONTENT_OS_ROCKAWARD_CHANGE_4						=5
+CONTENT_OS_ROCKAWARD_GET_NAME						=领取天命奖励。
+CONTENT_OS_ROCKAWARD_UP_OK						=<FONT COLOR='#23F54D'>获得三倍基础奖励!</FONT>
+CONTENT_OS_ROCKAWARD_UP_NOT_OK						=<FONT COLOR='#FF9900'>获得两倍基础奖励!</FONT>
+CONTENT_OS_ROCKAWARD_MC_1						=灵石
+CONTENT_OS_ROCKAWARD_MC_2						=声望
+CONTENT_OS_ROCKAWARD_MC_4						=令牌
+//==========摇摇乐============
+//==========洗点门派说明============
+CONTENT_OS_CLEANDOT_INFO_0						=门派说明0
+CONTENT_OS_CLEANDOT_INFO_1						=当前角色洗髓推荐重点为：体质、力量。
+CONTENT_OS_CLEANDOT_INFO_2						=当前角色洗髓推荐重点为：体质、力量。
+CONTENT_OS_CLEANDOT_INFO_3						=当前角色洗髓推荐重点为：力量、体质。
+CONTENT_OS_CLEANDOT_INFO_4						=当前角色洗髓推荐重点为：元气、体质。
+CONTENT_OS_CLEANDOT_INFO_5						=当前角色洗髓推荐重点为：体质、力量。
+CONTENT_OS_CLEANDOT_INFO_6						=当前角色洗髓推荐重点为：元气、体质。
+//==========洗点门派说明============
+
+
+//========法宝属性锁定时弹出的玄石消费提示框==========
+CONTENT_OS_FB_STONE_INFO						=总共花费{@0}礼卷或玄石
+
+////阵型界面对阵眼的标注
+FABAO_DONGFU_ZHENYAN							=【阵眼】
+
+//战斗画面中法宝灵气槽的上限
+FABAO_MAX_LINGQI							=100
+
+//第2、3、4、5法宝技能槽开启时的法宝等级
+FABAO_SKILL_NEED_LEVEL						=需求法宝达到{@0}级
+FABAO_SKILL_ONE_OPEN						=10
+FABAO_SKILL_LEVEL_1							=20
+FABAO_SKILL_LEVEL_2							=30
+FABAO_SKILL_LEVEL_3							=40
+
+//法宝技能重置功能的开启时的法宝等级
+FABAO_SKILL_RESETBTN_OPEN						=22
+FABAO_SKILL_RESETBTN_OPEN_INFO						=重置功能在法宝22级后开启
+
+//法宝阵法开启时的法宝等级
+FABAO_ARRAY_OPEN							=45
+
+// Талисман
+CONTENT_OS_FB_1								=六道轮回盘
+CONTENT_OS_FB_2								=九幽龙王环
+CONTENT_OS_FB_3								=阴阳混沌钟
+CONTENT_OS_FB_4								=赤炎天鬼炉
+CONTENT_OS_FB_5								=鸿蒙仙灵葫
+CONTENT_OS_FB_6								=地藏宝莲灯
+CONTENT_OS_FB_7								=三才无相鼎
+CONTENT_OS_FB_8								=黄泉蚩尤甲
+CONTENT_OS_FB_9								=玄天伏魔塔
+CONTENT_OS_FB_10							=鸿蒙紫气莲
+CONTENT_OS_FB_11							=九霄赤阳鼎
+CONTENT_OS_FB_12							=九霄赤阳鼎
+CONTENT_OS_FB_13							=九霄赤阳鼎
+CONTENT_OS_FB_14							=九霄赤阳鼎
+CONTENT_OS_FB_15							=九霄赤阳鼎
+
+CONTENT_OS_FB_LINGQI							=天地灵气：
+CONTENT_OS_FB_CANPIAN   = Опыт талисмана：
+
+//法宝技能的22个名字，对应22种特效
+CONTENT_OS_FB_SKILL_NAME_1						=银蛇狂舞#逐日箭雨#妖冥杀戮#疯由心生#怒海焚天#钩画河山#繁华烂漫#修魔邪刃#蛟龙出水#玲珑秋月#斗转星移#翔龙一击#错子乱局#沙场点兵#落花无情#剑狂酒痴#沾花带影#酒气熏天#幻惑玄音#梵天一梦#韦陀护法#星坠月沉
+
+//法宝界面TIP（更详细的可问小田泽鑫）
+CONTENT_OS_FB_ARRAY_OPEN_1						=<font color='#00FF00'>自创新阵法需要{@0}玄石或礼券</font>
+CONTENT_OS_FB_ARRAY_MONEY_OPEN						=<font color='#00FF00'>自创新阵法需要{@0}银两</font>
+CONTENT_OS_FB_ARRAY_OPEN_2						=0
+CONTENT_OS_FB_ARRAY_OPEN_3						=100000
+CONTENT_OS_FB_ARRAY_OPEN_4						=100
+CONTENT_OS_FB_ARRAY_OPEN_5						=200
+CONTENT_OS_FB_SKILL_OPEN_1						=<font color='#00FF00'>自创新技能需要{@0}玄石或礼券</font>
+CONTENT_OS_FB_SKILL_MONEY_OPEN						=<font color='#00FF00'>自创新技能需要{@0}银两</font>
+CONTENT_OS_FB_SKILL_OPEN_2						=0
+CONTENT_OS_FB_SKILL_OPEN_3						=100000
+CONTENT_OS_FB_SKILL_OPEN_4						=100
+CONTENT_OS_FB_SKILL_OPEN_5						=200
+CONTENT_OS_FB_FREE_OPEN							=免费开启
+CONTENT_OS_FB_ARRAY_NAME_ZY						=自由阵法
+CONTENT_OS_FB_ARRAY_INFO_ZY						=自由阵法：无属性加成，无阵眼，不可重置，不可升级。真正的阵法必须【自创】！
+CONTENT_OS_FB_SKILL_LOCK_1						=锁定1条技能属性，重置技能时\n额外消耗玄石或礼券100。
+CONTENT_OS_FB_SKILL_LOCK_2						=锁定2条技能属性，重置技能时\n额外消耗玄石或礼券200。
+CONTENT_OS_FB_SKILL_LOCK_3						=锁定3条技能属性，重置技能时\n额外消耗玄石或礼券500。
+CONTENT_OS_FB_SKILL_LOCK_STONE_1					=100
+CONTENT_OS_FB_SKILL_LOCK_STONE_2					=200
+CONTENT_OS_FB_SKILL_LOCK_STONE_3					=500
+CONTENT_OS_FB_ARRAY_LOCK_1						=锁定1个阵法格，重置阵法时\n额外消耗玄石或礼券50。
+CONTENT_OS_FB_ARRAY_LOCK_2						=锁定2个阵法格，重置阵法时\n额外消耗玄石或礼券100。
+CONTENT_OS_FB_ARRAY_LOCK_3						=锁定3个阵法格，重置阵法时\n额外消耗玄石或礼券200。
+CONTENT_OS_FB_ARRAY_LOCK_4						=锁定4个阵法格，重置阵法时\n额外消耗玄石或礼券500。
+CONTENT_OS_FB_ARRAY_LOCK_5						=锁定5个阵法格，重置阵法时\n额外消耗玄石或礼券1000。
+CONTENT_OS_FB_ARRAY_LOCK_STONE_1					=50
+CONTENT_OS_FB_ARRAY_LOCK_STONE_2					=100
+CONTENT_OS_FB_ARRAY_LOCK_STONE_3					=200
+CONTENT_OS_FB_ARRAY_LOCK_STONE_4					=500
+CONTENT_OS_FB_ARRAY_LOCK_STONE_5					=1000
+CONTENT_OS_FB_ARRAYR_ESETBTN					=对初始技能和阵法不开放此功能。
+CONTENT_OS_FB_ARRAYR_UPBTN						=对初始技能和阵法不开放此功能。
+CONTENT_OS_FB_ARRAYR_OKBTN						=对初始技能和阵法不开放此功能。
+
+CONTENT_OS_FB_ALL_STONE_1							=<font color='#00FF00'>(锁定属性和替代残片共需玄石或礼券{@0})</font>
+CONTENT_OS_FB_ALL_STONE_2							=<font color='#FE3F3F'>(锁定属性和替代残片共需玄石或礼券{@0})</font>
+CONTENT_OS_FB_ARRAYR_ESETBTN_LEV					=	<font color='#ED9255'>重新生成所选技能的各项属性</font>\n使用需求
+CONTENT_OS_FB_ARRAYR_ESETBTN_MONEY					=\n消耗银两{@0}
+CONTENT_OS_FB_ARRAYR_ESETBTN_LINGQI					=\n消耗天地灵气{@0}
+CONTENT_OS_FB_ARRAYR_ESETBTN_CANPIAN				=\n消耗法宝残片{@0}
+
+CONTENT_OS_FB_ARRAYR_UPBTN_LEV						=	<font color='#ED9255'>提高所选技能的属性</font>\n使用需求\n法宝等级{@0}级
+CONTENT_OS_FB_ARRAYR_UPBTN_MONEY					=\n消耗银两{@0}
+CONTENT_OS_FB_ARRAYR_UPBTN_LINGQI					=\n消耗天地灵气{@0}
+CONTENT_OS_FB_ARRAYR_UPBTN_CANPIAN					=\n消耗法宝残片{@0}
+
+CONTENT_OS_FB_ZHENFA_UPBTN_LEV						=<font color='#ED9255'>提高所选阵法的属性</font>\n使用需求\n法宝等级{@0}级
+
+CONTENT_OS_FB_LEVUP_INFO							=<font color='#ED9255'>可提高法宝自身的附加属性</font>\n<font color='#ED9255'>可提高法宝技能、法宝阵法的等级上限</font>\n升级需求
+CONTENT_OS_FB_LEVUP_ROLELEV							=\n主角等级{@0}级
+CONTENT_OS_FB_LEVUP_MONEY							=\n消耗银两{@0}
+CONTENT_OS_FB_LEVUP_LINGQI							=\n消耗天地灵气{@0}
+CONTENT_OS_FB_LEVUP_CANPIAN							=\n消耗法宝残片{@0}
+
+CONTENT_OS_FB_ARRAYR_NEED_INFO						=<font color='#ED9255'>重新生成所选阵法的各项属性</font>\n使用需求
+CONTENT_OS_FB_ARRAYR_NEEDMONEY						=\n消耗银两{@0}
+CONTENT_OS_FB_ARRAYR_NEEDMONEY_1					=0
+CONTENT_OS_FB_ARRAYR_NEEDCANPIAN					=\n消耗法宝残片{@0}
+CONTENT_OS_FB_ARRAYR_NEEDCANPIAN_1					=50
+CONTENT_OS_FB_ARRAYR_NEEDLINGQI						=\n消耗天地灵气{@0}
+CONTENT_OS_FB_ARRAYR_NEEDLINGQI_1					=0
+
+CONTENT_OS_FB_SKILL_NEED_INFO						=<font color='#ED9255'>重新生成所选技能的各项属性</font>\n使用需求
+CONTENT_OS_FB_SKILL_NEEDMONEY						=\n消耗银两{@0}
+CONTENT_OS_FB_SKILL_NEEDMONEY_1						=0
+CONTENT_OS_FB_SKILL_NEEDCANPIAN						=\n消耗法宝残片{@0}
+CONTENT_OS_FB_SKILL_NEEDCANPIAN_1					=50
+CONTENT_OS_FB_SKILL_NEEDLINGQI						=\n消耗天地灵气{@0}
+CONTENT_OS_FB_SKILL_NEEDLINGQI_1					=0
+CONTENT_OS_FB_GOLD_EXCHANGE							=1
+CONTENT_OS_FB_GOLD_EXCHANGE_INFO					=(不足的残片需{@0}玄石或礼券替代，请先在法宝界面右下勾选此项)
+CONTENT_OS_FB_ZHENYAN_INFO						=	<font color='#ED9255'>下级效果：</font>\n{@0}\n<font color='#ED9255'>此处是</font><font color='#FFD829'>【阵眼】</font><font color='#ED9255'>，此处的第2条属性是阵眼属性，</font>\n<font color='#00FF00'>即使锁定此格，依旧可重置阵眼的位置和属性。</font>
+CONTENT_OS_FB_SUODING_INFO						=	<font color='#ED9255'>下级效果：</font>\n{@0}\n<font color='#ED9255'>点击左键可</font><font color='#00FF00'>锁定或解锁</font><font color='#ED9255'>此处的属性,\n被锁定的属性在重置时不会改变。</font>
+CONTENT_OS_FB_COLOR_1							=250
+CONTENT_OS_FB_COLOR_2							=500
+CONTENT_OS_FB_COLOR_3							=750
+CONTENT_OS_FB_COLOR_4							=1000
+CONTENT_OS_FB_ARRAY_ON							=启用阵法：{@0:名字}  Lv{@1:等级}
+CONTENT_OS_FB_ARRAY_ON_1						=启用阵法：自由阵法
+
+//法宝自身属性TIP
+CONTENT_OS_FB_ATT_AP							=<font color='#ED9255'>法宝的附加属性在战斗</font>\n<font color='#ED9255'>中对本方全体角色生效</font>\n<font color='#00FF00'>属性  当前值（下一级）</font>
+CONTENT_OS_FB_ATT_MAXHP							=\n<font color='#00FF00'>生命  + {@0}</font>
+CONTENT_OS_FB_ATT_ATK							=\n<font color='#00FF00'>物攻  + {@0}</font>
+CONTENT_OS_FB_ATT_DEF							=\n<font color='#00FF00'>物防  + {@0}</font>
+CONTENT_OS_FB_ATT_POW							=\n<font color='#00FF00'>术攻  + {@0}</font>
+CONTENT_OS_FB_ATT_ITD							=\n<font color='#00FF00'>术防  + {@0}</font>
+CONTENT_OS_FB_ATT_SPD							=\n<font color='#00FF00'>速度  + {@0}</font>
+CONTENT_OS_FB_ATT_HIT							=\n<font color='#00FF00'>命中  + {@0}</font>
+CONTENT_OS_FB_ATT_EVA							=\n<font color='#00FF00'>闪避  + {@0}</font>
+CONTENT_OS_FB_ATT_FED							=\n<font color='#00FF00'>格挡  + {@0}</font>
+CONTENT_OS_FB_ATT_CRT							=\n<font color='#00FF00'>暴击  + {@0}</font>
+CONTENT_OS_FB_ATT_BRK							=\n<font color='#00FF00'>破击  + {@0}</font>
+CONTENT_OS_FB_ATT_TNY							=\n<font color='#00FF00'>抗暴  + {@0}</font>
+
+//教学引导的文字
+CONTENT_OS_FB_NEWLEAD_1							=可提升附加属性，法宝10级后需手动操作。
+CONTENT_OS_FB_NEWLEAD_2							=鼠标移到此处可查看升级需求。
+CONTENT_OS_FB_NEWLEAD_3							=可改变技能的属性，材料来自【万宝窟】
+CONTENT_OS_FB_NEWLEAD_4							=千万别忘了“保存”新的技能属性。
+CONTENT_OS_FB_NEWLEAD_5							=请自创新阵法！
+CONTENT_OS_FB_NEWLEAD_6							=关闭窗口！
+CONTENT_OS_FB_NEWLEAD_7							=改用更强大的技能！
+CONTENT_OS_FB_NEWLEAD_8							=请选择新技能！
+
+//法宝属性框内的TIP
+CONTENT_OS_FB_NEXT_LEV_INFO						=<font color='#00FF00'>属性  当前值(下一级)</font>
+CONTENT_OS_FB_NEXT_LEV_ADD						=<font color='#00FF00'>(已达上限)</font>
+CONTENT_OS_FB_SKILL_OPNE_INFO						=<font color='#22AADD'>法宝在每回合战斗中自动增长灵气，\n灵气槽充满时自动释放预置技能。\n角色命中敌方、或产生格挡、暴击\n时，法宝的灵气将获得额外提升。</font>\n<font color='#FFD829'>法宝技能只攻击固定位置的目标。</font>
+CONTENT_OS_FB_SKILL_CHOOSE_INFO						=<font color='#22AADD'>法宝在每回合战斗中自动增长灵气，\n灵气槽充满时自动释放预置技能。\n角色命中敌方、或产生格挡、暴击\n时，法宝的灵气将获得额外提升。</font>\n<font color='#FFD829'>法宝技能只攻击固定位置的目标。</font>
+CONTENT_OS_FB_ARRAY_OPNE_INFO						=<font color='#22AADD'>点击【布阵】按钮可转到阵型界面，\n放置于阵法格的角色可受到属性加成。</font>
+CONTENT_OS_FB_ARRAY_CHOOSE_INFO						=<font color='#22AADD'>点击【布阵】按钮可转到阵型界面，\n放置于阵法格的角色可受到属性加成。</font>
+
+//法宝技能槽、阵法槽相关TIP
+CONTENT_OS_FB_OPNE_STONE						=<font color='#00FF00'>可花费{@0}玄石或礼券开启</font>
+CONTENT_OS_FB_OPNE_LEVEL_1						=法宝达到10级时自动开启\n<font color='#FFD829'>（技能增加新属性）</font>
+CONTENT_OS_FB_OPNE_LEVEL_2						=法宝等级达到150后开启（备用）
+CONTENT_OS_FB_ESETBTN_FREE						=今日还可免费重置{@0}次
+CONTENT_OS_FB__ZHANDOU						=<font color='#ED9255'>法宝的灵气槽和当前技能的攻击位置</font>\n<font color='#22AADD'>法宝在每回合战斗中自动增长灵气，\n灵气槽充满时自动释放预置技能。\n角色命中敌方、或产生格挡、暴击\n时，法宝的灵气将获得额外提升。</font>\n<font color='#FFD829'>法宝技能只攻击固定位置的目标。</font>
+CONTENT_OS_FB_LAIYUAN						=<font color='#00FF00'>（点击）</font><font color='#7e2e0e'>前往万宝窟收集法宝残片</font>
+
+
+
+//==========法宝图片============
+//==========阵型站位说明========
+CONTENT_OS_ARRAY_OPEN_LEV_1 = 18
+CONTENT_OS_ARRAY_OPEN_LEV_2 = 33
+CONTENT_OS_ARRAY_OPEN_LEV_3 = 45
+CONTENT_OS_ARRAY_OPEN_1     = На 18 ур. отряд увеличится до 3
+CONTENT_OS_ARRAY_OPEN_2     = На 33 ур. отряд увеличится до 4
+CONTENT_OS_ARRAY_OPEN_3     = На 45 ур. отряд увеличится до 5
+CONTENT_OS_ARRAY_OPEN_4     = Максимальный размер отряда 5
+CONTENT_OS_SHUNXU								=角色的速度属性决定战斗中的出手顺序，\n同等速度的角色由阵型位置决定出手先后。
+FABAO_DONGFU_ZHENYAN							=<font color='#00FF00'>【阵眼】</font>
+
+//==========阵型站位说明========
+//==========洗点============
+CONTENT_OS_CLEAN_DOT_INFO_1						=每次洗髓有一定可能提升属性
+CONTENT_OS_CLEAN_DOT_INFO_2						=每次洗髓有较高可能提升属性\n花费5玄石或礼券洗髓1次
+CONTENT_OS_CLEAN_DOT_INFO_3						=每次洗髓有极高可能提升属性\n花费20玄石或礼券洗髓1次
+CONTENT_OS_CLEAN_DOT_INFO_4						=每次洗髓必定提升属性\n花费80玄石或礼券洗髓1次
+//==========打坐按钮tip============
+CONTENT_OS_SIT_DOWN							=	打坐调息，每分钟获得 {@0} 经验和5点灵气，调息时间 {@1} 小时\n离线或长时间挂机后，角色会自动开始打坐
+//==========二级属性说明======================
+CONTENT_OS_ATT_INFO_1							=生命，角色生命值。生\n命值为0时，角色退出 \n战斗。\n
+CONTENT_OS_ATT_INFO_2							=术法攻击，增加角色术\n法攻击力的输出。\n
+CONTENT_OS_ATT_INFO_3							=物理攻击，增加角色物\n理攻击力的输出。\n
+CONTENT_OS_ATT_INFO_4							=物理防御，减少敌方物\n理攻击力造成的伤害。\n
+CONTENT_OS_ATT_INFO_5							=术法防御，减少敌方术\n法攻击力造成的伤害。\n
+CONTENT_OS_ATT_INFO_6							=战斗速度，决定战斗中\n角色的出手顺序。\n
+CONTENT_OS_ATT_INFO_7							=提高伤害命中的几率。\n
+CONTENT_OS_ATT_INFO_8							=提高闪避伤害的几率。\n
+CONTENT_OS_ATT_INFO_9							=提高格挡伤害并且反击\n的几率。\n
+CONTENT_OS_ATT_INFO_10							=降低受到格挡的几率。\n
+CONTENT_OS_ATT_INFO_11							=提高伤害暴击的几率。\n
+CONTENT_OS_ATT_INFO_12							=降低受到暴击的几率。\n
+//==========二级属性说明======================
+//提示框内文本
+CONTENT_OS_CLEAN_DOT_1							=	4
+CONTENT_OS_CLEAN_DOT_2							=	20
+CONTENT_OS_TIANGONG_NAME_1						=	5
+CONTENT_OS_TIANGONG_NAME_2						=	10
+CONTENT_OS_NEWLEAD_LOST_TIME						=	30
+//==========成长值区间=========================
+CONTENT_OS_GROW_1_1							=	1000
+CONTENT_OS_GROW_2							=	1300
+CONTENT_OS_GROW_2_1							=	1900
+CONTENT_OS_GROW_3							=	2800
+CONTENT_OS_GROW_3_1							=	4000
+
+//==========成长值区间=========================
+//==========帮助系统===========================
+HELP_TASK_0								=	<u><font color='#C6FF00' size='12'>我要如何升级</font></u>
+HELP_TASK_1								=	<u><font color='#C6FF00' size='12'>我要如何赚大钱</font></u>
+HELP_TASK_2								=	<u><font color='#C6FF00' size='12'>我要如何获取强力装备</font></u>
+HELP_TASK_3								=	<u><font color='#C6FF00' size='12'>我要如何获取声望</font></u>
+HELP_TASK_4								=	<u><font color='#C6FF00' size='12'>我要如何提高排名</font></u>
+HELP_TASK_5								=	<u><font color='#C6FF00' size='12'>我要如何变得强力</font></u>
+HELP_OPEN_MODULES							=	模块未开启，努力升级！
+HELP_WIN_INFO_DATA							=	温馨提示：您需要帮助么？
+HELP_STRONG_INFO							=	想要强力？你要这么干！
+//==========帮助系统===========================
+CLEANDOT_NEWLEAD_1							=	鼠标点击洗随机属性
+CLEANDOT_NEWLEAD_2							=	鼠标点击替换属性
+CLEANDOT_NEWLEAD_3							=	鼠标点击关闭窗口
+YYL_GET_LINGSHI_GET							=	灵石不足，是否通过摇奖获取灵石？
+YYL_GET_LINGSHI								=	通过摇奖获取灵石
+CONTENT_OS_EXP_CARD							=	已使用或您已丢失此物!
+CONTENT_OS_FIRSTLOGIN							=	请别丢弃瑶光给您的神剑!
+CONTENT_OS_VIP_LEV_LIMIT						=	<font color='#db347b'>角色达到{@0}级开启此功能</font>\n
+CONTENT_OS_VIP_LIMIT							=	<font color='#db347b'>VIP{@0}级开启玄石直接融合丹药功能</font>\n花费{@1}玄石或礼券直接服用丹药增加{@2}点{@3}
+CONTENT_OS_VIP								=	花费{@0}玄石或礼券直接服用丹药增加{@1}点{@2}
+CONTENT_OS_GET_HERB							=	服用丹药后增加{@0}点{@1}
+CONTENT_OS_GET_HERB_OK							=	确定花费{@0}玄石或礼券购买此丹药吗?
+CONTENT_OS_NPC_NOT_LOOK							=	NPC不能查看属性！
+CONTENT_OS_ALERT_SHOWAUTO						=	<font color='#FBE104'>Закроется через 3 секунды...</font>
+CONTENT_OS_CORTEGE_DISMISS						=	确认要解雇它吗？
+CONTENT_OS_CORTEGE_CHOOSE						=	未选择随从！
+CONTENT_OS_SCHOOL_JOIN							=	确认要加入该门派吗？
+CONTENT_OS_SCHOOL_JOIN_FALSE					=	未达到入派要求！
+CONTENT_OS_LEV_FULL								=	等级已经最大！
+CONTENT_OS_PLAYER_PRO_AUTOGRAPH					=	还未写签名
+CONTENT_OS_PLAYER_AUTOGRAPH_OK					=	已保存！ 
+CONTENT_OS_TYPE_ALL											=	全部
+CONTENT_OS_SCHOOL_ALL										=	门派
+CONTENT_OS_ATT_STYLE											=	类型
+CONTENT_OS_PLAYER_PRO_SCHOOL_NULL				=	山庄新人
+CONTENT_OS_PLAYER_PRO_SCHOOL_ONE				=	火焰山
+CONTENT_OS_PLAYER_PRO_SCHOOL_TWO				=	化生寺 
+CONTENT_OS_PLAYER_PRO_SCHOOL_THREE				=	蓬莱岛 
+CONTENT_OS_PLAYER_PRO_SCHOOL_FOUR				=	方寸山
+CONTENT_OS_PLAYER_PRO_SCHOOL_FIVE				=	盘丝洞
+CONTENT_OS_PLAYER_PRO_SCHOOL_SIX				=	五庄观 
+CONTENT_OS_PLAYER_JOIN_SCHOOL_DATA				=	加入门派 
+CONTENT_OS_PLAYER_JOIN_SCHOOL_OK				=	已加入门派,日后壮大靠您了!
+CONTENT_OS_PLAYER_JOIN_SCHOOL_REPEAT			=	您已经有门派了，不能加入！
+CONTENT_OS_ATTENDANT_PUB						=	查看酒馆随从列表
+CONTENT_OS_HORSE_BREED_INFO_ONE					=	同一匹马，不能繁殖！
+CONTENT_OS_HORSE_BREED_INFO_TWO					=	繁殖参数不对，不能繁殖！
+CONTENT_OS_HORSE_BREED_INFO_THREE				=	这两匹马不能繁殖！
+CONTENT_OS_HORSE_BREED_INFO_FIVE				=	恭喜您，繁殖成功！
+CONTENT_OS_HORSE_DISSMISS						=	确定要解雇{@0}吗？
+CONTENT_OS_HORSE_EQUIP_ON						=	马已被装备！请卸下后再选择装备！
+CONTENT_OS_HORSE_DISSMISS_NO					=	马已被装备！请卸下后再解散！
+CONTENT_OS_HORSE_NULL							=	没有马匹，请到商店购买后使用！
+CONTENT_OS_PLAYER_LEV_LACK						=	等级不足！
+CONTENT_OS_MONTH								=	月
+CONTENT_OS_DAY									=	日
+CONTENT_OS_PROVINCE								=	省份
+CONTENT_OS_SEX									=	性别
+CONTENT_OS_PERFECT								=	请完善资料再确认提交！
+CONTENT_OS_CONSTELLATION						=	星座
+CONTENT_OS_HEAD									=	头饰	
+CONTENT_OS_BODY									=	衣服
+CONTENT_OS_ARMS									=	武器
+CONTENT_OS_FASHION								=	真灵之血
+CONTENT_OS_CAPE									=	副将卡
+CONTENT_OS_SHOES								=	鞋子
+CONTENT_OS_ADORN								=	配饰
+CONTENT_OS_SITHORSE								=	飞行器
+CONTENT_OS_ACTIVITYDAILY						=	日常活动
+CONTENT_OS_ACTIVITYFAMILY						=	家族活动
+CONTENT_OS_ACTIVITYBOSS							=	BOSS赛
+CONTENT_OS_AMP									=	竞技场
+CONTENT_OS_DAILYTASK                                                    =       日常任务
+CONTENT_CHANGE_DRESS                                                 =       换装失败，请查看是否穿戴时装！
+////////摘星会////////////
+CONTENT_STAR_MEET_WIN_1						=	天覆
+CONTENT_STAR_MEET_WIN_2						=	地载
+CONTENT_STAR_MEET_WIN_3						=	风扬
+CONTENT_STAR_MEET_WIN_4						=	云垂
+CONTENT_STAR_MEET_WIN_5						=	龙飞
+CONTENT_STAR_MEET_WIN_6						=	虎翼
+CONTENT_STAR_MEET_WIN_7						=	鸟翔
+CONTENT_STAR_MEET_WIN_8						=	蛇蟠
+///////////////真灵强化///////////
+CONTENT_COMPOSE_SUCCEED					= 成功率：
+CONTENT_COMPOSE_GOLD							= 消费银两：
+CONTENT_COMPOSE_NO_DRESS					= 未放入装备
+CONTENT_COMPOSE_NO_STUFF					= 未放入材料
+CONTENT_COMPOSE_NOT_DRESS				= 未穿戴
+CONTENT_COMPOSE_FALSE							= 合成失败！
+CONTENT_COMPOSE_TRUE							= 合成成功！
+CONTENT_COMPOSE_TOP								= 已合成至最高级！
+CONTENT_COMPOSE_ADD_TOP					= 添加数量已达上限！
+CONTENT_COMPOSE_STUFF_LACK				= 背包中材料不足，是否商城购买？
+/////////////新手礼包（星辰鼎）///////////////////////
+CONTENT_OS_FLOORONE	=第 一 层
+CONTENT_OS_FLOORTWO	=第 二 层
+CONTENT_OS_FLOORTHREE	=第 三 层
+CONTENT_OS_FLOORFOUR	=第 四 层
+CONTENT_OS_FLOORFIVE	=第 五 层
+CONTENT_OS_FLOORSIX	=第 六 层
+CONTENT_OS_FLOORSEVEN	=第 七 层
+CONTENT_OS_FLOOREIGHT	=第 八 层
+CONTENT_OS_FLOORNINE	=第 九 层
+CONTENT_OS_FLOORTEN		=第 十 层
+CONTENT_OS_PROLVELONE	=（Требуется 10 ур.）
+CONTENT_OS_PROLVELTWO	=（Требуется 20 ур.）
+CONTENT_OS_PROLVELTHREE	=（Требуется 25 ур.）
+CONTENT_OS_PROLVELFOUR	=（Требуется 30 ур.）
+CONTENT_OS_PROLVELFIVE	=（Требуется 35 ур.）
+CONTENT_OS_PROLVELSIX	=（Требуется 40 ур.）
+CONTENT_OS_PROLVELSEVEN	=（Требуется 45 ур.）
+CONTENT_OS_PROLVELEIGHT	=（Требуется 50 ур.）
+CONTENT_OS_PROLVELNINE	=（Требуется 55 ур.）
+CONTENT_OS_PROLVELTEN	=（Требуется 60 ур.）
+CONTENT_OS_GET_OK	=领取成功！
+////////////活动///////////////
+CONTENT_OS_TIMER_ACTIVITY						=定时活动
+CONTENT_OS_DAILY_ACTIVITY							=日常活动
+CONTENT_OS_FAMILY_ACTIVITY						=家族活动
+CONTENT_OS_HOUR											=小时
+////////////自动参加///////////
+/////获取顺序：经验 声望 银两 令牌 家族贡献//////
+AUTO_INTER_WAR_13_0_0							= 花费50玄石或礼券自动参加降魔战_靛翅风壑\n获取{@0:声望值}声望,{@1:银两值}银两
+
+AUTO_INTER_WAR_14_0_0							= 花费50玄石或礼券自动参加降魔战_焰光岩犰\n获取{@0:声望值}声望,{@1:银两值}银两
+
+AUTO_INTER_WAR_21_1_1							= 花费50玄石或礼券自动参加多人副本\n30~39级获取55000经验,40声望和20令牌
+AUTO_INTER_WAR_21_1_2							= 花费50玄石或礼券自动参加多人副本\n40~49级获取152000经验,100声望和40令牌
+AUTO_INTER_WAR_21_1_3							= 花费50玄石或礼券自动参加多人副本\n50~59级获取303000经验,180声望和60令牌
+AUTO_INTER_WAR_21_1_4							= 花费50玄石或礼券自动参加多人副本\n60~69级获取520000经验,280声望和80令牌
+AUTO_INTER_WAR_21_1_5							= 花费50玄石或礼券自动参加多人副本\n70~79级获取815000经验,400声望和100令牌
+AUTO_INTER_WAR_21_1_6							= 花费50玄石或礼券自动参加多人副本\n80~89级获取815000经验,400声望和100令牌
+
+
+AUTO_INTER_WAR_22_1_1							= 花费50玄石或礼券自动参加仙邪战\n10~19级获取240声望和40000银两
+AUTO_INTER_WAR_22_1_2							= 花费50玄石或礼券自动参加仙邪战\n20~29级获取260声望和60000银两
+AUTO_INTER_WAR_22_1_3							= 花费50玄石或礼券自动参加仙邪战\n30~39级获取280声望和80000银两
+AUTO_INTER_WAR_22_1_4							= 花费50玄石或礼券自动参加仙邪战\n40~49级获取300声望和100000银两
+AUTO_INTER_WAR_22_1_5							= 花费50玄石或礼券自动参加仙邪战\n50~59级获取320声望和120000银两
+AUTO_INTER_WAR_22_1_6							= 花费50玄石或礼券自动参加仙邪战\n60~69级获取340声望和140000银两
+AUTO_INTER_WAR_22_1_7							= 花费50玄石或礼券自动参加仙邪战\n70~79级获取360声望和160000银两
+AUTO_INTER_WAR_22_1_8							= 花费50玄石或礼券自动参加仙邪战\n80~89级获取380声望和180000银两
+
+AUTO_INTER_WAR_23_1_1							= 花费50玄石或礼券自动参加家族战\n获取100声望,30令牌和300家族贡献
+
+AUTO_INTER_WAR_CONTROL							= 13:0:0@14:0:0@21:1:1,30,39;2:40,49;3,50,59;4,60,69;5,70,79;6,80,89@22:1:1,10,19;2,20,29;3,30,39;4,40,49;5,50,59;6,60,69;7,70,79;8,80,89@23:1:1
+
+// Персонаж
+CONTENT_OS_CLEAN_DOWN							= 新属性中有比原有属性低的，确认替换？
+CONTENT_OS_ACTIVATION_OK							=激活成功！
+CONTENT_OS_RETURN										=返回
+CONTENT_OS_CLOSE											=关闭
+CONTENT_OS_CHOOSE_CLEAN							=请选着洗点对象！
+CONTENT_OS_STR          = Сила：
+CONTENT_OS_SPR          = Дух：
+CONTENT_OS_CON          = Вын.：
+CONTENT_OS_AGI          = Ловк.：
+CONTENT_OS_GROW_NUMBER						=成长潜力：
+CONTENT_OS_BATTLE       = БР：
+CONTENT_OS_STUNT							=绝        技：
+CONTENT_OS_RECOVERY					=御        术：
+CONTENT_OS_DHIT							=连        招：
+CONTENT_OS_GROW							=成    长：
+CONTENT_OS_SCHOOL					=门    派：
+CONTENT_OS_STR_INFO     = Увеличивает физ. атаку и защиту
+CONTENT_OS_SPR_INFO     = Увеличивает маг. атаку и защиту
+CONTENT_OS_CON_INFO     = Увеличивает максимальное здоровье
+CONTENT_OS_AGI_INFO     = Увеличивает скорость атаки
+CONTENT_OS_GROW_INFO					=放大一级属性的效果
+CONTENT_OS_LOOK_ATT					=点击查看二级属性
+
+// Отряд
+CONTENT_OS_DONGFU_NAME      = Имя：
+CONTENT_OS_DONGFU_LV        = Уровень：
+CONTENT_OS_DONGFU_SCHOOL						=门派：
+CONTENT_OS_DONGFU_STUNT							=绝技：
+CONTENT_OS_DONGFU_HP        = Здоровье：
+CONTENT_OS_DONGFU_MP								=真气：
+CONTENT_OS_DONGFU_SPR       = Дух：
+CONTENT_OS_DONGFU_CON       = Вын.：
+CONTENT_OS_DONGFU_STR       = Сила：
+CONTENT_OS_DONGFU_AGI       = Ловк.：
+CONTENT_OS_DONGFU_ATK       = Атака：
+CONTENT_OS_DONGFU_DEF       = Защита：
+CONTENT_OS_DONGFU_POW								=术攻：
+CONTENT_OS_DONGFU_ITD								=术防：
+CONTENT_OS_DONGFU_HIT       = Точность：
+CONTENT_OS_DONGFU_EVA       = Уклон：
+CONTENT_OS_DONGFU_FED       = Блок：
+CONTENT_OS_DONGFU_CRT       = Крит. атака：
+CONTENT_OS_DONGFU_SPD       = Скорость：
+CONTENT_OS_DONGFU_CLEANDOT					= 洗髓
+CONTENT_OS_DONGFU_CLEANUP					= 提升
+CONTENT_OS_DONGFU_CLEANDOWN				= 下降
+CONTENT_OS_DONGFU_CLEAN_FULL				= (满)
+CONTENT_OS_DONGFU_CLEAN_LIMIT				= 未激活随从不能洗点！
+CONTENT_OS_DONGFU_CLEAN_TOP				= 洗点已达上限！
+CONTENT_OS_DONGFU_CLEAN_STYLE				= 请选择洗髓类型！
+
+///////////活力系统/////////////
+CONTENT_OS_VIG_1=活力（每半小时恢复<FONT COLOR='#00FF00'>5点活力</FONT>）
+CONTENT_OS_VIG_2=购买恢复40点活力，花费{@0}玄石或礼券
+CONTENT_OS_VIG_3=确定花费<FONT COLOR='#FF9900'>{@0}玄石或礼券</FONT>恢复<FONT COLOR='#00FF00'>40点活力</FONT>
+CONTENT_OS_VIG_3_1=购买恢复40点活力，花费
+CONTENT_OS_VIG_3_2=玄石
+CONTENT_OS_VIG_4=今天活力购买次数已用完！
+CONTENT_OS_VIG_5=活力已满，无法购买！
+CONTENT_OS_VIG_UP=今日购买次数已达上限，升级VIP可增加购买次数!
+CONTENT_OS_VIG_UP_LIMIT=升级VIP可增加购买次数!
+CONTENT_OS_VIP_TEST_TIME					=使用VIP体验卡成为VIP4级。剩余时间：{@0:时间xx:xx}
+CONTENT_OS_VIP_TEST_OVER					=你已结束VIP体验，继续VIP爽快体验，点击确定成为VIP。
+CONTENT_OS_VIG_99_1=<font color='#FBE104'>   活力不足</font>
+CONTENT_OS_VIG_99_2=<font color='#FBE104'> 请先购买活力！</font>
+CONTENT_OS_BAG_OPEN_LOCK						= Расширить рюкзак на <font color='#FF9900'>{@1} яч.</font> за <font color='#FF9900'>{@0} кристалов или чеков</font>?
+CONTENT_OS_OPEN_NUM					=<font color='#5fc513'>还可上阵{@0:位子}人</font>
+CONTENT_OS_OPEN_NUM_MAX					=<font color='#e03b1a'>上阵人数已满</font>
+CONTENT_OS_CLEANSOUL					=<font color='#5fc513'>今日剩余{@0:位子}轮</font>
+CONTENT_OS_CLEANSOUL_LOCK				=五灵根锁定，无法凝聚。
+CONTENT_OS_CLEANSOUL_1					=两个相同五行获得10点灵根
+CONTENT_OS_CLEANSOUL_2					=三个相同五行获得15点灵根
+CONTENT_OS_CLEANSOUL_3					=两个两相同五行获得20点灵根
+CONTENT_OS_CLEANSOUL_4					=一个两相同和一个三相同获得25点灵根
+CONTENT_OS_CLEANSOUL_5					=五不同五行获得1点灵根
+CONTENT_OS_CLEANSOUL_6					=四相同五行获得100点灵根
+CONTENT_OS_CLEANSOUL_7					=五相同获得200点灵根
+CONTENT_OS_CLEANSOUL_TODAY				=今日{@0:五行}灵根加倍
+CONTENT_OS_CLEANSOUL_LINGGEN				=灵根
+CONTENT_OS_CLEANSOUL_CISHU				=今日剩余凝聚轮数
+CONTENT_OS_CLEANSOUL_GETEXP_ZERO			=无灵根值可获取
+CONTENT_OS_CLEANSOUL_GETEXP				=点击获取{@0}灵根值\n五相同获得                <font color='#00ff00'>200</font>点\n四相同获得                <font color='#00ff00'>100</font>点\n三相同+两相同获得    <font color='#00ff00'>50</font>点\n两个两相同获得          <font color='#00ff00'>40</font>点\n三相同获得                  <font color='#00ff00'>25</font>点\n二相同获得                  <font color='#00ff00'>10</font>点\n五不同获得                  <font color='#00ff00'>1</font>点\n与今日灵根相同获取加倍。
+CONTENT_OS_CLEANSOUL_GOLD				=花费玄石或礼券{@0}\n当前玄石或礼券消耗＝本轮重新凝聚次数×3＋当前锁定灵根数×2－1
+CONTENT_OS_CLEANSOUL_MONEY				=花费银两{@0}
+CONTENT_OS_CLEANSOUL_LIMIT				=本次凝聚次数已达上限
+
+CONTENT_OS_PUB_OPEN_1					=当前没有随从可召回
+CONTENT_OS_PUB_OPEN_2					=当前有{@0}名随从可召回
+CONTENT_OS_PUB_RENOWN					=当前声望：Lv{@0}
+CONTENT_OS_PUB_MONEY					=获得{@0:金币}银两
+CONTENT_OS_PUB_LINGSHI					=获得{@0:灵石}个灵石
+CONTENT_OS_PUB_TEN_TIME					=(还剩余{@0:次}次)
+CONTENT_OS_PUB_ONE_MONEY				=花费<font color='#5fc513'>3</font>万银两进行一次摇奖，可以获得大量灵石。
+CONTENT_OS_PUB_TEN_MONEY				=花费<font color='#5fc513'>30万</font>银两进行十次摇奖，可以获得大量灵石。
+CONTENT_OS_PUB_GOLD					=花费<font color='#5fc513'>20</font>玄石或礼券进行一次摇奖，必定获得大量灵石。
+CONTENT_OS_PUB_VIP					=<font color='#e03b1a'>VIP{@0}级开启</font>
+CONTENT_OS_ATT_TACKOUT					=您确认解雇{@0:名字}吗？
+CONTENT_OS_ATT_PASS_SKILL_1				={@0:名字}  {@1:等级}  {@2:门派}
+CONTENT_OS_ATT_PASS_SKILL				={@0:名字}  {@1:等级}  {@2:门派}  神魂{@3:神魂}级
+CONTENT_OS_ATT_PASS					=(已传功{@0:}  被传功{@1:})
+CONTENT_OS_ATT_PASS_MONEY				=消耗{@0:银两}银两
+CONTENT_OS_ATT_PASS_GOLD				=消耗{@0:玄石}玄石或礼券
+CONTENT_OS_ATT_PASS_GOLD_1				=500
+CONTENT_OS_ATT_PASS_GOLD_2				=2000
+CONTENT_OS_ATT_PASS_INFO_3				=传承洗髓数值的80%，原伙伴相同等级，各等级丹药损失一颗，神魂经验80%
+CONTENT_OS_ATT_PASS_INFO_2				=传承洗髓数值的100%，原伙伴相同等级，各等级丹药损失一颗，神魂经验100%
+CONTENT_OS_ATT_PASS_INFO_1				=传承洗髓数值的50%，原伙伴相同等级，各等级丹药个数的50%，神魂经验50%
+CONTENT_OS_ATT_CREDIT_1					=声望：{@0:} \n下级所需声望 {@1:}
+CONTENT_OS_ATT_CREDIT_2					=声望：{@0:}
+CONTENT_OS_CDTIME_1         = Время ожидания
+CONTENT_OS_CDTIME_2         = Время ожидания
+CONTENT_OS_CDTIME_3         = Время ожидания
+CONTENT_OS_CDTIME_4         = Время ожидания
+CONTENT_OS_CDTIME_5         = Время ожидания
+CONTENT_OS_CDTIME_6         = Время ожидания
+CONTENT_OS_CDTIME_NAME_1    = <font color='#23F54D'><u>Улучшение снаряжен.</u></font>
+CONTENT_OS_CDTIME_NAME_2    = <font color='#23F54D'><u>可以调教仆从</u></font>
+CONTENT_OS_CDTIME_NAME_3    = <font color='#23F54D'><u>Участие в турнире</u></font>
+CONTENT_OS_CDTIME_NAME_4    = <font color='#23F54D'><u>Улучшение навыков</u></font>
+CONTENT_OS_CDTIME_NAME_5    = <font color='#23F54D'><u>Улучшение лошадей</u></font>
+CONTENT_OS_CDTIME_NAME_6    = <font color='#23F54D'><u>Собрать серебро</u></font>
+
+////////////////洗灵系统///////////////////
+CLEANSOUL_EXP_INFO					=\n五相同获得    200点基础灵根\n四相同获得    100点基础灵根\n三相同+两相同获得    50点基础灵根\n两个两相同获得    40点基础灵根\n三相同获得    25点基础灵根\n二相同获得    10点基础灵根\n与今日灵根相同，获取加倍。
+CLEANSOUL_GET_INFO					=\n当前玄石或礼券消耗＝本轮重新凝聚次数*3+当前锁定灵根数*2-1
+CONTENT_OS_CLEANSOUL_LIMIT				=需{@0}点灵根自动激活
+CONTENT_OS_CLEANSOUL_NMAE_1				=<FONT COLOR='#328563'>【凡体境】</FONT>第一重 :: <FONT COLOR='#b4bb14'>养身</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_2				=<FONT COLOR='#328563'>【凡体境】</FONT>第二重 :: <FONT COLOR='#b4bb14'>练力</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_3				=<FONT COLOR='#328563'>【凡体境】</FONT>第三重 :: <FONT COLOR='#b4bb14'>练体</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_4				=<FONT COLOR='#328563'>【凡体境】</FONT>第四重 :: <FONT COLOR='#b4bb14'>练形</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_5				=<FONT COLOR='#328563'>【凡体境】</FONT>第五重 :: <FONT COLOR='#b4bb14'>练骨</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_6				=<FONT COLOR='#328563'>【凡体境】</FONT>第六重 :: <FONT COLOR='#b4bb14'>练筋</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_7				=<FONT COLOR='#328563'>【凡体境】</FONT>第七重 :: <FONT COLOR='#b4bb14'>练气</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_8				=<FONT COLOR='#328563'>【凡体境】</FONT>第八重 :: <FONT COLOR='#b4bb14'>凝气</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_9				=<FONT COLOR='#328563'>【凡体境】</FONT>第九重 :: <FONT COLOR='#b4bb14'>内壮</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_10				=<FONT COLOR='#328563'>【凡体境】</FONT>第十重 :: <FONT COLOR='#b4bb14'>脱胎</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+30</FONT> :: <FONT COLOR='#CD2226'>15级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_11				=<FONT COLOR='#328563'>【通灵境】</FONT>第一重 :: <FONT COLOR='#b4bb14'>旋照</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_12				=<FONT COLOR='#328563'>【通灵境】</FONT>第二重 :: <FONT COLOR='#b4bb14'>开光</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_13				=<FONT COLOR='#328563'>【通灵境】</FONT>第三重 :: <FONT COLOR='#b4bb14'>凝元</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_14				=<FONT COLOR='#328563'>【通灵境】</FONT>第四重 :: <FONT COLOR='#b4bb14'>结丹</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_15				=<FONT COLOR='#328563'>【通灵境】</FONT>第五重 :: <FONT COLOR='#b4bb14'>辟谷</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_16				=<FONT COLOR='#328563'>【通灵境】</FONT>第六重 :: <FONT COLOR='#b4bb14'>念动</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_17				=<FONT COLOR='#328563'>【通灵境】</FONT>第七重 :: <FONT COLOR='#b4bb14'>灵寂</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_18				=<FONT COLOR='#328563'>【通灵境】</FONT>第八重 :: <FONT COLOR='#b4bb14'>出窍</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_19				=<FONT COLOR='#328563'>【通灵境】</FONT>第九重 :: <FONT COLOR='#b4bb14'>分神</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_20				=<FONT COLOR='#328563'>【通灵境】</FONT>第十重 :: <FONT COLOR='#b4bb14'>神游</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+60</FONT> :: <FONT COLOR='#CD2226'>20级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_21				=<FONT COLOR='#328563'>【先天境】</FONT>第一重 :: <FONT COLOR='#b4bb14'>入静</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_22				=<FONT COLOR='#328563'>【先天境】</FONT>第二重 :: <FONT COLOR='#b4bb14'>真静</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_23				=<FONT COLOR='#328563'>【先天境】</FONT>第三重 :: <FONT COLOR='#b4bb14'>入定</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_24				=<FONT COLOR='#328563'>【先天境】</FONT>第四重 :: <FONT COLOR='#b4bb14'>真定</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_25				=<FONT COLOR='#328563'>【先天境】</FONT>第五重 :: <FONT COLOR='#b4bb14'>道成</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_26				=<FONT COLOR='#328563'>【先天境】</FONT>第六重 :: <FONT COLOR='#b4bb14'>洞天</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_27				=<FONT COLOR='#328563'>【先天境】</FONT>第七重 :: <FONT COLOR='#b4bb14'>斗转</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_28				=<FONT COLOR='#328563'>【先天境】</FONT>第八重 :: <FONT COLOR='#b4bb14'>星移</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_29				=<FONT COLOR='#328563'>【先天境】</FONT>第九重 :: <FONT COLOR='#b4bb14'>宙光</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_30				=<FONT COLOR='#328563'>【先天境】</FONT>第十重 :: <FONT COLOR='#b4bb14'>混沌</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+90</FONT> :: <FONT COLOR='#CD2226'>30级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_31				=<FONT COLOR='#328563'>【大乘境】</FONT>第一重 :: <FONT COLOR='#b4bb14'>返璞</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_32				=<FONT COLOR='#328563'>【大乘境】</FONT>第二重 :: <FONT COLOR='#b4bb14'>归元</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_33				=<FONT COLOR='#328563'>【大乘境】</FONT>第三重 :: <FONT COLOR='#b4bb14'>归真</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_34				=<FONT COLOR='#328563'>【大乘境】</FONT>第四重 :: <FONT COLOR='#b4bb14'>本相</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_35				=<FONT COLOR='#328563'>【大乘境】</FONT>第五重 :: <FONT COLOR='#b4bb14'>本我</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_36				=<FONT COLOR='#328563'>【大乘境】</FONT>第六重 :: <FONT COLOR='#b4bb14'>超相</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_37				=<FONT COLOR='#328563'>【大乘境】</FONT>第七重 :: <FONT COLOR='#b4bb14'>超我</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_38				=<FONT COLOR='#328563'>【大乘境】</FONT>第八重 :: <FONT COLOR='#b4bb14'>无相</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_39				=<FONT COLOR='#328563'>【大乘境】</FONT>第九重 :: <FONT COLOR='#b4bb14'>无我</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+CONTENT_OS_CLEANSOUL_NMAE_40				=<FONT COLOR='#328563'>【大乘境】</FONT>第十重 :: <FONT COLOR='#b4bb14'>虚空</FONT> :: <FONT COLOR='#b4bb14'>成长潜力：+120</FONT> :: <FONT COLOR='#CD2226'>50级可激活</FONT>
+
+/////////////竞技场TIPS/////////////////
+JJC_GAIN_1						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n1360000银两\n4000声望
+JJC_GAIN_2						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n794000~1078000银两\n2000~3000声望
+JJC_GAIN_3						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n630000~748000银两\n1500~1900声望
+JJC_GAIN_4						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n368000~610000银两\n450~1450声望
+JJC_GAIN_5						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n292000~366000银两\n200~445声望
+JJC_GAIN_6						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n170000~292000银两\n5~199声望
+JJC_GAIN_7						=<FONT COLOR='#FFF600'>根据今日排名次日可领取：</FONT>\n170000银两\n5声望
+JJC_REWARD_NUM                                      =1;5;10;15
+JJC_REWARD_TIP_1                                    =<FONT COLOR='#FFF600'>今日挑战满1场可领取：</FONT>\n5000银两\n2礼券\n5声望
+JJC_REWARD_TIP_2                                    =<FONT COLOR='#FFF600'>今日挑战满5场可领取：</FONT>\n10000银两\n4礼券\n10声望
+JJC_REWARD_TIP_3                                    =<FONT COLOR='#FFF600'>今日挑战满10场可领取：</FONT>\n20000银两\n6礼券\n20声望
+JJC_REWARD_TIP_4                                    =<FONT COLOR='#FFF600'>今日挑战满15场可领取：</FONT>\n50000银两\n8礼券\n40声望
+JJC_REWARD_TIP_5                                    =<FONT COLOR='#FFF600'>今日挑战奖励已全部领取</FONT>
+JJC_AREWARD_TIP_1                                   =<FONT COLOR='#FFF600'>凭昨日24点前的竞技场排名领取奖励</FONT>
+JJC_TZ_TIP_1                                        =<FONT COLOR='#FFF600'>战力：{@0:角色战力}</FONT>\n<FONT COLOR='#FFF600'>等级：{@1:角色等级}</FONT>\n<FONT COLOR='#00FF00'>点击进入切磋战斗结果</FONT>\n<FONT COLOR='#00FF00'>不影响排名和奖励</FONT>
+CONTENT_JJC_NOTICE_1                                         = <FONT COLOR='#00FF00'>{@0:玩家id、名称}</FONT>挑战<FONT COLOR='#00FF00'>{@1:玩家id、名称}</FONT>成功晋升到<FONT COLOR='#00FFFF'>第{@2:名次}名</FONT>！
+CONTENT_JJC_NOTICE_2                                         = <FONT COLOR='#00FF00'>{@0:玩家id、名称}</FONT>力压众生成功卫冕竞技场<FONT COLOR='#00FFFF'>第1名</FONT>。
+CONTENT_JJC_NOTICE_3                                         = 您成功击退了<FONT COLOR='#00FF00'>{@0:玩家id、名称}</FONT>的挑战。
+CONTENT_JJC_NOTICE_4                                         = 您被<FONT COLOR='#00FF00'>{@0:玩家id、名称}击败了</FONT>。
+CONTENT_JJC_NOTICE_5                                         =<FONT COLOR='#00FF00'>{@0:玩家id、名称}</FONT>取得昨日排名第一获得了1360000银两和4000声望奖励   
+CONTENT_JJC_NOTICE_6                                         =<FONT COLOR='#00FF00'>{@0:玩家id、名称}</FONT>取得昨日排名第二获得了1078000银两和3000声望奖励   
+CONTENT_JJC_NOTICE_7                                         =<FONT COLOR='#00FF00'>{@0:玩家id、名称}</FONT>取得昨日排名第三获得了942000银两和2500声望奖励
+CONTENT_JJC_TIPS					=是否花费{@0:黄金数}玄石或礼券增加1次竞技次数？
+
+/////////////仙邪战/////////////////
+CONTENT_XXZ_NOTICE_1                                         =<FONT COLOR='#FF9900'>[{@0:回合数}回合]</FONT><FONT COLOR='#00FFFF'>[胜利]</FONT><FONT COLOR='#FFFFCD'>您对</FONT><FONT COLOR='#00FF00'>{@1:角色名}</FONT><FONT COLOR='#FFFFCD'>造成</FONT><FONT COLOR='#FF00FF'>{@2:伤害值}</FONT><FONT COLOR='#FFFFCD'>伤害，成就</FONT><FONT COLOR='#00FF00'>{@3:连胜数}</FONT><FONT COLOR='#FFFFCD'>连胜，获得</FONT><FONT COLOR='#00FF00'>{@4:声望数}</FONT><FONT COLOR='#FFFFCD'>声望。</FONT>
+CONTENT_XXZ_NOTICE_2                                         =<FONT COLOR='#FF9900'>[{@0:回合数}回合]</FONT><FONT COLOR='#FF0000'>[失败]</FONT><FONT COLOR='#00FF00'>{@1:角色名}</FONT><FONT COLOR='#FFFFCD'>对您造成</FONT><FONT COLOR='#FF00FF'>{@2:伤害值}</FONT><FONT COLOR='#FFFFCD'>伤害，您被击溃了。</FONT>
+CONTENT_XXZ_NOTICE_3                                         =<FONT COLOR='#FF9900'>[{@0:回合数}回合]</FONT><FONT COLOR='#00FFFF'>[胜利]</FONT><FONT COLOR='#FFFFCD'>您的团造成敌方神明</FONT><FONT COLOR='#FF00FF'>1</FONT><FONT COLOR='#FFFFCD'>伤害，您获得</FONT><FONT COLOR='#00FF00'>5</FONT><FONT COLOR='#FFFFCD'>声望。 </FONT>
+CONTENT_XXZ_NOTICE_4                                         =<FONT COLOR='#FF9900'>[{@0:回合数}回合]</FONT><FONT COLOR='#FF0000'>[失败]</FONT><FONT COLOR='#FFFFCD'>您的团队被击溃，您获得</FONT><FONT COLOR='#00FF00'>2</FONT><FONT COLOR='#FFFFCD'>声望。</FONT>
+CONTENT_XXZ_NOTICE_5                                         =<FONT COLOR='#00FFFF'>阵营和排名奖励通过邮件领取请注意查收</FONT>
+
+/////////////家族战/////////////////
+CONTENT_CHAT_ARRET_1                                         ={@0:角色名}的最高连胜数达到{@1:胜利场数}场暂时位居个人连胜第一。
+CONTENT_CHAT_ARRET_2                                         =[家族] {@0:家族名}的积分达到{@1:积分值}分暂时位居家族积分第一。
+CONTENT_CHAT_ARRET_3                                         ={@0:角色名}的积分达到{@1:积分值}分暂时位居个人积分第一。
+
+/////////////活动结束界面/////////////////
+CONTENT_ACTIVITY_LIST_23                                     =2;<font size='12' color='#FFF6A1'>个人排名：{@0:个人排名}名   家族排名：{@1:家族排名}名</font>\n<font size='12' color='#F7A31E'>获取奖励：{@2:获得声望}声望   {@3:获得令牌}令牌</font>,1；<font size='12' color='#FFF6A1'>家族排名：{@4:家族排名}名</font>\n<font size='12' color='#F7A31E'>获取奖励：{@5:家族名望}名望</font>,2;						
+CONTENT_ACTIVITY_LIST_13                                     =2;<font size='12' color='#FFF6A1'>伤害排名：{@0:个人排名}名</font>\n<font size='12' color='#F7A31E'>获取奖励：{@1:获得银两}银两   {@2:获得声望}声望   {@3:获得令牌}令牌</font>,1；<font size='12' color='#FFF6A1'>累计伤害：{@4:伤害}</font>\n<font size='12' color='#F7A31E'>获取奖励：{@5:获得银两}银两   {@6:获得声望}声望</font>,2;
+CONTENT_ACTIVITY_LIST_14                                     =2;<font size='12' color='#FFF6A1'>伤害排名：{@0:个人排名}名</font>\n<font size='12' color='#F7A31E'>获取奖励：{@1:获得银两}银两   {@2:获得声望}声望   {@3:获得令牌}令牌</font>,1；<font size='12' color='#FFF6A1'>累计伤害：{@4:伤害}</font>\n<font size='12' color='#F7A31E'>获取奖励：{@5:获得银两}银两   {@6:获得声望}声望</font>,2;
+CONTENT_ACTIVITY_LIST_21                                     =2;<font size='12' color='#FFF6A1'>战斗场次：{@0:有奖励场次}场</font>\n<font size='12' color='#F7A31E'>获取奖励：{@1:获得经验}经验   {@2:获得声望}声望   {@3:获得令牌}令牌</font>,2；<font size='12' color='#FFF6A1'>协助战斗场次：{@4:无奖励场次}场</font>\n<font size='12' color='#F7A31E'>获取奖励：无</font>,2;
+CONTENT_ACTIVITY_LIST_22                                     =3;<font size='12' color='#FFF6A1'>个人排名：{@0:个人排名}名</font>\n<font size='12' color='#F7A31E'>获取奖励：{@1:获得银两}银两   {@2:获得声望}声望</font>,1；<font size='12' color='#FFF6A1'>阵营胜负：{@3:阵营胜负}</font>\n<font size='12' color='#F7A31E'>获取奖励：{@4:获得银两}银两   {@5:获得声望}声望</font>,1；<font size='12' color='#FFF6A1'>最高连胜：{@6:最高连胜数}</font>\n<font size='12' color='#F7A31E'>获取奖励：{@7:获得声望}声望</font>,2;
+CONTENT_ACTIVITY_LIST_37                                     =1;<font size='12' color='#FFF6A1'>胜利场次：{@0:胜利场次}场</font>\n<font size='12' color='#F7A31E'>获取奖励：{@1:获得灵石}灵石   {@2:获得战功}银两  {@3:获得战功}战功</font>,2；
+
+/////////////实力评价///////////////
+CONTENT_SlPJ_LIST                                            =1,法宝进度,TalismanWin,70,0;2,真灵进度,realSoulEquipWin,48,0;3,丹药进度,HerbWin,61,0;4,神魂进度,SoulWin,64,0;5,洗髓进度,CleanDotWin,67,0;6,强化进度,ComposeWin,7,0;7,随从上阵,DongfuWin,3,1;
+
+//========lhc==========
+
+//========LYON=========
+CONTENT_OS_MARK_LINGPAI							=令牌：{@0:金钱}
+CONTENT_OS_SEX_1							= 男
+CONTENT_OS_SEX_2							= 女
+
+CONTENT_OS_SCHOOL_0							=	--
+CONTENT_OS_SCHOOL_1							=	火焰山
+CONTENT_OS_SCHOOL_2							=	化生寺
+CONTENT_OS_SCHOOL_3							=	蓬莱岛
+CONTENT_OS_SCHOOL_4							=	方寸山
+CONTENT_OS_SCHOOL_5							=	盘丝洞 
+CONTENT_OS_SCHOOL_6							=	阎罗岛
+
+CONTENT_OS_SEPT_DATY								=	日
+CONTENT_OS_SEPT_LEVENT						=	级
+CONTENT_OS_SEPT_LIST								=	排名
+CONTENT_OS_SEPT_TIMER							=	小时
+CONTENT_OS_SEPT_DISBAND						=	申请遣散
+CONTENT_OS_SEPT_LEAVETIME                                       =   259200
+CONTENT_OS_SEPT_LDTEXT                                          =   3日
+
+CONTENT_OS_SKILL_COMPLETE					= 已完成
+CONTENT_OS_SKILL_WASHCLOTH				= 洗点将消耗金币
+
+CONTENT_OS_SEPT_EXIT										= <FONT COLOR='#FFED8B'>您将失去所有的</FONT><FONT COLOR='#00FF00'>家族贡献</FONT><FONT COLOR='#FFED8B'>，</FONT><FONT COLOR='#00FF00'>24小时</FONT><FONT COLOR='#FFED8B'>内无法加入其它家族。</FONT>
+CONTENT_OS_SKILL_FACTION_ERR1				= <FONT COLOR='#FF0000'>未加入门派</FONT>
+CONTENT_OS_SKILL_FACTION_ERR2				= <FONT COLOR='#FF0000'>门派不匹配，无法学习武功</FONT>
+
+CONTENT_OS_SEPT_SUCCEED						= <FONT COLOR='#00FF00'>家族繁荣</FONT><FONT COLOR='#FFED8B'>到</FONT><FONT COLOR='#FF0000'>0</FONT><FONT COLOR='#FFED8B'>家族会自动解散。切记！</FONT>
+CONTENT_OS_SEPT											= 家族
+CONTENT_OS_SEPT_DISBANDS					= <FONT COLOR='#00FF00'>72小时</FONT><FONT COLOR='#FFED8B'>内可主动撤消遣散申请，</FONT><FONT COLOR='#00FF00'>72小时</FONT><FONT COLOR='#FFED8B'>后需再次确认遣散。</FONT>
+CONTENT_OS_SEPT_SUCCEEDBANDS		= <FONT COLOR='#FFED8B'>家族进入申请遣散过程中。</FONT>
+CONTENT_OS_SEPT_OBLATION					= 供奉
+CONTENT_OS_ADD_REFER							= <FONT COLOR='#FFED8B'>您提交了加入</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT><FONT COLOR='#FFED8B'>家族的申请。</FONT>
+CONTENT_OS_ADD_CANCEL							= <FONT COLOR='#FFED8B'>您取消了加入</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT><FONT COLOR='#FFED8B'>家族的申请。</FONT>
+CONTENT_OS_BUND_REFER							= <FONT COLOR='#FFED8B'>您向<FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族的结盟请求发送成功。</FONT>
+CONTENT_OS_BUND_CANCEL						= <FONT COLOR='#FFED8B'>您取消了向</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族的结盟请求。</FONT>
+CONTENT_OS_AGREE_BUND						= <FONT COLOR='#FFED8B'>您的家族与</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族结盟成功。</FONT>
+CONTENT_OS_REFUSE_BUND						= <FONT COLOR='#FFED8B'>您拒绝与</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族结盟。</FONT>
+CONTENT_OS_ANNEX_REFER						= <FONT COLOR='#FFED8B'>您向</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族的招揽请求发送成功。</FONT>
+CONTENT_OS_ANNEX_CANCEL					= <FONT COLOR='#FFED8B'>您取消了向</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族的招揽请求。</FONT>
+CONTENT_OS_AGREE_ANNEX						= <FONT COLOR='#FFED8B'>您的家族与</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT><FONT COLOR='#FFED8B'>家族结成一家从此共图霸业。</FONT>
+CONTENT_OS_REFUSE_ANNEX					= <FONT COLOR='#FFED8B'>您拒绝与</FONT><FONT COLOR='#00FF00'>{@0:家族名}</FONT></FONT><FONT COLOR='#FFED8B'>家族结成一家。</FONT>
+CONTENT_OS_FUNCMODEL_1					=家族俸禄
+CONTENT_OS_FUNCMODEL_2					=家族抽奖
+CONTENT_OS_FUNCMODEL_3					=家族供奉
+CONTENT_OS_FUNCMODEL_4					=家族显灵
+CONTENT_OS_FUNCMODEL_6					=家族战
+CONTENT_OS_FUNCMODEL_7					=家族库房
+
+CONTENT_OS_SEPT_1_3                                     = {@0:等级}级
+CONTENT_OS_SEPT_4_9                                     = 豪门({@0:等级}级)
+CONTENT_OS_SEPT_10_18                                     = 世家({@0:等级}级)
+CONTENT_OS_SEPT_19_36                                     = 传承世家({@0:等级}级)
+CONTENT_OS_SEPT_0                                      = 名门望族(排名{@0:等级})
+
+//========LYON=========
+//========xcz==========
+CONNET_MAIL_TEMPLATE_1                                             = {@0:字符串}|{@0:字符串}
+CONNET_MAIL_TEMPLATE_2                                             = 家族遣散|您所在的{@0:家族名}家族已成功遣散
+CONNET_MAIL_TEMPLATE_3                                             = 家族取消遣散|您所在的{@0:家族名}家族已取消遣散
+CONNET_MAIL_TEMPLATE_4                                             = 家族申请遣散|您所在的{@0:家族名}家族族长已申请遣散，请在此之前尽量使用自己的家族贡献，不然家族解散后家族贡献会全部失去。
+CONNET_MAIL_TEMPLATE_5                                             = 恭喜您获得降魔战第{@0:降魔战排名}名|系统奖励
+CONNET_MAIL_TEMPLATE_6                                             = 填写角色信息奖励|奖励100玄石
+CONNET_MAIL_TEMPLATE_7                                             = 您在古老山庄活动中排行第{@0:古老山庄之战排名}名|恭喜您的势力获得古老山庄的胜利
+CONNET_MAIL_TEMPLATE_8                                             = 您在古老山庄活动中排行第{@0:古老山庄之战排名}名|很遗憾，您们势力战败了
+CONNET_MAIL_TEMPLATE_9                                             = 拍卖场邮件|您在拍卖场购买了道具，请查看
+CONNET_MAIL_TEMPLATE_10                                            = 拍卖场邮件|您竞拍的{@0:物品名}被其他人超过 
+CONNET_MAIL_TEMPLATE_11                                            = 副本奖励|系统检测到您的背包不足，现将副本奖励通过邮件发送
+CONNET_MAIL_TEMPLATE_12                                            = {@0:玩家名}赠送的礼物|
+CONNET_MAIL_TEMPLATE_13                                            = 家族战奖励|您在家族战中为您的家族做出了不可磨灭的贡献，特此奖励。
+CONNET_MAIL_TEMPLATE_14                                            = 降魔战奖励|您在降魔战中出色的表现让人印象深刻，特此奖励。
+CONNET_MAIL_TEMPLATE_15                                            = 仙邪战阵营奖励|恭喜您所在的仙势力战胜了邪势力，特此奖励。
+CONNET_MAIL_TEMPLATE_16                                            = 仙邪战阵营奖励|您所在的仙势力败给了邪势力，特此奖励，期望下次取得更好的成绩。
+CONNET_MAIL_TEMPLATE_17                                            = 仙邪战阵营奖励|您所在的仙势力与邪势力旗鼓相当打成平手，特此奖励，期望下次取得更好的成绩。
+CONNET_MAIL_TEMPLATE_18                                            = 仙邪战阵营奖励|恭喜您所在的邪势力战胜了仙势力，特此奖励。
+CONNET_MAIL_TEMPLATE_19                                            = 仙邪战阵营奖励|您所在的邪势力败给了仙势力，特此奖励，期望下次取得更好的成绩。
+CONNET_MAIL_TEMPLATE_20                                            = 仙邪战阵营奖励|您所在的邪势力与仙势力旗鼓相当打成平手，特此奖励，期望下次取得更好的成绩。
+CONNET_MAIL_TEMPLATE_21                                            = 仙邪战排名奖励|您在仙邪战活动中声望获取排行第{@0:仙邪战声望排名}名，特此奖励。
+CONNET_MAIL_TEMPLATE_22                                            = 商城道具购买|您所购买的商城道具已到货,请马上领取。该邮件7小时后自动删除。
+CONNET_MAIL_TEMPLATE_23                                            = 背包已满|您所获得的物品已发送到邮件,请马上领取。该邮件7小时后自动删除。
+CONNET_MAIL_TEMPLATE_24                                            = 自动参战奖励|自动参加[{@0:活动名称}],获取{@1:声望}声望和{@2:银两}银两。
+CONNET_MAIL_TEMPLATE_26                                            = 自动参战奖励|自动参加[多人副本],获取{@0:声望}声望、{@1:银两}经验和{@2:令牌}令牌。
+CONNET_MAIL_TEMPLATE_27                                            = 自动参战奖励|自动参加[仙邪战],获取{@0:声望}声望和{@1:银两}银两。
+CONNET_MAIL_TEMPLATE_28                                            = 自动参战奖励|自动参加[家族战],获取{@0:声望}声望、{@1:家族贡献}家族贡献和{@2:令牌}令牌。
+CONNET_MAIL_TEMPLATE_29                                            = 取消自动参战|自动参加[{@0:活动名称}]需要50玄石或点券，您当前的玄石和点券不足，取消自动参加[{@1:活动名称}]!
+CONNET_MAIL_TEMPLATE_30                                            = 麻匪运宝获得第{@0:排名}名|您在麻匪运宝中出色的表现让人印象深刻，特此奖励。
+CONNET_MAIL_TEMPLATE_31                                            = 麻匪运宝奖励|您在麻匪运宝中出色的表现让人印象深刻，特此奖励。
+CONNET_MAIL_TEMPLATE_32                                            = 麻匪运宝击杀奖励|您在麻匪运宝中击杀了麻匪波神，特此奖励。
+CONNET_MAIL_TEMPLATE_33                                            = 麻匪运宝击杀奖励|您在麻匪运宝中击杀了麻匪肥猫，特此奖励。
+CONNET_MAIL_TEMPLATE_34                                            = 麻匪运宝击杀奖励|您在麻匪运宝中击杀了麻匪教主，特此奖励。
+CONNET_MAIL_TEMPLATE_35                                            = 腾讯集市任务奖励|恭喜您达到20级，完成了集市任务。
+
+CONTENT_HORSE_UPGRADE                                              = 恭喜您的马帮达到了{@0:马帮等级}级马帮
+CONTENT_GET_SOUL_ALERT                                             = 提取器灵后马匹会永久消失，确定要这样做？
+CONTENT_BUILD_SPEED                                                = 确定花费{@0:玄石}玄石或礼券加速建造？
+CONTENT_TRANSPORT_SPEED                                            = 确定花费{@0:玄石}玄石或礼券加速运输？
+CONTENT_ROBCD_SPEED                                                = 确定花费{@0:玄石}玄石或礼券清除劫运CD？
+CONTENT_END_TRADE                                                  = 终止路线会损失本次运输的收益，确定要这样做？
+CONTENT_BUY_HORSE                                                  = 确定花费{@0:玄石}玄石或礼券购买该马匹？
+CONTENT_TRANSPORT_REFRESH                                          = 确定花费{@0:玄石}玄石或礼券刷新运输品质？
+CONTENT_TRANSPORT_REFRESH_MONEY                                     = 2,10,20,40
+CONTENT_TRANSPORT_HIGH_REFRESH									   = 确认花费400玄石或礼券刷新至最高品质？
+CONTENT_TRANSPORT_HIGH_REFRESH_TIP								   = 花费400玄石或礼券直接刷新至最高品质的货物
+CONTENT_BUY_LAND                                                   = 确定花费{@0:玄石}玄石或礼券购买开启该区域？
+CONTENT_SPY                                                        = 确定花费{@0:玄石}玄石或礼券刺探对方的真实身份？
+CONTENT_LAND_OPEN                                                  = 已开启新的区域2秒后系统自动返回...
+CONTENT_GET_FOOD                                                   = 获得{@0:货物}斤货物|2秒后系统自动返回...
+CONTENT_GET_HORSE                                                  = 获得{@0:器灵}|可前往马厩中查看
+CONTENT_PROTECT_BACK                                               = 对方拒绝了您的护送请求
+CONTENT_HORSE_INFO						   						   = <FONT COLOR='#fffac7' SIZE='24'>马匹运输是西游梦银两获取的主要途径！</FONT>
+CONTENT_HORSE_BOSSINFO											   = 麻匪携带有巨额银两！打劫麻匪可获取银两声望奖励！
+//========xcz==========
+
+//========lhc==========
+
+//========lhc==========
+
+//========调休========
+CONTENT_ZANEN_BEGIN								= <FONT COLOR='#8f4025'>获得经验  {@0:获得经验}\n调息时间  {@1:调息时间}</FONT>
+CONTENT_ZANEN_END								= <FONT COLOR='#8f4025'>累计获得  {@0:获得经验}经验</FONT>\r\n<FONT COLOR='#8f4025'>是否继续调休?</font>
+CONTENT_ZANEN_LIMIT								= <FONT COLOR='#8f4025'>获得经验  {@0:获得经验}\n调息时间  已达上限</FONT>
+CONTENT_PATROL_BEGIN							= <FONT COLOR='#8f4025'>获得经验  {@0:获得经验}\n获得灵气  {@1:获得灵气}\n调息时间  {@2:调息时间}</FONT>
+CONTENT_PATROL_END								= <FONT COLOR='#8f4025'>累计获得  {@0:获得经验}经验</FONT>\r\n<FONT COLOR='#8f4025'>是否继续调休?</font>
+CONTENT_PATROL_LIMIT							= <FONT COLOR='#8f4025'>获得经验  {@0:获得经验}\n获得灵气  {@1:获得灵气}\n调息时间  已达上限</FONT>
+
+
+
+
+//==========hxt============
+
+//==========聊天框显示==========
+
+//==========显示==========玩家主动聊天类==========开始
+
+//===前缀=== 
+CONTENT_CHAT_CM_FAMILY						= [Клан] 
+CONTENT_CHAT_CM_SCENE							= [Локация] 
+CONTENT_CHAT_CM_TEAM							= [Группа] 
+CONTENT_CHAT_CM_WEIGHT						= [Мир] 
+CONTENT_CHAT_CM_BUGLE						= [喇叭]
+//======
+//======频道颜色
+
+//===颜色===
+//===场景颜色===
+CONTENT_SCENE_COLOR								= <font color='#FFED8B'>
+//===家族颜色===
+CONTENT_FAMILY_COLOR							= <font color='#67C91F'>
+//===组队颜色===
+CONTENT_TEAM_COLOR								= <font color='#6868AE'>
+//===势力颜色===
+CONTENT_WEIGHT_COLOR							= <font color='#22AADD'>
+//===喇叭颜色===
+CONTENT_BUGLE_COLOR								= <font color='#F0812A'>
+//=路点颜色=
+CONTENT_ROOT_COLOR								= <font color='#0099ff'>
+
+//=1级物品白色=
+CONTENT_WHITE									= <font color='#F2F5FA'>
+//=2级物品绿色=
+CONTENT_GREEN									= <font color='#6FD266'>
+//=3级物品蓝色=
+CONTENT_BLUENESS								= <font color='#0379DD'>
+//=4级物品紫色=
+CONTENT_PURPLE									= <font color='#A73DF9'>
+//=5级物品金色=
+CONTENT_GOLD									= <font color='#E78546'>
+
+//==================
+//修饰符号
+CONTENT_CHAT_CM_COLON							=：
+
+//======
+
+//==========显示==========玩家主动聊天类==========结束
+
+//==========显示==========玩家被动接收聊天类==========开始
+
+//======被动类文字颜色 
+CONTENT_CHAT_CM_COLOR							= <font color='#FFFF00'>
+//======人名颜色
+CONTENT_CHAT_ARRET_COLOR_PLAYER					= <font color='#FF3300'>
+//======装备颜色
+CONTENT_CHAT_ARRET_COLOR_WEAPON					= <font color='#00FF00'>
+
+//======登入游戏======
+CONTENT_CHAT_WELCOME    = Добро пожаловать в игру Герои востока!<br>Играйте честно и остерегайтесь мошенников.<br>Желаем приятной игры =)
+//============
+
+//特殊获取提示,0玄石；1贡献；2卷轴；3银两...
+CONTENT_OS_TESHU_GET_TIP_0						=	获得{@0}礼券
+CONTENT_OS_TESHU_GET_TIP_1						=	获得{@0}家族贡献
+CONTENT_OS_TESHU_GET_TIP_2						=	获得{@0}
+CONTENT_OS_TESHU_GET_TIP_3						=	银两+{@0:银两数目}
+CONTENT_OS_TESHU_GET_TIP_4						=	声望+{@0:声望数目}
+CONTENT_OS_GUAJI							=	快速加速战斗功能
+
+//倍率
+CONTENT_OS_BEILV							=	<B><FONT COLOR='#FFFF00' SIZE='24'>{@0:倍率}倍暴击!</FONT>
+
+//战斗跳过
+ZD_SKIP_TIP                                                             =       VIP{@0:VIP需求等级}级可直接跳过观看      
+ZD_SKIP_LIMITNUM                                                        =       2                                                      
+
+//GM命令异常
+CONTENT_CHAT_ODER		=GM指令出错				
+//======公告======
+
+CONTENT_CHAT_NOTICE_COLOR_HEAD					= <font color='#FF0000'>
+CONTENT_CHAT_NOTICE_HEAD						= [Объявление] 
+CONTENT_CHAT_NOTICE_9							={@0:自定义文字}
+CONTENT_CHAT_NOTICE_10							={@0:自定义文字}
+CONTENT_CHAT_NOTICE_11							=距离停机维护还有{@0:时间}分钟。 
+CONTENT_CHAT_NOTICE_12							=服务器关闭。
+CONTENT_CHAT_NOTICE_13							= {@0:时间}分钟后{@1:活动名}报名开始。
+CONTENT_CHAT_NOTICE_14							= {@0:活动名}报名开始。
+CONTENT_CHAT_NOTICE_15							= {@0:活动名}报名结束。
+CONTENT_CHAT_NOTICE_16							= {@0:时间}分钟后 {@1:活动名}开始。
+CONTENT_CHAT_NOTICE_17							= {@0:活动名}开始!
+CONTENT_CHAT_NOTICE_18							= {@0:活动名}结束。
+CONTENT_CHAT_NOTICE_19							= 高级拍卖行即将开启，请玩家通过高级拍卖师进入。
+CONTENT_CHAT_NOTICE_22							= {@0:玩家名}战胜{@1:玩家名}，成为竞技场第一！
+CONTENT_CHAT_NOTICE_26							= {@0:玩家名}准备大展宏图，在聚仙阁中将{@1:随从名}招募到麾下！
+CONTENT_CHAT_NOTICE_110						= 高级拍卖行已拍卖完所有商品，下周再见。
+CONTENT_CHAT_NOTICE_115						= {@0:玩家id、名称}成功合成{@1:物品id、名称}！
+CONTENT_CHAT_NOTICE_116						= {@0:玩家id、名称}在真灵殿中祭拜洪荒之灵时突觉金光罩顶，获得了{@1:真灵id、名称}！
+CONTENT_CHAT_NOTICE_117						= {@0:玩家id、名称}在神魂祭台忽见紫气东来，“啪”的一下合成了{@1:副魂id、名称}！
+CONTENT_CHAT_NOTICE_118						= {@0:玩家id、名称}使用{@1:炉子名:青蟾地火炉/金蟾地火炉/银龙地火炉/朱雀天火炉/九霄离火炉对应一品/二品/三品/四品/五品}，炼成{@2:物品id、名称}！
+CONTENT_CHAT_NOTICE_119						= {@0:胜利者}在竞技场战胜了{@1:失败者}，成为竞技场排名第一！
+CONTENT_CHAT_NOTICE_120						= {@0:击杀者名字}成功击杀{@1:BOSS名字}获得{@2:击杀奖励}银两。\n本次降魔战伤害前{@3:总共名次}名：\n{@4:第一名名字}获得第一名,奖励{@5:第一名银两奖励}银两和{@6:第一名声望奖励}声望\n{@7:第二名名字}获得第二名,奖励{@8:第二名银两奖励}银两和{@9:第二名声望奖励}声望\n{@10:第三名名字}获得第三名,奖励{@11:第三名银两奖励}银两和{@12:第三名声望奖励}声望
+CONTENT_CHAT_NOTICE_121						= 本次仙邪战声望获得前{@0:总共名次}名：\n{@1:第一名名字}获得第一名,奖励{@2:第一名银两奖励}银两和{@3:第一名声望奖励}声望\n{@4:第二名名字}获得第二名,奖励{@5:第二名银两奖励}银两和{@6:第二名声望奖励}声望\n{@7:第三名名字}获得第三名,奖励{@8:第三名银两奖励}银两和{@9:第三名声望奖励}声望
+CONTENT_CHAT_NOTICE_122						= 本次家族战个人积分前{@0:总共名次}名：\n{@1:第一名名字}获得第一名,奖励{@2:第一名家族贡献}贡献、{@3:第一名声望奖励}声望、50令牌\n{@4:第二名名字}获得第二名,奖励{@5:第二名家族贡献}贡献、{@6:第二名声望奖励}声望、39令牌\n{@7:第三名名字}获得第三名,奖励{@8:第三名家族贡献}贡献、{@9:第三名声望奖励}声望、34令牌
+CONTENT_CHAT_NOTICE_123						= 本次家族战家族积分前3名:\n<font color='#00FF00'>{@0:家族名}</font>获得第一名,奖励{@1:家族名望}家族名望\n<font color='#00FF00'>{@2:家族名}</font>获得第二名,奖励{@3:家族名望}家族名望\n<font color='#00FF00'>{@4:家族名}</font>获得第三名,奖励{@5:家族名望}家族名望
+CONTENT_CHAT_NOTICE_126						= {@0:玩家id、名称}将{@1:马匹id、名称}培育成{@2:马匹id、名称}！
+CONTENT_CHAT_NOTICE_124						= {@0:玩家id、名称}充值成为VIP{@1:VIP等级}用户，可享受到VIP尊贵服务。{@2:成为VIP}。
+CONTENT_CHAT_NOTICE_127						= {@0:玩家id、名称}的[{@1:货物星级}星货物]开始运输！
+CONTENT_CHAT_NOTICE_134						= {@0:玩家id、名称}使用VIP体验卡，享受1小时的VIP4级尊贵体验。{@1:成为VIP}
+CONTENT_CHAT_NOTICE_138						= {@0:玩家id、名称、品质}在博天命连续4次逆天改命,获得{@1:灵石数}灵石,{@2:声望}声望和{@3:令牌}个令牌.
+CONTENT_CHAT_NOTICE_139						= {@0:玩家id、名称、品质}在博天命连续4次逆天改命,获得{@1:灵石数}灵石,{@2:声望}声望.
+CONTENT_CHAT_NOTICE_150						= {@0:时间}分钟后{@1:活动名}活动自动参加报名开始!
+CONTENT_CHAT_NOTICE_151						= {@0:活动名}活动自动参加报名开始!
+CONTENT_CHAT_NOTICE_152						= {@0:活动名}活动自动参加报名结束!
+CONTENT_CHAT_NOTICE_153						= 本次麻匪运宝伤害前{@0:总共名次}名：\n{@1:第一名名字}获得第一名,奖励{@2:第一名银两奖励}银两和{@3:第一名声望奖励}声望\n{@4:第二名名字}获得第二名,奖励{@5:第二名银两奖励}银两和{@6:第二名声望奖励}声望\n{@7:第三名名字}获得第三名,奖励{@8:第三名银两奖励}银两和{@9:第三名声望奖励}声望
+CONTENT_CHAT_NOTICE_155						= {@0:击杀者名字}成功击杀麻匪运宝{@1:BOSS名字}获得{@2:击杀奖励}银两
+CONTENT_CHAT_NOTICE_158						= {@0:玩家名字}在{@1:装备名字}洗练出黄色品质属性[{@2:属性名字}+{@3:属性值}]。
+CONTENT_CHAT_NOTICE_159						= {@0:玩家名字}在{@1:装备名字}洗练出三项紫色品质属性[{@2:属性名字}+{@3:属性值}]、[{@4:属性名字}+{@5:属性值}]和[{@6:属性名字}+{@7:属性值}]。
+CONTENT_CHAT_NOTICE_161						= {@0:玩家名字}憨人有憨福,洗灵时摇出壹贰叁肆伍陆，获得400境界点!
+CONTENT_CHAT_NOTICE_162						= {@0:玩家名字}突破{@1:境界名}，成长潜力改变为{@2:等级}!
+CONTENT_CHAT_NOTICE_163						= {@0:玩家名字}的法宝阵法刷新出黄色属性:[{@1:属性名字}+{@2:属性值}]!
+CONTENT_CHAT_NOTICE_165						= {@0:玩家名字}将背包全部开启!
+CONTENT_CHAT_NOTICE_170                                         = {@0:玩家名字}在聚贤阁张榜招贤，幸运的将{@1:随从名}招募到麾下！
+CONTENT_CHAT_NOTICE_171                                         = {@0:玩家名字}法力高强轻松将{@1:玩家名字}降伏为奴仆！
+
+CLASS_TYPE_YAPPING_1=一级丹药卷轴
+CLASS_TYPE_YAPPING_2=二级丹药卷轴
+CLASS_TYPE_YAPPING_3=三级丹药卷轴
+CLASS_TYPE_YAPPING_4=四级丹药卷轴
+CLASS_TYPE_YAPPING_5=五级丹药卷轴
+
+CONTENT_CHAT_PINZHI						=1000,1299,绿色;1300,1899,蓝色;1900,2799,紫色;2800,3999,金色;4000,4000,红色
+
+CONTENT_CHAT_SYSTEM_HEAD                                        = [Система] 
+CONTENT_CHAT_SYSTEM_70						= 获得{@0:礼券数}礼券！
+CONTENT_CHAT_SYSTEM_71						= 失去{@0:礼券数}礼券！
+CONTENT_CHAT_SYSTEM_72						= 获得{@0:银两数}银两！
+CONTENT_CHAT_SYSTEM_73						= 失去{@0:银两数}银两！
+
+CONTENT_CHAT_PERSONNAL_NOTICE_HEAD                              = [Инфо] 
+CONTENT_CHAT_PERSONNAL_NOTICE_70				= 获得{@0:礼券数}礼券！
+CONTENT_CHAT_PERSONNAL_NOTICE_71				= 消耗{@0:礼券数}礼券！
+CONTENT_CHAT_PERSONNAL_NOTICE_72				= 获得{@0:银两数}银两！
+CONTENT_CHAT_PERSONNAL_NOTICE_73				= 消耗{@0:银两数}银两！
+CONTENT_CHAT_PERSONNAL_NOTICE_74				= 获得{@0:道具id}×{@1:道具数量}！
+CONTENT_CHAT_PERSONNAL_NOTICE_75				= 失去{@0:道具id}×{@1:道具数量}！
+CONTENT_CHAT_PERSONNAL_NOTICE_76				= 马匹升级到{@0:等级数}级！
+CONTENT_CHAT_PERSONNAL_NOTICE_77				= 获得{@0:副魂id}×{@1:副魂数量}！
+CONTENT_CHAT_PERSONNAL_NOTICE_128				= 获得{@0:体力值}点活力。
+CONTENT_CHAT_PERSONNAL_NOTICE_129				= 接受 {@0:任务名}。
+CONTENT_CHAT_PERSONNAL_NOTICE_130				= 完成 {@0:任务名}。
+CONTENT_CHAT_PERSONNAL_NOTICE_131				= {@0:玩家名称}升级到{@1:等级}级。
+CONTENT_CHAT_PERSONNAL_NOTICE_132				= 当前活跃度提高到{@0:活跃度}点。
+CONTENT_CHAT_PERSONNAL_NOTICE_133				= {@0:随从ID}升级到{@1:等级}级。
+CONTENT_CHAT_PERSONNAL_NOTICE_135				= VIP体验时间结束，想要继续VIP爽快体验，{@0:成为VIP}
+CONTENT_CHAT_PERSONNAL_NOTICE_136				= 当前活跃度提高到{@0:活跃度}点,可以领取新的活跃度礼包了!{@1:领取礼包}
+CONTENT_CHAT_PERSONNAL_NOTICE_137				= 获取{@0:声望值}点声望。
+CONTENT_CHAT_PERSONNAL_NOTICE_140                               = 获得{@0:玄石}玄石！
+CONTENT_CHAT_PERSONNAL_NOTICE_141                               = 消耗{@0:玄石}玄石！
+CONTENT_CHAT_PERSONNAL_NOTICE_142                               = 获得{@0:天地灵气}点天地灵气！
+CONTENT_CHAT_PERSONNAL_NOTICE_143                               = 消耗{@0:天地灵气}点天地灵气！
+CONTENT_CHAT_PERSONNAL_NOTICE_144                               = 获得{@0:法宝残片}个法宝残片！
+CONTENT_CHAT_PERSONNAL_NOTICE_145                               = 消耗{@0:法宝残片}个法宝残片！
+CONTENT_CHAT_PERSONNAL_NOTICE_148                               = 获得了{@0:灵石}灵石！
+CONTENT_CHAT_PERSONNAL_NOTICE_149                               = 消耗了{@0:灵石}灵石！
+
+//============
+
+//======告示======
+
+CONTENT_CHAT_ARRET_HEAD							=[告示]
+CONTENT_CHAT_ARRET_21							= {@0:玩家名}成功建立<FONT COLOR='#00FF00'>{@1:家族名}</FONT>从此广收门徒名扬四方 {@2:申请加入}
+CONTENT_CHAT_ARRET_23							= {@0:玩家名}击杀了{@1:BOSS名}，获得{@2:银两}银两
+CONTENT_CHAT_ARRET_24							= 本次降魔战伤害最高的玩家依次是：<br>     第一名 {@0:玩家名}<br>     第二名 {@1:玩家名}<br>     第三名 {@2:玩家名} 
+CONTENT_CHAT_ARRET_25							= {@0:玩家名}在高级拍卖行使用{@1:玄石}玄石或礼券购买{@2:物品名}
+CONTENT_CHAT_ARRET_20							= {@0:BOSS名}剩余生命 {@1:百分比}%
+CONTENT_CHAT_ARRET_114							= 仙邪战战况 [仙 {@0:仙阵营剩余血量}：{@1:邪阵营剩余血量} 邪]
+CONTENT_CHAT_ARRET_147							= {@0:活动名}开始,{@1:快速加入}!
+CONTENT_CHAT_ARRET_154							= 本次麻匪运宝伤害前三名分别是：<br>     第一名 {@0:玩家名}<br>     第二名 {@1:玩家名}<br>     第三名 {@2:玩家名}
+CONTENT_CHAT_ARRET_156							= {@0:击杀者名字}成功击杀麻匪运宝{@1:BOSS名字}获得{@2:击杀奖励}银两。
+CONTENT_CHAT_ARRET_157						= 恭喜{@0:玩家名字}战斗力超过{@1:战斗力数值}!
+CONTENT_CHAT_ARRET_160						= {@0:玩家名字}将{@1:装备名字}强化到{@2:强化等级}级!
+CONTENT_CHAT_ARRET_164						= {@0:玩家名字}将本命法宝强化到{@1:法宝等级}级!
+CONTENT_CHAT_ARRET_166						= {@0:玩家名字}将自身的主魂升到{@1:主魂等级}级!
+CONTENT_CHAT_ARRET_167						= {@0:玩家名字}通关了108星劫的第{@1:星劫层数}劫!
+CONTENT_CHAT_ARRET_168						= {@0:玩家名字}通关了万宝窟的第{@1:万宝窟层数}层!
+CONTENT_CHAT_ARRET_169						= {@0:玩家名字}将屠神剑升到{@1:屠神剑等级}级!
+CONTENT_CHAT_ARRET_170                                          = {@0:玩家玩家名字}在聚贤阁张榜招贤，幸运的将{@1:随从名}招募到麾下！
+CONTENT_CHAT_ARRET_111						= 今日仙邪战【仙阵营】获胜，获取声望最多的玩家依次是  {@0:声望第一}  {@1:声望第二}  {@2:声望第三}
+CONTENT_CHAT_ARRET_112						= 今日仙邪战【邪阵营】获胜，获取声望最多的玩家依次是  {@0:声望第一}  {@1:声望第二}  {@2:声望第三}
+CONTENT_CHAT_ARRET_113						= 今日仙邪战【仙阵营】与【邪阵营】战平，获取声望最多的玩家依次是  {@0:声望第一}  {@1:声望第二}  {@2:声望第三}
+
+/////////////家族战/////////////////
+CONTENT_CHAT_ARRET_30                                         ={@0:角色名}的最高连胜数达到{@1:胜利场数}场暂时位居个人连胜第一。
+CONTENT_CHAT_ARRET_31                                         =[家族] {@0:家族名}的积分达到{@1:积分值}分暂时位居家族积分第一。
+CONTENT_CHAT_ARRET_32                                         ={@0:角色名}的积分达到{@1:积分值}分暂时位居个人积分第一。
+
+//======真灵提示（其中4 是指真灵猎灵的最低等级的银两消耗）======
+TIPS_SMT_1                                                              =自动吞噬背包中所有真灵。
+TIPS_SMT_2                                                              =花费200玄石召唤当前真灵？
+TIPS_SMT_3                                                              =花费400玄石或礼券召唤当前真灵？	              
+TIPS_SMT_4                                                              =9000
+//9级真灵升级到10级的语句提示
+TIPS_SMT_5								=浪费真灵经验{@0:经验值}点?
+TIPS_SMT_6                                                             	=<font color='#00ff00'>花费{@0:玄石}玄石或礼券开启{@1:格子数}个格子</font>              
+TIPS_SMT_7                                                              =是否花费{@0:玄石}玄石或礼券,开启{@1:格子数}个真灵格子?               
+//======家族======
+CONNET_CHAT_SEPT_61                             ={@0:玩家名}加入了家族
+CONNET_CHAT_SEPT_62                             ={@0:玩家名}离开了家族
+CONNET_CHAT_SEPT_63                             ={@0:家族名}加入同盟
+CONNET_CHAT_SEPT_64                             ={@0:家族名}退出同盟
+CONNET_CHAT_SEPT_65                             ={@0:家族名}与本家族共同霸业
+CONNET_CHAT_SEPT_66                             ={@0:家族名}在家族战中取得第{@1:名次}名，获得奖励{@1:名望}家族名望。
+CONNET_CHAT_SEPT_67                             = <FONT COLOR='#00FF00'>{@0:功能名}</FONT><FONT COLOR='#FFED8B'>已开启，请打开家族-管理界面查看。</FONT>
+CONNET_CHAT_SEPT_146                            = 家族获得第{@0：排名}名,奖励{@1：家族名望}名望！
+//============
+
+//========离线信息=========
+CONTENT_CHAT_HINT_31						= <FONT COLOR='#FF0000'>{@0:玩家名}</FONT><FONT COLOR='#FFFFFF'>已加您为好友，是否要回加对方</FONT>
+CONTENT_CHAT_HINT_32						= <FONT COLOR='#FFFFFF'>您被</FONT><FONT COLOR='#FF0000'>{@0:玩家名}</FONT><FONT COLOR='#FFFFFF'>击败了，排名降至</FONT><FONT COLOR='#FF0000'>{@1:竞技场排名}</FONT><FONT COLOR='#FFFFFF'>名，是否要进行复仇</FONT>
+CONTENT_CHAT_HINT_33                        = <FONT COLOR='#FFFFFF'>本次战斗获得奖励：</FONT><FONT COLOR='#FF0000'>{@0:银两}</FONT><FONT COLOR='#FFFFFF'>银两，</FONT><FONT COLOR='#FF0000'>{@1:声望}</FONT><FONT COLOR='#FFFFFF'>声望</FONT>
+CONTENT_CHAT_HINT_34                        = <FONT COLOR='#FFFFFF'>您在降魔战中总伤害排</FONT><FONT COLOR='#FF0000'>{@0:降魔战排名}</FONT><FONT COLOR='#FFFFFF'>名。</FONT><FONT COLOR='#FFFFFF'>累计获得：</FONT><FONT COLOR='#FF0000'>{@1:银两}</FONT><FONT COLOR='#FFFFFF'>银两，</FONT><FONT COLOR='#FF0000'>{@2:声望}</FONT><FONT COLOR='#FFFFFF'>声望</FONT>
+CONTENT_CHAT_HINT_35						= <FONT COLOR='#FF0000'>{@0:家族名}</FONT><FONT COLOR='#FFFFFF'>拒绝您的结盟请求</FONT>
+CONTENT_CHAT_HINT_36						= <FONT COLOR='#FF0000'>{@0:家族名}</FONT><FONT COLOR='#FFFFFF'>拒绝您的招揽请求</FONT>
+CONTENT_CHAT_HINT_37						= <FONT COLOR='#FFFFFF'>您被</FONT><FONT COLOR='#FF0000'>{@0:玩家名}</FONT><FONT COLOR='#FFFFFF'>打劫了，损失{@1:银两}银两</FONT>
+CONTENT_CHAT_HINT_38						= <FONT COLOR='#FFFFFF'>您成功击退了</FONT><FONT COLOR='#FF0000'>{@0:玩家名}</FONT><FONT COLOR='#FFFFFF'>避免了损失</FONT>
+//============
+
+//==========显示==========玩家被动接收聊天类==========结束
+
+//==========聊天框显示==========
+
+
+//==========好友显示=============
+
+CONTENT_FRIEND_LOOK 						= 查看资料
+CONTENT_FRIEND_DEL 							= 删除好友
+CONTENT_FRIEND_BLACKLIST				= 移黑名单
+CONTENT_FRIEND_TEAM						= 邀请组队
+CONTENT_FRIEND_SEND						= 发送消息
+CONTENT_FRIEND_NOTE						= 交谈记录
+CONTENT_FRIEND_BEVY							= 添加入群
+CONTENT_FRIEND_ARRAY						= 添加入组
+CONTENT_FRIEND_HORSE						= 进入马帮
+
+CONTENT_FRIEND_ADD													= 加为好友
+CONTENT_FRIEND_DLE_	BLACKLIST							= 删除
+error_smt_1723                                                 =该玩家在您的黑名单中
+
+
+
+
+
+//==========好友显示=============
+
+//==========hxt============
+
+//==========真灵描述============。
+REALSOUL_DES_1                                                =花费200玄石可以直接召唤当前真灵。
+REALSOUL_DES_2                                                =花费400玄石或礼券可以直接召唤当前真灵。
+REALSOUL_DES_3                                                =点击按键后选择一个真灵即可锁定/解锁真灵。
+REALSOUL_DES_4                                                =点击按键后选择一个金色真灵即可进行粉碎。
+
+//==========yyg============
+LABEL_INTENSIFY_EQUIP                                          =装备强化
+LABEL_PEEL_EQUIP                                               =装备强化剥离
+LABEL_STONE_COMBINE                                            =强化石合成
+
+//新强化购买
+LABEL_BUY_EUQIP							=1;0,110011,7500,1804:1,110022,7500,1804:2,120022,7500,1804:3,130022,7500,1804:4,140022,7500,1804:5,150022,7500,1804:6,160022,7500,1804@2;210022,7500,1804@3;230022,7500,1804@5;220022,7500,1804@6;200022,7500,1804
+//新强化引导文字
+LABEL_LEVUP_TIPS						= 点击强化到12级
+LABEL_LEVUP_NUM							= 12
+//新洗练引导文字
+LABEL_XILIAN_TIPS						= 点击洗练附加属性
+
+LABEL_INTENSIFY_SUCCESS                                        =强化成功
+LABEL_INTENSIFY_FAILED					       				   =强化失败
+LABEL_NOT_EQUIP                                                =该物品不是装备,请放入装备
+LABEL_CANNOT_INTENSIFY                                         =该物品不能被强化
+LABEL_NOT_STONE                                                =放入的材料不是强化石,请放入强化石
+LABEL_PUT_EQUIP                                                =请放入装备
+LABEL_PUT_STONE                                                =请放入强化石
+LABEL_PEEL_SUCCESS                                             =装备剥离成功
+LABEL_PEEL_FAILED                                              =装备剥离失败
+LABEL_SUCRATE                                                  =成功率
+LABEL_COMBINE_SUCCESS                                          =合成成功
+LABEL_COMBINE_FAILED                                           =合成失败
+LABEL_SAME_TYPE_STONE                                          =请放入同种类型的强化石
+LABEL_LACK_STONE                                               =合成材料不足
+
+LABEL_INTEN_NOTICE                                             =小提示:单击想要强化的装备,放入到强化栏,可以通过双击选择想要投入的强化石
+LABEL_COMBINE_STONE_NOTICE                                     =小提示:可以通过双击选择想要投入的强化石
+LABEL_COMBINE_GEM_NOTICE                                       =小提示:可以通过双击选择想要投入的宝石
+
+LABEL_INTEN_CD_TIPS                                            =可花费{@0:玄石数目}玄石或礼券清除CD时间\nVIP5强化后无CD
+
+
+LABEL_FORCE_LIST                                               =势力列表
+LABEL_FORCE_INFO                                               =势力介绍
+LABEL_FORCE_AIM						       =九星的终极目标
+LABEL_SEVEN_STAR                                               =七星
+LABEL_PUB						       =门派
+LABEL_FORCE_WORLD                                              =江湖势力
+
+LABEL_ELEVATE                                                  =提升
+LABEL_STAR                                                     ={@0:星级}星
+LABEL_EXCHANGE                                                 =可以兑换一下奖励物品
+
+LABEL_MINIUTE                                                  =分钟
+LABEL_SECOND                                                   =秒
+
+LABEL_SUBMIT                                                   =可交
+LABEL_ACCEPT                                                   =可接
+LABEL_RUN                                                      =进行中
+LABEL_FAILED                                                   =失败
+
+LABEL_PROCEED_NOTE                                             =请完成任务后再来吧
+LABEL_FAILED_NOTE                                              =任务失败,请放弃后重新做吧
+
+LABEL_CHOOSE_REWARD                                            =请选择一种奖励物品
+LABEL_TASK_REWARD                                              = Награда
+LABEL_EXPERIENCE                                               = Опыт
+LABEL_MONEY                                                    = Серебро
+LABEL_FAMILY_CONTRIBUTE                                        =家族贡献
+LABEL_FAMILY_RENOWN                                            =家族名望
+LABEL_FAMILY_PROSPEROUS                                        =家族繁荣
+LABEL_MENPAI_RENOWN                                            =门派声望
+LABEL_FORCE_SELF_REBOWN                                        =本势力声望
+LABEL_FORCE_ALLIANCE_REBOWN                                    =同盟势力声望
+LABEL_FORCE_ENEMY_REBOWN                                       =敌对势力声望
+LABEL_CHOOSE                                                   =请选择
+LABEL_LEFT_BUY_TIMES                                           =<FONT COLOR='#FF6600' SIZE="14">VIP{@0:VIP等级}级</FONT>\n<FONT COLOR='#FFCC99' SIZE="12">需求：</FONT><FONT COLOR='#00FF00' SIZE="12">{@1:玄石}玄石或礼券</FONT><FONT COLOR='#FFCC99' SIZE="12"> 今日剩余可购买：</FONT><FONT COLOR='#00FF00' SIZE="12">{@2:次数}次</FONT>
+
+LABEL_TASK_DESCRIBE = Описание
+LABEL_START_NPC     = NPC, выдающий задание:
+LABEL_END_NPC       = NPC, выдающий награду:
+LABEL_TASK_PROCESS  = Цель
+
+LABEL_TASK_WAIT                                                =未接取
+LABEL_TASK_PROCEED                                             =未完成
+LABEL_TASK_FINISH                                              =已完成
+LABEL_TASK_LOST                                                =完成失败
+
+LABEL_MAIN_TASK     = Сюжетные
+LABEL_BRANCH_TASK   = Вторичные
+LABEL_DAILY_TASK    = Ежедневные
+LABEL_ELITE_TASK    = Элитные
+LABEL_FAMILY_TASK   = Клановые
+
+LABEL_TASK_TYPE_0   = [Сюжет.] 
+LABEL_TASK_TYPE_1   = [Втор.] 
+LABEL_TASK_TYPE_2   = [Элит.] 
+LABEL_TASK_TYPE_3   = [Клан.] 
+LABEL_TASK_TYPE_4   = [Ежед.] 
+
+LABEL_CHOOSE_GIVEUP                                            =请选择要放弃的任务
+LABEL_TASK_GIVEUP                                              =您确定要放弃任务
+
+LABEL_LEFT_TIME                                                =剩余时间
+
+LABEL_EXCEED_TIME                                              =超过{@0:时间}小时
+
+LABEL_REFRESH_STAR                                             =<A HREF='EVENT:'><FONT COLOR='#FF9900'><U>刷星</U></FONT></A>
+LABEL_SIGN_SUM                                                 =已累计签到: {@0:次数}次
+
+LABEL_TYPE_NOT_EXISTED                                         =该npc功能类型不存在,请添加
+LABEL_LEAVE						       =离开
+
+LABEL_COMBINBE_MONEY                                           =银两消耗:
+LABEL_COMBINE_ELEVATE_ONE                                      =提升一级成功率:
+LABEL_COMBINE_ELEVATE_TWO                                      =提升二级成功率:
+
+LABEL_RENOWN_SHOP					       =声望商人
+
+LABEL_SKILL_FEE_RESET                                          =今日可用玄石或礼券重置经脉:
+LABEL_SKILL_FREE_RESET                                         =今日可免费重置经脉:
+
+LABEL_CURRENT_SKILL_MAP                                        =今日可重头挑战次数:{@0:次数}次
+LABEL_SKILL_MAXRECORD                                          =当前最高闯关记录是第{@0:最高关卡数}关
+LABEL_FLOOR_STR_0                                              =零
+LABEL_FLOOR_STR_1                                              =一
+LABEL_FLOOR_STR_2                                              =二
+LABEL_FLOOR_STR_3                                              =三
+LABEL_FLOOR_STR_4                                              =四
+LABEL_FLOOR_STR_5                                              =五
+LABEL_FLOOR_STR_6                                              =六
+LABEL_FLOOR_STR_7                                              =七
+LABEL_FLOOR_STR_8                                              =八
+LABEL_FLOOR_STR_9                                              =九
+LABEL_FLOOR_STR_10                                             =十
+LABEL_FLOOR_STR_11                                             =十一
+LABEL_FLOOR_STR_12                                             =十二
+
+LABEL_SKILL_TYPE_1                                             =绝技
+LABEL_SKILL_TYPE_2                                             =御术
+LABEL_SKILL_TYPE_3                                             =连击技
+
+LABEL_HAVE_NO_SKILL                                            =暂无绝技
+
+LABEL_SKILL_EXP                                                =领悟程度
+
+LABEL_PLAYER                                                   =玩家
+LABEL_SCORE                                                    =积分
+LABEL_MAX_WINNUM                                               =最高连胜数
+
+LABEL_SEPT_BATTLE_SCORE                                        =分
+LABEL_SEPT_BATTLE_WINNUM                                       =胜
+LABEL_SEPT_BATTLE_RANKING                                      =名
+
+LABEL_SEPT_BATTLE_LEFT_TIME                                    =家族战{@0:时间}后结束
+LABEL_SEPT_BATTLE_NUM                                          =家族战第{@0:轮数}轮进行中
+LABEL_SEPT_BATTLE_LEFT_TIME_START                              ={@0:时间}后第一轮战斗开始
+LABEL_WAIT_OTHER_SEPT                                          =等待其他家族参加
+LABEL_SEPT_BATTLE_END                                          =家族战已结束
+
+LABEL_MG_HAS_THIS                                              =已有该命格
+LABEL_MG_HAS_BORROWED                                          =该命格已被借走
+LABEL_MG_NOT_REQUEST                                           =不是所需要的命格
+
+LABEL_IN_COPY_CANNOT_ENTER_FAMILYSCENE                         =在副本中无法进入家族大堂
+
+LABEL_FRIEND_TYPE_0 = Друзья 
+LABEL_FRIEND_TYPE_1 = Незнакомецы 
+LABEL_FRIEND_TYPE_2 = Черный список 
+
+LABEL_ONLINE_STATE_0    = Не в сети
+LABEL_ONLINE_STATE_1    = В сети
+
+//活动自动参战
+LABEL_ACTIVITY_AUTO_ENTER                                      =自动参加
+
+LABEL_SEPT_BATTLE_MAXWINNER_REWARD_TIPS                        =<FONT COLOR='#FF9900'>奖励暂未开放</FONT>
+LABEL_SEPT_BATTLE_FIRST_REWARD_TIPS                            =<FONT COLOR='#FF9900'>个人积分第一名奖励：</FONT>\n<FONT COLOR='#00FFFF'>1350声望+家族排名奖励声望</FONT>\n<FONT COLOR='#00FFFF'>1000贡献+家族排名奖励贡献</FONT>\n<FONT COLOR='#00FFFF'>50个令牌</FONT>\n<FONT COLOR='#FF0000'>家族战结束后可通过邮件领取</FONT>
+LABEL_SEPT_BATTLE_FIRST_SEPT_REWARD_TIPS                       =<FONT COLOR='#FF9900'>家族积分第一名奖励：</FONT>\n<FONT COLOR='#00FFFF'>2000名望</FONT>\n<FONT COLOR='#FF0000'>家族战结束后自动获取</FONT>
+
+
+LABEL_SEPT_MODEL_ARR                                           =1,9,2;10,19,3;20,39,4;40,10000,5
+
+LABEL_PLAYER_GOLD_BUY                                          =只需要充值 {@0:玄石数} 玄石，就能获得如下特权：
+LABEL_PLAYER_VIGORVAL                                          =还剩 {@0:活力值} 点活力值未使用，千万不要浪费！！！
+LABEL_DAILY_ACTIVE_VALUE                                       =还差 {@0:活跃度} 点活跃度就能获取下一级奖励！！！
+LABEL_DAILY_DIRECT_UNFINISH                                    =还有下列内容等待您的挑战：
+
+LABEL_SKILL_TOLL_BTN                                           =<FONT COLOR='#FFFFFF'>只能对已经完成挑战的关卡执行自动挑战</FONT>
+LABEL_SKILL_MAX_BARRIER                                        =<FONT COLOR='#F0B12A'>最大关卡:</FONT><FONT COLOR='#C6FF00'>{@0:最大关卡数}</FONT><FONT COLOR='#F0B12A'>关</FONT>
+LABEL_SKILL_CURR_BARRIER                                       =<FONT COLOR='#F0B12A'>您当前所在关卡:</FONT><FONT COLOR='#C6FF00'>{@0:当前关卡数}</FONT><FONT COLOR='#F0B12A'>关</FONT>
+LABEL_SKILL_MAX_RECORD                                         =共105关,历史最高挑战至第{@0:关卡数}关,（第{@1:层数汉字}层）\n在当前位置重置关卡时将返回第{@2:关卡数}关
+
+LABEL_INTEN_CD_CLEAR_NOTICE                                    =清除CD时间需花费{@0:玄石数目}玄石或礼券
+
+LABEL_SEPT_DEFAULT_NOTICE                                      =为了家族更好的发展，请大家多多进入家族大堂完成日常任务、供奉祖师获取家族名望和家族贡献。
+LABEL_SEPT_ANNEX_TIPS                                          =<FONT COLOR='#F0B12A'>该家族所有成员加入本家族但不损失家族贡献</FONT>\n<FONT COLOR='#FF0000'>注意:家族成员上限须可容纳对方所有成员</FONT>
+LABEL_SEPT_MAIL_REWARD_NOTICE                                  =家族战结束后获取
+
+NEW_LEAD_TASK_ARR                                              =320173,320175,320021,320022,320023,320024,320025,320002,320003,320004,320005,320006,320007,320008,320012,320013,320014,320026,320027,320028,320029,320030,320031,320032,320033,320035,320036,320037,320038,320039,320040,320041,320042,320043,320044,320045,320046,320047,320048,320049,320050,321300,321302
+NEW_LEAD_TASK_TYPE_1                                           =点击接取任务
+NEW_LEAD_TASK_TYPE_2                                           =点击完成任务
+NEW_LEAD_TASK_TYPE_3                                           =点击继续对话
+
+NEW_LEAD_TASK_TIPS_1                                           =点击自动寻路
+
+LABEL_JOIN_FAMILY                                              =申请加入
+LABEL_GET_VIPER							=成为vip
+LABEL_GET_DAILYREWARD                                          =领取礼包
+LABEL_ACTIVITY_JOIN                                            =快速加入
+
+LABEL_GROW                                                     =成长
+
+LABEL_LEVEL                                                    =级
+
+LABEL_RECRUIT_LEVEL                                            =招募等级
+LABEL_RECRUIT_RENOWN                                           =声望需求
+LABEL_RECRUIT_CONSUME                                          =招募消耗
+LABEL_PUB_LINGSHISHI					       =一定概率可招募到紫色随从和金色随从
+LABEL_PUB_XUANSHI					       =较大概率可招募到紫色随从和金色随从
+
+LABEL_TRANSPORT_INCOME                                         =运输收益
+LABEL_UPGRADE_ADD                                              =升级加成
+
+LABEL_SEPT_PLACING_AND_NAME                                    =第{@0:名次}家族：{@1:家族名称}
+
+SEPT_BATTLE_SUM_TIME                                           =1800
+SEPT_BATTLE_WAIT_TIME                                          =120
+
+LABEL_VIPLEVEL                                                 =<FONT COLOR='#ECB320'>VIP{@0:vip等级}</FONT>
+LABEL_VIPTYPE_1                                                =<FONT COLOR='#FFFF00'>[黄钻]</FONT>
+
+LABEL_SEX_1                                                    = <FONT COLOR='#00FFFF'>♂</FONT> 
+LABEL_SEX_2                                                    = <FONT COLOR='#FF00FF'>♀</FONT> 
+
+LABEL_DAILYDIRECT_TYPE_LEV_1					=0
+LABEL_DAILYDIRECT_TYPE_LEV_2					=12
+LABEL_DAILYDIRECT_TYPE_LEV_3					=19
+LABEL_DAILYDIRECT_TYPE_LEV_4					=0
+LABEL_DAILYDIRECT_TYPE_LEV_5					=21
+LABEL_DAILYDIRECT_TYPE_LEV_6					=29
+LABEL_DAILYDIRECT_TYPE_LEV_7					=0
+LABEL_DAILYDIRECT_TYPE_INFO                                     =级开放
+
+LABEL_FINISHED_NUM                                              =当前项目({@0:完成项目数}/{@1:项目总数目})
+LABEL_DIRECT_FINISHED_ICON                                      =已完成
+
+LABEL_EXIT_COPY                                                 =请先退出副本
+
+LABEL_SEPT_SALARY_GET_WAY                                       =<FONT COLOR='#F0B12A'>获取途径：</FONT><br><FONT COLOR='#FFFF00'>家族日常任务、家族战、</FONT><br><FONT COLOR='#FFFF00'>家族供奉</FONT>
+
+LABEL_SEPT_OBLATION_LEVBAR_TIPS                                 =<FONT COLOR='#F0B12A'>当前活跃：{@0:当前活跃值}/{@1:总活跃值}</FONT><br><FONT COLOR='#FFFF00'>家族供奉可增加活跃度,活跃度</FONT><br><FONT COLOR='#FFFF00'>满足要求可领取活力奖励</FONT>
+
+SEPT_FUNC_LINK_TYPE_INTO_101                                    =<FONT COLOR='#F0B12A' SIZE="14">您今日还可领取家族俸禄</FONT><FONT COLOR='#FFFF00' SIZE="14">{@0:次数}</FONT><FONT COLOR='#F0B12A' SIZE="14">次！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_102                                    =<FONT COLOR='#F0B12A' SIZE="14">您今日还可参加家族抽奖</FONT><FONT COLOR='#FFFF00' SIZE="14">{@0:次数}</FONT><FONT COLOR='#F0B12A' SIZE="14">次！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_103                                    =<FONT COLOR='#F0B12A' SIZE="14">您可以进入家族宝库兑换宝物！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_111_1                                  =<FONT COLOR='#F0B12A' SIZE="14">您可以接取家族征税任务了！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_111_2                                  =<FONT COLOR='#F0B12A' SIZE="14">您的家族征税任务正在进行中！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_111_3                                  =<FONT COLOR='#F0B12A' SIZE="14">您今日家族征税已经完成！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_111_4                                  =<FONT COLOR='#F0B12A' SIZE="14">您现在无家族征税任务可做！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_112_1                                  =<FONT COLOR='#F0B12A' SIZE="14">您可以接取家族剿匪任务了！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_112_2                                  =<FONT COLOR='#F0B12A' SIZE="14">您的家族剿匪任务正在进行中！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_112_3                                  =<FONT COLOR='#F0B12A' SIZE="14">您今日家族剿匪任务已经完成！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_112_4                                  =<FONT COLOR='#F0B12A' SIZE="14">您现在无家族剿匪任务可做！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_113                                    =<FONT COLOR='#F0B12A' SIZE="14">您今日还可参加家族供奉</FONT><FONT COLOR='#FFFF00' SIZE="14">{@0:次数}</FONT><FONT COLOR='#F0B12A' SIZE="14">次！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_122_1                                  =<FONT COLOR='#F0B12A' SIZE="14">您现在可以参加家族战了！</FONT>
+SEPT_FUNC_LINK_TYPE_INTO_122_2                                  =<FONT COLOR='#F0B12A' SIZE="14">您现在还不能参加家族战！</FONT>
+
+SEPT_FUNC_LINK_TYPE_BTN_101                                     =进入大堂领取
+SEPT_FUNC_LINK_TYPE_BTN_102                                     =进入大堂参加
+SEPT_FUNC_LINK_TYPE_BTN_103                                     =进入大堂兑换
+SEPT_FUNC_LINK_TYPE_BTN_111_1                                   =进入大堂接取
+SEPT_FUNC_LINK_TYPE_BTN_111_2                                   =前往完成任务
+SEPT_FUNC_LINK_TYPE_BTN_111_3                                   =进入大堂提交
+SEPT_FUNC_LINK_TYPE_BTN_111_4                                   =进入大堂
+SEPT_FUNC_LINK_TYPE_BTN_112_1                                   =进入大堂接取
+SEPT_FUNC_LINK_TYPE_BTN_112_2                                   =前往完成任务
+SEPT_FUNC_LINK_TYPE_BTN_112_3                                   =进入大堂提交
+SEPT_FUNC_LINK_TYPE_BTN_112_4                                   =进入大堂
+SEPT_FUNC_LINK_TYPE_BTN_113                                     =进入大堂参加
+SEPT_FUNC_LINK_TYPE_BTN_122_1                                   =参加家族战
+SEPT_FUNC_LINK_TYPE_BTN_122_2                                   =参加家族战
+
+
+LABEL_AWARDMONEY_TIP							= <FONT COLOR='#FF0000'>您今天兑换银两次数已经用完了!</FONT>
+LABEL_AWARDREPUTE_TIP							= <FONT COLOR='#FF0000'>您今天兑换声望次数已经用完了!</FONT>
+LABEL_AWARDMONEY_NEEDGOLD						= <font color='#ffff00'>消耗{@0}玄石或礼券使用聚宝盆,获得{@1}银两</font>
+LABEL_AWARDREPUTE_NEEDGOLD						= <font color='#ffff00'>消耗{@0}玄石或礼券使用声望号角,获得{@1}声望</font>
+
+//聚宝盆&声望号角倍击
+BEIJI_JUBAOPEN							=2,有几率获取双倍银两,VIP2级激活获取双倍银两功能\n点击充值VIP2;4,有几率获取五倍银两,VIP4级激活获取五倍银两功能\n点击充值VIP4;6,有几率获取十倍银两,VIP6级激活获取十倍银两功能\n点击充值VIP6
+BEIJI_HAOJIAO							=2,有几率获取双倍声望,VIP2级激活获取双倍声望功能\n点击充值VIP2;4,有几率获取三倍声望,VIP4级激活获取三倍声望功能\n点击充值VIP4;6,有几率获取五倍声望,VIP6级激活获取五倍声望功能\n点击充值VIP6
+
+
+
+//奴隶系统 %s代表奴隶名称
+LABEL_SLAVE_ADD								=	您成功征用了{@0:玩家名}作为您的仆从.
+LABEL_SLAVE_LOST							=	您的仆从{@0:玩家名}被{@1:玩家名}夺走了!
+LABEL_SLAVE_OUTDATE							=	您的仆从{@0:玩家名}通过给您打工重获自由了.
+LABEL_SLAVE_RELEASE							=	您确定要释放该仆从?
+LABEL_MANAGE_SLAVE_TIP0						=	您好不容易获得一张忘川酒庄品酒大会请帖,于是带上{@0:玩家名}同去参加,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP1						=	您带{@0:玩家名}前往边疆小镇,偶遇厨王朱八菜,他请您们品尝他的最新菜式,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP2						=	您带{@0:玩家名}前去听魔音柳唐生抚琴,并与他畅谈音律,心情舒畅,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP3						=	您诗兴大发,带{@0:玩家名}上无极宫赏月吟诗,受到无极宫主赏识,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP4						=	您将{@0:玩家名}引荐给快活山庄庄主快活老人,受到快活老人指点,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP5						=	您将微尘子送给您的法宝转赠给{@0:玩家名},{@0:玩家名}欢喜雀跃,功力大进,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP6						=	您带{@0:玩家名}前往拈花寺礼佛参禅,受到住持释空大师的点拨,悟性大增,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP7						=	您感念{@0:玩家名}平日为您所做的一切,邀天涯戏班将您们的故事搬上戏台,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP8						=	您派{@0:玩家名}上灵山偷取仙草,被守卫机关人发现,遭到一顿暴打,您将剩余仙草服下,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP9						=	您派{@0:玩家名}去春袖招购买胭脂,{@0:玩家名}在那里受到各种姑娘的热情款待,终于买回胭脂,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP10					=	您与人打赌要拿到南海夜明珠,派{@0:玩家名}扮作男宠伺候烟波仙子三个月,终于得手,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP11					=	五庄观傅苍生研制了新药,您让{@0:玩家名}前去试药,经过一阵上吐下泻后功力提升,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP12					=	为探取婆罗教的情报,您派{@0:玩家名}跟随亁达婆入教苦修,饿了五天五夜,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP13					=	边关军情告急,您派{@0:玩家名}前往增援龙破军,被列吉曼人射成箭猪,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP14					=	您派{@0:玩家名}替您参加鸿门崖猎妖大会,{@0:玩家名}误入妖族陷阱,被打得屁滚尿流,获得{@1:经验}经验.
+LABEL_MANAGE_SLAVE_TIP15					=	您让{@0:玩家名}帮岐黄门公子苏长月追求万鹤山庄小姐柳随烟,却被刁蛮小姐捉弄一番,获得{@1:经验}经验.
+LABEL_SLAVE_TIP0							=	可提取当前仆从打工经验
+LABEL_SLAVE_TIP1							=	可调教当前仆从获取经验
+LABEL_SLAVE_TIP2							=	开启随从修行界面，通过修行逐步获取经验，使随从快速升级
+LABEL_SLAVE_TIP3							=	开启征用列表，获取新的仆从
+LABEL_SLAVE_TIP4                                                        =   确定花费{@0:玄石}玄石或礼券额外获取2小时经验吗？
+LABEL_SLAVE_TIP5                                                        =   确定花费5玄石或礼券添加一次征用次数?
+LABEL_XIUXING_TIP1							=   修行8小时，获取经验倍率为1
+LABEL_XIUXING_TIP2							=   修行8小时，获取经验倍率为1.5
+LABEL_XIUXING_TIP3							=   修行8小时，获取经验倍率为2
+LABEL_XIUXING_TIP4							=   修行8小时，获取经验倍率为2.5
+LABEL_XIUXING_TIP5							=	随从修行获取经验，倍率越高经验收益越多
+LABEL_XIUXING_TIP6							=	加速修行可以快速提升修行速率，更节省时间
+LABEL_XIUXING_TIP7							=	花费20玄石或礼券加速2小时修行
+LABEL_XIUXING_TIP8							=	您当前没有随从，从聚\n仙阁中可招募随从！
+LABEL_XIUXING_TIP9                                                      =   是否终止当前随从修行?
+
+//技艺合成TIPS
+LABEL_craft_TIP0							=	<FONT COLOR='FFED8B'>还需\n</FONT>{@0:材料}<FONT COLOR='FFED8B'>您可消耗{@1:玄石数}玄石或礼券立即合成</FONT>
+LABEL_craft_TIP1							=	确定消耗{@0:玄石数}玄石或礼券立即合成?
+LABEL_craft_TIP2							=	玄石或礼券可补足相关材料(需原始装备)
+LABEL_craft_TIP3							=	强化等级↓5,消耗{@0:玄石数}玄石或礼券?
+LABEL_craft_TIP4							=	确定合成丹药吗?
+LABEL_craft_TIP5							=	强化等级下降5级，确定合成吗?
+
+//日常任务小提示
+LABEL_TASKDAILY_TIP0                                                    =	<FONT COLOR='FFED8B'>1、日常任务在0点进行定时重置，每15分钟刷新一次任务内容和品质。   2、每日可完成的任务上限为20次。</FONT>\n<FONT COLOR='FFED8B'>3、手动刷新可以改变任务品质和内容，品质越高，奖励越丰厚。      4、手动刷新将消耗一定玄石或礼券。</FONT>	
+LABEL_TASKDAILY_TIP1							=	<FONT COLOR='FFED8B'>消耗银两：{@0:银两}</FONT>
+LABEL_TASKDAILY_TIP2							=	<FONT COLOR='FFED8B'>随机获得银两、礼券、声望、灵石、活力中的1种奖励</FONT>
+LABEL_TASKDAILY_TIP3							=	<FONT COLOR='FFED8B'>手动重置需玄石或礼券：10</FONT>\n<FONT COLOR='FFED8B'>手动重置可改变任务品质和内容</FONT>
+LABEL_TASKDAILY_gold							=	<FONT COLOR='FFED8B'>确定消耗10玄石或礼券？</FONT>
+ERROR_SMT_562								= <FONT COLOR='#FF0000'>今日任务已达上限</FONT>
+
+//副本小提示
+LABEL_COPY_TIP0							=	<FONT COLOR='FFED8B'>购买将花费100玄石或礼券</FONT>\n<FONT COLOR='FFED8B'>VIP3级予以开放</FONT>
+LABEL_COPY_TIP1							=	<FONT COLOR='FFED8B'>重置只对当前页面副本有效</FONT>\n<FONT COLOR='FFED8B'>VIP达到3级，每天可购买1次重置机会</FONT>\n<FONT COLOR='FFED8B'>VIP达到5级，每天可购买2次重置机会</FONT>
+//幻境副本重置丹
+LABEL_COPY_PROP							=	354111
+LABEL_COPY_XUNLU						=	<FONT COLOR='FFED8B'>勾选后可自动执行寻路操作</FONT>
+
+//每日指引副本引导配置
+LABEL_COPY_NPC							=	mapId:90005;npcId:1815
+LABEL_JYCOPY_NPC						=	mapId:90005;npcId:1852
+
+
+//真灵召唤卡
+ZHEN_LING_4TH_KA						=	354005
+ZHEN_LING_5TH_KA						=	354006
+
+//副本挂机
+LABEL_ONCE_GOLD_NEED							=	1
+LABEL_ALL_GOLD_NEED							=	确定消耗{@0:玄石数}玄石或礼券启动加速？
+LABEL_COPY_GUAJI_TIP0							=	<FONT COLOR='FFED8B'>1、请保持背包有足够的空间来拾取奖励。</FONT>\n<FONT COLOR='FFED8B'>2、可以通过消耗一定玄石或礼券，启动副本加速挂机。</FONT>\n<FONT COLOR='FFED8B'>3、挂机中，如果背包满将自动停止挂机。</FONT>
+LABEL_COPY_GUAJI_TIP1							=	背包满，已自动停止挂机，请清理背包后继续
+LABEL_COPY_GUAJI_TIP2							=	本轮扫荡还有{@0:剩余时间}时间获得奖励……
+
+//帮助系统
+HELP_INFO_1001201							=	仆从征用：点击按钮“征用仆从”，击败排名和您相差不大的玩家获得仆从
+HELP_INFO_1001202							=	仆从剥削：花费玄石或礼券，获得额外部分时间仆从打工经验，每天可以剥削5次
+HELP_INFO_1001203							=	仆从提取：提取出相应的仆从为您打工的经验，每天可无限次数的提取
+HELP_INFO_1001204							=	仆从调教：通过相应仆从调教，可获得额外的经验加成，每天可调教8次
+HELP_INFO_1001205							=	随从修行：选择随从进行一定时间的修行，可获得经验提高随从等级
+
+HELP_INFO_1002201							=	运输货物：点击马匹，通过按钮“运输”可以运送物品，获取收益
+HELP_INFO_1002202							=	马匹品质：通过购买或者更换获得高级的马匹，可获得更高的运输收益
+HELP_INFO_1002203							=	马匹等级：通过升级自己所购买的马匹，可以不断的提高运输收益
+HELP_INFO_1002204							=	货物品质：通过对运输货物的刷新，可获得高品质的货物，提高运输收益
+HELP_INFO_1002205							=	围栏数量：通过建造更多的围栏，可以大幅度提高收益
+HELP_INFO_1002206							=	打劫运输：打劫其他玩家运输的马匹，获胜则可获得银两收益
+
+HELP_INFO_1003201							=	强化的好处：通过装备强化，可以大大提高当前装备的基础属性
+HELP_INFO_1003202							=	强化等级：装备强化的等级越高，则获取的属性收益越大
+HELP_INFO_1003203							=	强化消耗：装备的强化仅仅消耗玩家的银两，不需要其他的材料
+HELP_INFO_1003204							=	强化冷却：装备的强化会累积冷却时间，使用玄石或礼券可以消除冷却
+HELP_INFO_1003205							=	强化的种类：主角的装备、随从的装备、未穿戴的装备，均可进行强化
+
+HELP_INFO_1003301							=	洗练的好处：装备洗练可以大幅度提高或者改变装备的附加属性
+HELP_INFO_1003302							=	洗练属性数量：蓝装可以洗练一条属性、紫装两天、橙装三条
+HELP_INFO_1003303							=	洗练锁定：可以通过锁定属性，来控制锁定的属性不被洗练，并保存
+HELP_INFO_1003304							=	洗练消耗：装备的洗练消耗银两或者玄石和礼券
+HELP_INFO_1003305							=	洗练的种类：主角的装备、随从的装备、未穿戴的装备，均可进行洗练
+
+HELP_INFO_1003401							=	技艺的好处：通过技艺系统，打造紫色或高级武器、服饰、首饰
+HELP_INFO_1003402							=	技艺的特性：技艺打造装备会保留原有装备的强化等级和洗练属性
+HELP_INFO_1003403							=	材料的获取：打造装备的材料源于仆从副本，鼠标移至材料上可查看具体产出
+HELP_INFO_1003404							=	装备卷轴获取：打造装备的卷轴源于相应等级段的环境副本
+HELP_INFO_1003405							=	温馨提示：最低等级装备的打造所需要的装备，可以从商店获取
+
+HELP_INFO_1005201							=	神魂的好处：通过神魂系统可以提高主角和随从的二级属性，如生命值
+HELP_INFO_1005202							=	神魂等级：通过“祭拜神魂”来提高神魂的等级，等级越高，属性越高
+HELP_INFO_1005203							=	副魂的作用：通过在本名神魂上镶嵌副魂，可以提高相应的二级属性
+HELP_INFO_1005204							=	副魂的来源：通过108星劫的关卡，可以获得副魂
+HELP_INFO_1005205							=	副魂的吞噬：通过吞噬副魂，可以增加本命神魂的经验
+HELP_INFO_1005206							=	副魂的合成：相同等级并且属性相同的副魂，可以合成为高级副魂
+
+HELP_INFO_1005301							=	真灵的好处:通过真灵的获取可以提高主角和随从的二级属性，如生命值
+HELP_INFO_1005302							=	真灵的获取：进入真灵殿，点击五种灵体随即获得真灵
+HELP_INFO_1005303							=	真灵的品质：真灵品质由低到高分为灰色、绿色、蓝色、紫色、金色
+HELP_INFO_1005304							=	高品质真灵获取：高品质真灵由高级灵体产出，金色真灵仅“洪荒之灵”产出
+HELP_INFO_1005305							=	真灵的等级：真灵通过相互吞噬升级，高品质吞噬低品质，高级吞噬低级
+HELP_INFO_1005306							=	温馨提示：可通过消耗玄石或礼券，召唤高级的“昊天之灵”和“洪荒之灵”
+
+HELP_INFO_1005401							=	洗灵的好处：通过洗灵，可以直接提高主角的多种二级属性
+HELP_INFO_1005402							=	洗灵的境界：通过累计灵根值，不断的提高境界，境界越高，属性加成越多
+HELP_INFO_1005403							=	灵根值获取：通过“凝聚”获取灵根值，同种类的灵根数量越多则灵根值越大
+HELP_INFO_1005404							=	灵根的锁定：通过锁定灵根，使在凝聚过程中，被锁定的灵根不会改变
+HELP_INFO_1005405							=	温馨提示一：大境界的突破不仅仅属性提高，还可以改变主角名字的颜色
+HELP_INFO_1005406							=	温馨提示二：注意真灵界面右上角“今日灵根”，灵根值会翻倍噢
+
+HELP_INFO_1005501							=	剑灵的好处:剑灵的属性加成，对于降魔战以及玩家间的战斗很有帮助
+HELP_INFO_1005502							=	银两培育：每次培育灵气值加成较少，有较低纪律小暴击，加成十倍灵气
+HELP_INFO_1005503							=	玄石培育：每次配置灵气值较多，较高几率小暴击，有几率大暴机(直接升级)
+HELP_INFO_1005504							=	图腾祝福：图腾祝福可百分比的提高剑灵的某种二级属性，如物理攻击
+HELP_INFO_1005505							=	温馨提示：使用图腾印可以立刻获得2个小时的祝福灵气值
+
+HELP_INFO_1005601							=	融丹的好处：融丹系统可以大幅度提高主角和随从的一级属性，如力量
+HELP_INFO_1005602							=	融丹的获取：通过“技艺”系统中打造丹药，或者直接使用玄石或礼券吃丹药
+HELP_INFO_1005603							=	融丹材料的获取："技艺"系统打造丹药需要的材料，可从普通副本中获取
+HELP_INFO_1005604							=	丹方的获取："技艺"系统打造丹药需要的丹方，可从“令牌商店”中购买
+HELP_INFO_1005605							=	温馨提示：丹药是可以通过传承系统传承给其他的随从，放心的吃吧
+
+HELP_INFO_1006101							=	升级法宝可增加法宝自身附带的属性，法宝附带的属性对主角和全部出战的角色都有辅助效果
+HELP_INFO_1006102							=	升级法宝还能提高自创的技能和自创的阵法的等级上限
+HELP_INFO_1006103							=	升级法宝需要消耗银两、天地灵气、法宝残片，后两种材料来自“万宝窟”
+HELP_INFO_1006104							=	万宝窟在法宝自身等级达到10级时自动开放
+
+HELP_INFO_1006201							=	攻击位置：法宝技能只会对固定位置内的目标生效
+HELP_INFO_1006202							=	攻击效果：法宝技能攻击时的强度
+HELP_INFO_1006203							=	减益效果：被法宝技能击中的目标，将被附加2回合的减益效果，此属性只对第2个技能槽及之后的自创技能开放
+HELP_INFO_1006204							=	增益效果：释放法宝技能时，本方全体角色将被附加2回合的增益效果。此属性只对第3个技能槽及之后的自创技能开放
+HELP_INFO_1006205							=	升级后的技能可继续重置，技能等级不会改变，重置后的属性依旧会获得技能等级的加成
+
+HELP_INFO_1006301							=	法宝的自创阵法包含5个阵法格，每个阵法格都会提供额外的属性加成
+HELP_INFO_1006302							=	5个阵法格中必定有一格是“阵眼”，阵眼除了包含阵法格的属性，还会附加一条额外的阵眼属性
+HELP_INFO_1006303							=	重置阵法可同时改变阵法格的位置、阵法格的属性、阵眼的位置、阵眼的属性
+HELP_INFO_1006304							=	即使锁定5个阵法格，再次重置阵法时，依旧会在5个被锁定的阵法格内随机改变阵眼的位置，附加的阵眼属性也会同时被重置
+HELP_INFO_1006305							=	升级后的阵法可继续重置，阵法等级不会改变，重置后的属性依旧会获得阵法等级的加成
+//==========yyg============
+
+//==============通信错误代号===============
+
+ERROR_SMT_0								= <FONT COLOR='#FF0000'>系统错误</FONT>
+ERROR_SMT_1								= <FONT COLOR='#FF0000'>处理成功</FONT>
+ERROR_SMT_2								= <FONT COLOR='#FF0000'>没有创建人物</FONT>
+ERROR_SMT_3								= <FONT COLOR='#FF0000'>被玩家挤下线</FONT>
+ERROR_SMT_4								= <FONT COLOR='#FF0000'>被GM挤下线</FONT>
+ERROR_SMT_6								= <FONT COLOR='#FF0000'>用户名和密码不能为空</FONT>
+ERROR_SMT_7								= <FONT COLOR='#FF0000'>没有该帐号，请注册</FONT>
+ERROR_SMT_8								= <FONT COLOR='#FF0000'>密码不匹配</FONT>
+ERROR_SMT_9								= <FONT COLOR='#FF0000'>该用户已经登录</FONT>
+ERROR_SMT_10								= <FONT COLOR='#FF0000'><b>角色名过长</b></FONT>
+ERROR_SMT_11								= <FONT COLOR='#FF0000'><b>角色名包含非法字符</b></FONT>
+ERROR_SMT_12								= <FONT COLOR='#FF0000'>角色头像选择错误</FONT>
+ERROR_SMT_13								= <FONT COLOR='#FF0000'>该帐号已经创建人物，不能重复创建</FONT>
+ERROR_SMT_14								= <FONT COLOR='#FF0000'><b>角色名已被使用</b></FONT>
+ERROR_SMT_15								= <FONT COLOR='#FF0000'>提交的玩家编号中有错误编号</FONT>
+ERROR_SMT_16								= <FONT COLOR='#FF0000'><b>角色名不能为空</b></FONT>
+ERROR_SMT_17								= <FONT COLOR='#FF0000'>没有指定编号的玩家</FONT>
+ERROR_SMT_18								= <FONT COLOR='#FF0000'>当前经验不够升级</FONT>
+ERROR_SMT_19								= <FONT COLOR='#FF0000'>当前等级已经是最大等级</FONT>
+ERROR_SMT_20								= <FONT COLOR='#FF0000'>当前的潜力点不够</FONT>
+ERROR_SMT_21								= <FONT COLOR='#FF0000'>提交的加点不合法</FONT>
+ERROR_SMT_22								= <FONT COLOR='#FF0000'>签名重复</FONT>
+ERROR_SMT_23								= <FONT COLOR='#FF0000'>10以下玩家不可以打坐</FONT>
+ERROR_SMT_24								= <FONT COLOR='#FF0000'>当前状态不可以调息</FONT>
+ERROR_SMT_25								= <FONT COLOR='#FF0000'>门派未到开放等级</FONT>
+ERROR_SMT_26								= <FONT COLOR='#FF0000'>已经加入了一个门派</FONT>
+ERROR_SMT_27								= <FONT COLOR='#FF0000'>角色没有登录</FONT>
+ERROR_SMT_28								= <FONT COLOR='#FF0000'>角色没有登录</FONT>
+ERROR_SMT_29								= <FONT COLOR='#FF0000'>角色填写资料</FONT>
+ERROR_SMT_30								= <FONT COLOR='#FF0000'>没有对应的省份</FONT>
+ERROR_SMT_31								= <FONT COLOR='#FF0000'>该省份没有对应的城市</FONT>
+ERROR_SMT_32								= <FONT COLOR='#FF0000'>年龄参数错误</FONT>
+ERROR_SMT_33								= <FONT COLOR='#FF0000'>性别参数错误</FONT>
+ERROR_SMT_34								= <FONT COLOR='#FF0000'>星座参数错误</FONT>
+ERROR_SMT_35								= <FONT COLOR='#FF0000'>生日月份参数错误</FONT>
+ERROR_SMT_36								= <FONT COLOR='#FF0000'>生日日参数错误</FONT>
+ERROR_SMT_37								= <FONT COLOR='#FF0000'>QQ参数错误</FONT>
+ERROR_SMT_38								= <FONT COLOR='#FF0000'>势力参数错误</FONT>
+
+ERROR_SMT_54								= <FONT COLOR='#FF0000'>游戏窗口x坐标</FONT>
+ERROR_SMT_55								= <FONT COLOR='#FF0000'>没有指定的门派类型</FONT>
+
+
+ERROR_SMT_90								= <FONT COLOR='#FFFFFF'>银两不足</FONT>
+ERROR_SMT_91								= <FONT COLOR='#FFFFFF'>玄石和礼券不足\n是否购买？</FONT>
+ERROR_SMT_92								= <FONT COLOR='#FFFFFF'>经验不足</FONT>
+ERROR_SMT_93								= <FONT COLOR='#FFFFFF'>等级不足</FONT>
+ERROR_SMT_94								= <FONT COLOR='#FFFFFF'>相关任务未完成</FONT>
+ERROR_SMT_95								= <FONT COLOR='#FFFFFF'>没有学习相关武功或者武功等级不足</FONT>
+ERROR_SMT_96								= <FONT COLOR='#FFFFFF'>找不到相关角色数据</FONT>
+ERROR_SMT_97								= <FONT COLOR='#FFFFFF'>找不到相关NPC数据</FONT>
+ERROR_SMT_98								= <FONT COLOR='#FFFFFF'>相关物品数量不足</FONT>
+ERROR_SMT_99								= <FONT COLOR='#FFFFFF'>活力值不足</FONT>
+ERROR_SMT_100								= <FONT COLOR='#FFFFFF'>相关数据不存在</FONT>
+ERROR_SMT_101								= <FONT COLOR='#FFFFFF'>冷却时间中，请耐心等待！</FONT>
+ERROR_SMT_102								= <FONT COLOR='#FFFFFF'>发生重名</FONT>
+ERROR_SMT_103								= <FONT COLOR='#FFFFFF'>势力不同</FONT>
+ERROR_SMT_104							        = <FONT COLOR='#FFFFFF'>势力相同</FONT>
+ERROR_SMT_105								= <FONT COLOR='#FFFFFF'>声望不够!</FONT>
+ERROR_SMT_106								= <FONT COLOR='#FFFFFF'>技能点不足</FONT>
+ERROR_SMT_107								= <FONT COLOR='#FFFFFF'>策划配置不存在</FONT>
+ERROR_SMT_108							    = <FONT COLOR='#FFFFFF'>等级超出</FONT>
+ERROR_SMT_109								= <FONT COLOR='#FFFFFF'>声望获得首次已经达到当日限制</FONT>
+ERROR_SMT_110								= <FONT COLOR='#FFFFFF'>没有权限</FONT>
+ERROR_SMT_118								= <FONT COLOR='#FFFFFF'>真灵碎片不足!</FONT>
+ERROR_SMT_120								= <FONT COLOR='#FFFFFF'>今日您购买太多了请给别人留点!</FONT>
+ERROR_SMT_121								= <FONT COLOR='#FFFFFF'>玄石不足，请充值</FONT>
+
+// 地图异常编号
+ERROR_SMT_201								= <FONT COLOR='#FFFFFF'>目标坐标不可行走</FONT>
+ERROR_SMT_202								= <FONT COLOR='#FFFFFF'>没有指定地图</FONT>
+ERROR_SMT_203								= <FONT COLOR='#FFFFFF'>该地图没有对应的传送点</FONT>
+ERROR_SMT_204								= <FONT COLOR='#FFFFFF'>角色当前坐标离传送点太远，不能传送</FONT>
+ERROR_SMT_205								= <FONT COLOR='#FFFFFF'>没有该NPC</FONT>
+ERROR_SMT_206								= <FONT COLOR='#FFFFFF'>当前状态不可以移动</FONT>
+ERROR_SMT_207								= <FONT COLOR='#FFFFFF'>切换势力失败</FONT>
+ERROR_SMT_208								= <FONT COLOR='#FFFFFF'>角色在行动中没有到达终点</FONT>
+ERROR_SMT_209								= <FONT COLOR='#FFFFFF'>切换势力数据处理中，请稍后尝试切换</FONT>
+ERROR_SMT_210								= <FONT COLOR='#FFFFFF'>当前地图没有该NPC</FONT>
+ERROR_SMT_211								= <FONT COLOR='#FFFFFF'>距离NPC太远</FONT>
+ERROR_SMT_222								= <FONT COLOR='#FFFFFF'>该家族已存在！</FONT>
+
+ERROR_SMT_301								= <FONT COLOR='#FFFFFF'>战斗类型错误</FONT>
+ERROR_SMT_302								= <FONT COLOR='#FFFFFF'>战斗组人数不满足要求(缺少对手方)</FONT>
+ERROR_SMT_303								= <FONT COLOR='#FFFFFF'>用户没有启用的阵型</FONT>
+ERROR_SMT_304								= <FONT COLOR='#FFFFFF'>找不到相关NPCGROUP信息</FONT>
+
+// 聊天异常编号
+ERROR_SMT_401								= <FONT COLOR='#FFFFFF'>密语对象不存在,提示"未找到该玩家"</FONT>
+ERROR_SMT_402								= <FONT COLOR='#FFFFFF'>密语对象离线,提示"该玩家目前离线</FONT>
+ERROR_SMT_403								= <FONT COLOR='#FFFFFF'>聊天类型不正确</FONT>
+ERROR_SMT_404								= <FONT COLOR='#FFFFFF'>您不在一个门派中</FONT>
+ERROR_SMT_405								= <FONT COLOR='#FFFFFF'>您不在一个家族中</FONT>
+ERROR_SMT_406								= <FONT COLOR='#FFFFFF'>小喇叭数量不足</FONT>
+ERROR_SMT_407								= <FONT COLOR='#FFFFFF'>请先休息一会再发言！</FONT>
+ERROR_SMT_408								= <FONT COLOR='#FFFFFF'>聊天内容不能为空</FONT>
+ERROR_SMT_409								= <FONT COLOR='#FFFFFF'>不可以向自己发送消息</FONT>
+ERROR_SMT_410								= <FONT COLOR='#FFFFFF'>您不在队伍中</FONT>
+ERROR_SMT_411								= <FONT COLOR='#FFFFFF'>您处于禁言状态中,请等待禁言解除!</FONT>
+ERROR_SMT_412								= <FONT COLOR='#FFFFFF'>VIP或者25级以上的用户才能发言!</FONT>
+
+
+ERROR_SMT_521								= <FONT COLOR='#FFFFFF'>已存在可接任务</FONT>
+ERROR_SMT_522                               = <FONT COLOR='#FFFFFF'>不存在可接任务</FONT>
+ERROR_SMT_531								= <FONT COLOR='#FFFFFF'>已存在进行中的任务</FONT>
+ERROR_SMT_532								= <FONT COLOR='#FFFFFF'>不存在进行中的任务</FONT>
+ERROR_SMT_541								= <FONT COLOR='#FFFFFF'>任务还未完成</FONT>
+ERROR_SMT_542								= <FONT COLOR='#FFFFFF'>任务已经提交</FONT>
+ERROR_SMT_543								= <FONT COLOR='#FFFFFF'>任务失败</FONT>
+ERROR_SMT_550								= <FONT COLOR='#FFFFFF'>不存在该奖励道具</FONT>
+ERROR_SMT_551								= <FONT COLOR='#FFFFFF'>任务超时</FONT>
+ERROR_SMT_552								= <FONT COLOR='#FFFFFF'>任务没有超时</FONT>
+ERROR_SMT_570								= <FONT COLOR='#FFFFFF'>当前为最高星级!</FONT>
+ERROR_SMT_571								= <FONT COLOR='#FFFFFF'>您本小时免费刷星已用完!确定花费</FONT><FONT COLOR='#FFFFFF'>2</FONT><FONT COLOR='#FFFFFF'>玄石或礼券进行刷星?</FONT>
+ERROR_SMT_572								= <FONT COLOR='#FFFFFF'>玄石和礼券余额不足!</FONT>
+
+// 背包、仓库、物品系统
+ERROR_SMT_600								= <FONT COLOR='#FFFFFF'>背包满</FONT>
+ERROR_SMT_601								= <FONT COLOR='#FFFFFF'>物品为空</FONT>
+ERROR_SMT_602								= <FONT COLOR='#FFFFFF'>移动的物品为空</FONT>
+ERROR_SMT_603								= <FONT COLOR='#FFFFFF'>不是装备</FONT>
+ERROR_SMT_604								= <FONT COLOR='#FFFFFF'>等级不足</FONT>
+ERROR_SMT_605								= <FONT COLOR='#FFFFFF'>任务物品不能丢弃</FONT>
+ERROR_SMT_606								= <FONT COLOR='#FFFFFF'>门派限制</FONT>
+ERROR_SMT_614								= <FONT COLOR='#FFFFFF'>物品只能对主角从使用</FONT>
+ERROR_SMT_615								= <FONT COLOR='#FFFFFF'>物品只能对随从使用</FONT>
+ERROR_SMT_617								= <FONT COLOR='#FFFFFF'>系统未开放不能使用 </FONT>
+ERROR_SMT_618								= <FONT COLOR='#FFFFFF'>没有达到物品使用等级 </FONT>
+// 强化石强化, 剥离, 合成
+ERROR_SMT_607								= <FONT COLOR='#FFFFFF'>装备星级为0, 无法分解</FONT>
+ERROR_SMT_608								= <FONT COLOR='#FFFFFF'>策划配置不存在, 无法分解</FONT>
+ERROR_SMT_609								= <FONT COLOR='#FFFFFF'>策划配置不存在, 无法合成</FONT>
+ERROR_SMT_610								= <FONT COLOR='#FFFFFF'>装备达到强化上限</FONT>
+ERROR_SMT_611								= <FONT COLOR='#FFFFFF'>整理失败</FONT>
+ERROR_SMT_5601								= <FONT COLOR='#FFFFFF'>累积cd不存在</FONT>
+ERROR_SMT_5602								= <FONT COLOR='#FFFFFF'>cd时间已累计满, 冷却中</FONT>
+ERROR_SMT_5603								= <FONT COLOR='#FFFFFF'>累积cd已经冷却, 无法消除</FONT>
+ERROR_SMT_5604								= <FONT COLOR='#FFFFFF'>洗练装备中，请勿切换当前目标装备</FONT>
+	
+// 交易模块
+ERROR_SMT_801								= <FONT COLOR='#FFFFFF'>商店不存在该物品</FONT>
+ERROR_SMT_803								= <FONT COLOR='#FFFFFF'>卖出物品不能为空</FONT>
+ERROR_SMT_804								= <FONT COLOR='#FFFFFF'>交易已取消</FONT>
+ERROR_SMT_805								= <FONT COLOR='#FFFFFF'>绑定道具不能交易</FONT>
+ERROR_SMT_806								= <FONT COLOR='#FFFFFF'>交易没锁定</FONT>
+ERROR_SMT_807								= <FONT COLOR='#FFFFFF'>交易拒绝</FONT>
+ERROR_SMT_810								= <FONT COLOR='#FFFFFF'>令牌不足</FONT>
+
+//阵型模块
+ERROR_SMT_901								= <FONT COLOR='#FFFFFF'>随从不存在。</FONT>
+ERROR_SMT_902								= <FONT COLOR='#FFFFFF'>主角必须在阵型中</FONT>
+ERROR_SMT_903								= <FONT COLOR='#FFFFFF'>上阵人数已满</FONT>
+ERROR_SMT_904								= <FONT COLOR='#FFFFFF'>存在非法操作</FONT>
+
+//随从模块
+ERROR_SMT_1001								= <FONT COLOR='#FFFFFF'>系统随从内存对象不存在</FONT>
+ERROR_SMT_1002								= <FONT COLOR='#FFFFFF'>用户已经拥有此随从</FONT>
+ERROR_SMT_1003								= <FONT COLOR='#FFFFFF'>随从已是激活状态</FONT>
+ERROR_SMT_1004								= <FONT COLOR='#FFFFFF'>身上所带随从已达上限</FONT>
+//传承模块
+ERROR_SMT_1005								= <FONT COLOR='#FFFFFF'>当前随从不满足传功等级需求</FONT>
+ERROR_SMT_1006								= <FONT COLOR='#FFFFFF'>当前传功随从传功次数已满</FONT>
+ERROR_SMT_1007								= <FONT COLOR='#FFFFFF'>当前随被传功随从被传功次数已满</FONT>
+ERROR_SMT_1008								= <FONT COLOR='#FFFFFF'>当前角色vip等级不够</FONT>
+ERROR_SMT_1009								= <FONT COLOR='#FFFFFF'>没有属性增长</FONT>
+//随从模块
+ERROR_SMT_1010								= <FONT COLOR='#FFFFFF'>随从等级不能超过玩家等级</FONT>	
+//摇摇乐模块
+ERROR_SMT_1011								= <FONT COLOR='#FFFFFF'>抽奖次数不足</FONT>	
+//队伍系统
+ERROR_SMT_1101								= <FONT COLOR='#FFFFFF'>不能邀请自己</FONT>
+ERROR_SMT_1102								= <FONT COLOR='#FFFFFF'>目标不存在</FONT>
+ERROR_SMT_1103								= <FONT COLOR='#FFFFFF'>邀请队列已满</FONT>
+ERROR_SMT_1104								= <FONT COLOR='#FFFFFF'>目标等级不足</FONT>
+ERROR_SMT_1105								= <FONT COLOR='#FFFFFF'> 队伍已满</FONT>
+ERROR_SMT_1106								= <FONT COLOR='#FFFFFF'>已经有队伍</FONT>
+ERROR_SMT_1107								= <FONT COLOR='#FFFFFF'>不是队长</FONT>
+ERROR_SMT_1108								= <FONT COLOR='#FFFFFF'>目标繁忙</FONT>
+ERROR_SMT_1109								= <FONT COLOR='#FFFFFF'>请求超时</FONT>
+ERROR_SMT_1110								= <FONT COLOR='#FFFFFF'>以及加入队伍</FONT>
+ERROR_SMT_1111								= <FONT COLOR='#FFFFFF'>不能剔除自己</FONT>
+ERROR_SMT_1112								= <FONT COLOR='#FFFFFF'>没有队伍</FONT>
+ERROR_SMT_1113								= <FONT COLOR='#FFFFFF'>当前不能组队</FONT>
+
+//武功模块
+ERROR_SMT_1201								= <FONT COLOR='#FFFFFF'>已达到洞窟尽头</FONT>
+ERROR_SMT_1202								= <FONT COLOR='#FFFFFF'>已超过最高关卡限制</FONT>
+ERROR_SMT_1203								= <FONT COLOR='#FFFFFF'>非法数据，自动冲关CD时间不足</FONT>
+ERROR_SMT_1204								= <FONT COLOR='#FFFFFF'>每日奖励不存在</FONT>
+ERROR_SMT_1205								= <FONT COLOR='#FFFFFF'>自动领取每日奖励</FONT>
+ERROR_SMT_1206								= <FONT COLOR='#FFFFFF'>已在起点，无需重置</FONT>
+ERROR_SMT_1207								= <FONT COLOR='#FFFFFF'>重置次数不足</FONT>
+
+//副本模块
+ERROR_SMT_1301								= <FONT COLOR='#FFFFFF'>副本不存在</FONT>
+ERROR_SMT_1302								= <FONT COLOR='#FFFFFF'>非组队状态下不可进入组队副本</FONT>
+ERROR_SMT_1303								= <FONT COLOR='#FFFFFF'>组队状态下不可进入单人副本</FONT>
+ERROR_SMT_1304								= <FONT COLOR='#FFFFFF'>未开启此副本</FONT>
+ERROR_SMT_1305								= <FONT COLOR='#FFFFFF'>用户正在副本中，无法再次进入副本</FONT>
+ERROR_SMT_1306								= <FONT COLOR='#FFFFFF'>临时变量为空</FONT>
+ERROR_SMT_1307								= <FONT COLOR='#FFFFFF'>副本房间内存信息不存在</FONT>
+ERROR_SMT_1308								= <FONT COLOR='#FFFFFF'>步骤空</FONT>
+ERROR_SMT_1309								= <FONT COLOR='#FFFFFF'>用户不在副本地图中</FONT>
+ERROR_SMT_1310								= <FONT COLOR='#FFFFFF'>流程不存在</FONT>
+ERROR_SMT_1311								= <FONT COLOR='#FFFFFF'>当前流程已经计算完毕，等待剧情结束</FONT>
+ERROR_SMT_1312								= <FONT COLOR='#FFFFFF'>临时变量无法完成副本流程校验</FONT>
+ERROR_SMT_1313								= <FONT COLOR='#FFFFFF'>副本状态与其他状态互斥</FONT>
+ERROR_SMT_1314								= <FONT COLOR='#FFFFFF'>目标副本未通关</FONT>
+ERROR_SMT_1315								= <FONT COLOR='#FFFFFF'>所要挂机的副本未通关</FONT>
+ERROR_SMT_1316								= <FONT COLOR='#FFFFFF'>挂机状态不正常</FONT>
+ERROR_SMT_1317								= <FONT COLOR='#FFFFFF'>副本挂机时间未达到要求</FONT>
+ERROR_SMT_1318								= <FONT COLOR='#FFFFFF'>副本已完成</FONT>
+ERROR_SMT_1319								= <FONT COLOR='#FFFFFF'>副本NPC配置错误</FONT>
+ERROR_SMT_1320								= <FONT COLOR='#FFFFFF'>精英副本重置次数不足</FONT>
+ERROR_SMT_1321								= <FONT COLOR='#FFFFFF'>精英副本列表不存在</FONT>
+ERROR_SMT_1322								= <FONT COLOR='#FFFFFF'>当前精英副本进入次数超出上限</FONT>
+
+ERROR_SMT_1401								= <FONT COLOR='#FFFFFF'>角色当前没有该坐骑</FONT>
+ERROR_SMT_1402								= <FONT COLOR='#FFFFFF'>坐骑正在使用中</FONT>
+ERROR_SMT_1403								= <FONT COLOR='#FFFFFF'>坐骑处于烙印状态</FONT>
+ERROR_SMT_1404								= <FONT COLOR='#FFFFFF'>坐骑已经处于未烙印状态</FONT>
+ERROR_SMT_1405								= <FONT COLOR='#FFFFFF'>繁殖参数错误</FONT>
+ERROR_SMT_1406								= <FONT COLOR='#FFFFFF'>这两皮马不能繁殖</FONT>
+ERROR_SMT_1407								= <FONT COLOR='#FFFFFF'>坐骑没有被使用</FONT>
+ERROR_SMT_1408								= <FONT COLOR='#FFFFFF'>马槽数量不够</FONT>
+ERROR_SMT_1409								= <FONT COLOR='#FFFFFF'>繁殖失败</FONT>
+	
+ERROR_SMT_1601								= <FONT COLOR='#FFFFFF'>玩家血量已满</FONT>
+ERROR_SMT_1602								= <FONT COLOR='#FFFFFF'>背包格子不足不能领取</FONT>
+ERROR_SMT_1603								= <FONT COLOR='#FFFFFF'>随从血量已满</FONT>
+ERROR_SMT_1604								= <FONT COLOR='#FFFFFF'>物品已过期</FONT>
+ERROR_SMT_1605								= <FONT COLOR='#FFFFFF'>威望不足</FONT>
+ERROR_SMT_1606								= <FONT COLOR='#FFFFFF'>物品使用地点不正确</FONT>
+ERROR_SMT_1607								= <FONT COLOR='#FFFFFF'>没有自动回血包</FONT>
+ERROR_SMT_1608								= <FONT COLOR='#FFFFFF'>声望排名不足</FONT>
+ERROR_SMT_1609								= <FONT COLOR='#FFFFFF'>物品不可删除</FONT>
+ERROR_SMT_1610								= <FONT COLOR='#FFFFFF'>使用不正当或不能使用</FONT>
+ERROR_SMT_1611								= <FONT COLOR='#FFFFFF'>物品数量不足</FONT>
+ERROR_SMT_1612								= <FONT COLOR='#FFFFFF'>被转化武器不存在</FONT>
+//好友模块
+ERROR_SMT_1701								= <FONT COLOR='#FFFFFF'>不能添加自己</FONT>
+ERROR_SMT_1702								= <FONT COLOR='#FFFFFF'>没有找到id</FONT>
+ERROR_SMT_1703								= <FONT COLOR='#FFFFFF'>存在与好友列表</FONT>
+ERROR_SMT_1704								= <FONT COLOR='#FFFFFF'>黑名单删除失败</FONT>
+ERROR_SMT_1705								= <FONT COLOR='#FFFFFF'>人数超出</FONT>
+ERROR_SMT_1706								= <FONT COLOR='#FFFFFF'>没有找到组名</FONT>
+ERROR_SMT_1707								= <FONT COLOR='#FFFFFF'>不允许修改组名</FONT>
+ERROR_SMT_1708								= <FONT COLOR='#FFFFFF'>不允许删除组名</FONT>
+ERROR_SMT_1709								= <FONT COLOR='#FFFFFF'>好友分组数超出</FONT>
+ERROR_SMT_1710								= <FONT COLOR='#FFFFFF'>签名超出长度</FONT>
+ERROR_SMT_1711								= <FONT COLOR='#FFFFFF'>群数超出</FONT>
+ERROR_SMT_1712								= <FONT COLOR='#FFFFFF'>没权限删人</FONT>
+ERROR_SMT_1713								= <FONT COLOR='#FFFFFF'>群数找不到</FONT>
+ERROR_SMT_1714								= <FONT COLOR='#FFFFFF'>群人员超出</FONT>
+ERROR_SMT_1715								= <FONT COLOR='#FFFFFF'>群名超出长度</FONT>
+ERROR_SMT_1716								= <FONT COLOR='#FFFFFF'>在对方黑名单中</FONT>
+ERROR_SMT_1717								= <FONT COLOR='#FFFFFF'>存在于对方黑名单中</FONT>
+ERROR_SMT_1718								= <FONT COLOR='#FFFFFF'>等级不够错误,返回指令号1701</FONT>
+ERROR_SMT_1719								= <FONT COLOR='#FFFFFF'>没有此玩家</FONT>
+ERROR_SMT_1720								= <FONT COLOR='#FFFFFF'>修改的名字相同</FONT>
+ERROR_SMT_1721								= <FONT COLOR='#FFFFFF'>聊天字数太长</FONT>
+ERROR_SMT_1722								= <FONT COLOR='#FFFFFF'>不同势力不能互加</FONT>
+
+// 拍卖行系统
+ERROR_SMT_1801								= <FONT COLOR='#FFFFFF'>拍卖行数据为空</FONT>
+ERROR_SMT_1802								= <FONT COLOR='#FFFFFF'>背包没有这么多的物品</FONT>
+ERROR_SMT_1803								= <FONT COLOR='#FFFFFF'>您已经竞价</FONT>
+ERROR_SMT_1804								= <FONT COLOR='#FFFFFF'>高级拍卖行起价过低</FONT>
+ERROR_SMT_1805								= <FONT COLOR='#FFFFFF'>您已经入座</FONT>
+ERROR_SMT_1806								= <FONT COLOR='#FFFFFF'>当前拍卖的物品信息已经为空</FONT>
+ERROR_SMT_1807								= <FONT COLOR='#FFFFFF'>已经报名</FONT>
+ERROR_SMT_1808								= <FONT COLOR='#FFFFFF'>未到时间</FONT>
+ERROR_SMT_1809								= <FONT COLOR='#FFFFFF'>您未报名参加拍卖</FONT>
+ERROR_SMT_1810								= <FONT COLOR='#FFFFFF'>报名截止</FONT>
+ERROR_SMT_1811								= <FONT COLOR='#FFFFFF'>拍卖行没有开始</FONT>
+ERROR_SMT_1812								= <FONT COLOR='#FFFFFF'>您还没有入座</FONT>
+ERROR_SMT_1813								= <FONT COLOR='#FFFFFF'>物品已绑定，不能拍卖</FONT>
+ERROR_SMT_1814								= <FONT COLOR='#FFFFFF'>物品的一口价小于竞价</FONT>
+
+// 邮件系统
+ERROR_SMT_1901								= <FONT COLOR='#FFFFFF'>信件已满,请及时清理邮箱,则系统将进行删除操作</FONT>
+ERROR_SMT_1902								= <FONT COLOR='#FFFFFF'>邮件已过期</FONT>
+ERROR_SMT_1903								= <FONT COLOR='#FFFFFF'>邮件已删除或者不存在</FONT>
+ERROR_SMT_1905								= <FONT COLOR='#FFFFFF'>包裹满，请预留足够空格</FONT>
+
+// 经脉系统
+ERROR_SMT_2001								= <FONT COLOR='#FFFFFF'>升级失败,没有下一等级配置数据.可能已经升级到最顶级</FONT>
+ERROR_SMT_2002								= <FONT COLOR='#FFFFFF'>真气不足</FONT>
+ERROR_SMT_2003								= <FONT COLOR='#FFFFFF'>cd还未冷却</FONT>
+ERROR_SMT_2004								= <FONT COLOR='#FFFFFF'>真气大于丹田真气</FONT>
+ERROR_SMT_2005								= <FONT COLOR='#FFFFFF'>真气大于经脉允许通过的真气</FONT>
+ERROR_SMT_2006								= <FONT COLOR='#FFFFFF'>真气大于穴道剩余空间</FONT>
+ERROR_SMT_2007								= <FONT COLOR='#FFFFFF'>依赖穴道未开启 </FONT>
+ERROR_SMT_2008								= <FONT COLOR='#FFFFFF'>经脉未开启</FONT>
+
+// 活力系统
+ERROR_SMT_2101								= <FONT COLOR='#FFFFFF'>次数用完</FONT>
+ERROR_SMT_2102								= <FONT COLOR='#FFFFFF'>活力已满</FONT>
+
+// 家族系统
+ERROR_SMT_2201								= <FONT COLOR='#FFFFFF'>家族名称长度不符，可能为空或者大于最大长度</FONT>
+ERROR_SMT_2203								= <FONT COLOR='#FFFFFF'>家族名称包含敏感词 </FONT>
+ERROR_SMT_2204								= <FONT COLOR='#FFFFFF'>家族该职位玩家达到上限</FONT>
+ERROR_SMT_2205								= <FONT COLOR='#FFFFFF'>家族成员达到上限</FONT>
+ERROR_SMT_2206								= <FONT COLOR='#FFFFFF'>您不是族长</FONT>
+ERROR_SMT_2207								= <FONT COLOR='#FFFFFF'>您是族长，不能退出家族</FONT>
+ERROR_SMT_2208								= <FONT COLOR='#FFFFFF'>您没有家族</FONT>
+ERROR_SMT_2209								= <FONT COLOR='#FFFFFF'>该角色已经有家族</FONT>
+ERROR_SMT_2210								= <FONT COLOR='#FFFFFF'>邀请列表已满</FONT>
+ERROR_SMT_2211								= <FONT COLOR='#FFFFFF'>家族申请不能超过3个</FONT>
+ERROR_SMT_2212								= <FONT COLOR='#FFFFFF'>该家族加入申请已满</FONT>
+ERROR_SMT_2213								= <FONT COLOR='#FFFFFF'>您已经申请过该家族</FONT>
+ERROR_SMT_2214								= <FONT COLOR='#FFFFFF'>您未申请加入该家族</FONT>
+ERROR_SMT_2215								= <FONT COLOR='#FFFFFF'>该家族在您的"入族邀请"列表里</FONT>
+ERROR_SMT_2216								= <FONT COLOR='#FFFFFF'>该家族不在您的"入族邀请"列表里</FONT>
+ERROR_SMT_2217								= <FONT COLOR='#FFFFFF'>您不在该家族申请列表里</FONT>
+ERROR_SMT_2218								= <FONT COLOR='#FFFFFF'>不是同一个家族</FONT>
+ERROR_SMT_2219								= <FONT COLOR='#FFFFFF'>家族不存在</FONT>
+ERROR_SMT_2220								= <FONT COLOR='#FFFFFF'>家族名称只能由字母、数字、汉字组成</FONT>
+ERROR_SMT_2221								= <FONT COLOR='#FFFFFF'>家族贡献不足</FONT>
+ERROR_SMT_2222								= <FONT COLOR='#FFFFFF'>该家族已经存在</FONT>
+ERROR_SMT_2223								= <FONT COLOR='#FFFFFF'>不能受理反复申请 </FONT>
+ERROR_SMT_2224								= <FONT COLOR='#FFFFFF'>家族等级不足</FONT>
+ERROR_SMT_2225                                                          = <FONT COLOR='#FFFFFF'>家族申请解散中，请先取消申请</FONT>
+ERROR_SMT_2251								= <FONT COLOR='#FFFFFF'>退出家族未满24小时</FONT>
+
+// 家族外交
+ERROR_SMT_2301								= <FONT COLOR='#FFFFFF'>已经加入同盟</FONT>
+ERROR_SMT_2302								= <FONT COLOR='#FFFFFF'>没有同盟</FONT>
+ERROR_SMT_2303								= <FONT COLOR='#FFFFFF'>同盟成员已经达到上限</FONT>
+ERROR_SMT_2304								= <FONT COLOR='#FFFFFF'>都有同盟, 是同一个同盟</FONT>
+ERROR_SMT_2305								= <FONT COLOR='#FFFFFF'>都有同盟, 不是同一个同盟</FONT>
+ERROR_SMT_2306								= <FONT COLOR='#FFFFFF'>结盟申请列表没有剩余位置</FONT>
+ERROR_SMT_2307								= <FONT COLOR='#FFFFFF'>对方家族的外交邀请已满</FONT>
+ERROR_SMT_2308								= <FONT COLOR='#FFFFFF'> 本家族成员上限不足以安顿该家族所有成员</FONT>
+
+//家族俸禄
+ERROR_SMT_2601								= <FONT COLOR='#FFFFFF'>可兑换次数不足</FONT>
+ERROR_SMT_2221								= <FONT COLOR='#FFFFFF'>家族贡献不足</FONT>
+
+//家族天命抽奖
+ERROR_SMT_2650	                                                        = <FONT COLOR='#FFFFFF'>当前无已刷新的命格</FONT>
+ERROR_SMT_2651	                                                        = <FONT COLOR='#FFFFFF'>当前刷新的命格不是需求的命格</FONT>
+ERROR_SMT_2652	                                                        = <FONT COLOR='#FFFFFF'>此命格已满足</FONT>
+ERROR_SMT_2654	                                                        = <FONT COLOR='#FFFFFF'>每日只能向同1个玩家借1次命格</FONT>
+
+//家族供奉
+ERROR_SMT_2401								= <FONT COLOR='#FFFFFF'>可供奉次数不足</FONT>
+ERROR_SMT_2402								= <FONT COLOR='#FFFFFF'>家族活跃度奖励已经领取</FONT>
+ERROR_SMT_2403								= <FONT COLOR='#FFFFFF'>丹炉参加人数已满</FONT>
+ERROR_SMT_2404								= <FONT COLOR='#FFFFFF'>已经加入炼丹</FONT>
+ERROR_SMT_2405								= <FONT COLOR='#FFFFFF'>炼丹炉中得五行位置已经有玩家</FONT>
+ERROR_SMT_2406								= <FONT COLOR='#FFFFFF'>没有狂暴元素</FONT>
+
+// 商城系统
+ERROR_SMT_3101								= <FONT COLOR='#FFFFFF'>不是VIP</FONT>
+ERROR_SMT_3102								= <FONT COLOR='#FFFFFF'>不在出售时间</FONT>
+ERROR_SMT_3103								= <FONT COLOR='#FFFFFF'>点券不够</FONT>
+ERROR_SMT_3104								= <FONT COLOR='#FFFFFF'>赠送的玩家不存在</FONT>
+ERROR_SMT_3105								= <FONT COLOR='#FFFFFF'>玩家已经竞价</FONT>
+ERROR_SMT_3106								= <FONT COLOR='#FFFFFF'>玩家不在好友列表</FONT>
+
+
+//竞技场模块
+ERROR_SMT_3201								= <FONT COLOR='#FFFFFF'>用户未开启竞技场</FONT>
+ERROR_SMT_3202								= <FONT COLOR='#FFFFFF'>挑战次数不足</FONT>
+ERROR_SMT_3203								= <FONT COLOR='#FFFFFF'>CD时间不足</FONT>
+ERROR_SMT_3204								= <FONT COLOR='#FFFFFF'>竞技次数已达到最大，无需购买</FONT>
+ERROR_SMT_3206								= <FONT COLOR='#FFFFFF'>竞技冷却时间已满，无需购买</FONT>
+ERROR_SMT_3207								= <FONT COLOR='#FFFFFF'>竞技对象不存在</FONT>
+ERROR_SMT_3208								= <FONT COLOR='#FFFFFF'>战斗初始化错误</FONT>
+ERROR_SMT_3209								= <FONT COLOR='#FFFFFF'>领取奖励条件不满足</FONT>
+ERROR_SMT_3210								= <FONT COLOR='#FFFFFF'>奖励已领取</FONT>
+ERROR_SMT_3211								= <FONT COLOR='#FFFFFF'>新用户当日不可领取奖励</FONT>
+
+//奴隶系统
+ERROR_SMT_3251								= <FONT COLOR='#FFFFFF'>调教次数不足</FONT>
+ERROR_SMT_3252								= <FONT COLOR='#FFFFFF'>提取仆从经验间隔时间不足</FONT>
+ERROR_SMT_3253								= <FONT COLOR='#FFFFFF'>仆从CD时间未到 </FONT>
+ERROR_SMT_3256								= <FONT COLOR='#FFFFFF'>调教次数不足</FONT>
+ERROR_SMT_3257								= <FONT COLOR='#FFFFFF'>剥削次数不足</FONT>
+
+
+	
+//古老山庄
+ERROR_SMT_3301								= <FONT COLOR='#FFFFFF'>所打NPC并非旗帜</FONT>
+ERROR_SMT_3302								= <FONT COLOR='#FFFFFF'>用户所属势力没有信息</FONT>
+ERROR_SMT_3303								= <FONT COLOR='#FFFFFF'>用户古老山庄信息为空</FONT>
+ERROR_SMT_3304								= <FONT COLOR='#FFFFFF'>旗帜信息为空</FONT>
+ERROR_SMT_3305								= <FONT COLOR='#FFFFFF'>旗帜耐久为空</FONT>
+ERROR_SMT_3306								= <FONT COLOR='#FFFFFF'>古老山庄战未开启</FONT>
+ERROR_SMT_3307								= <FONT COLOR='#FFFFFF'>防守方不能打旗帜</FONT>
+ERROR_SMT_3308								= <FONT COLOR='#FFFFFF'>对方势力无排名</FONT>
+ERROR_SMT_3309								= <FONT COLOR='#FFFFFF'>对方无战斗信息</FONT>
+
+//降魔战
+ERROR_SMT_3901								= <FONT COLOR='#FFFFFF'>降魔战活动未开启</FONT>
+ERROR_SMT_3902								= <FONT COLOR='#FFFFFF'>降魔战与其它状态互斥</FONT>
+ERROR_SMT_3903								= <FONT COLOR='#FFFFFF'>鼓舞已达上限</FONT>
+
+// 活动载体
+ERROR_SMT_4001								= <FONT COLOR='#FFFFFF'>此活动不需要报名</FONT>
+ERROR_SMT_4002								= <FONT COLOR='#FFFFFF'>活动还没开始报名</FONT>
+ERROR_SMT_4003								= <FONT COLOR='#FFFFFF'>活动还未开始</FONT>
+ERROR_SMT_4004								= <FONT COLOR='#FFFFFF'>参加活动失败, 自己没有报名</FONT>
+ERROR_SMT_4005								= <FONT COLOR='#FFFFFF'>参加活动失败, 家族族长没有报名</FONT>
+ERROR_SMT_4006								= <FONT COLOR='#FFFFFF'>参加活动失败, 武林盟主没有报名</FONT>
+ERROR_SMT_4007								= <FONT COLOR='#FFFFFF'>参加活动失败, 队长没有报名</FONT>
+ERROR_SMT_4008								= <FONT COLOR='#FFFFFF'>已经报名</FONT>
+ERROR_SMT_4009								= <FONT COLOR='#FFFFFF'>参加活动失败, 达到参加次数上限</FONT>
+ERROR_SMT_4010								= <FONT COLOR='#FFFFFF'>活动正在进行中，不能点击自动参加</FONT>
+ERROR_SMT_4011								= <FONT COLOR='#FFFFFF'>你已经自动参加活动，不能再次参加</FONT>
+
+//飞行器 
+ERROR_SMT_4101								= <FONT COLOR='#FFFFFF'>角色没有装备飞行器</FONT>
+ERROR_SMT_612	                                                        = <FONT COLOR='#FFFFFF'>飞行中不能更换飞行器</FONT>
+
+//马帮 
+ERROR_SMT_4156								= <FONT COLOR='#FFFFFF'>该马匹今天不能再运输了</FONT>
+ERROR_SMT_4159								= <FONT COLOR='#FFFFFF'>马匹等级不能超过玩家等级</FONT>
+ERROR_SMT_4160								= <FONT COLOR='#FFFFFF'>今天打劫次数已经用完了</FONT>
+ERROR_SMT_4161								= <FONT COLOR='#FFFFFF'>打劫冷却中，请稍候再试</FONT>
+ERROR_SMT_4163								= <FONT COLOR='#FFFFFF'>该玩家的马匹已完成运输</FONT>
+ERROR_SMT_4164								= <FONT COLOR='#FFFFFF'>该玩家已经被劫光了</FONT>
+ERROR_SMT_4165								= <FONT COLOR='#FFFFFF'>您已经劫过该玩家了</FONT>
+
+
+//今日五行
+ERROR_SMT_5001								= <FONT COLOR='#FFFFFF'>洗灵数据不存在</FONT>
+ERROR_SMT_5002								= <FONT COLOR='#FFFFFF'>当前不能凝聚</FONT>
+ERROR_SMT_5003								= <FONT COLOR='#FFFFFF'>已经没有可用的凝聚次数</FONT>
+ERROR_SMT_5004								= <FONT COLOR='#FFFFFF'>当前没有可以提取的灵气</FONT>
+ERROR_SMT_5005								= <FONT COLOR='#FFFFFF'>本次凝聚锁定凝聚次数已经用完</FONT>
+ERROR_SMT_5101								= <FONT COLOR='#FFFFFF'>剑灵最高不能超过限制等级</FONT>
+ERROR_SMT_5102								= <FONT COLOR='#FFFFFF'>图腾达到最大等级</FONT>
+
+//VIP
+ERROR_SMT_112								= <FONT COLOR='#FFFFFF'>VIP等级不足</FONT>
+ERROR_SMT_115								= <FONT COLOR='#FFFFFF'>灵石不足</FONT>
+ERROR_SMT_4901                                                          = <FONT COLOR='#FFFFFF'>没有剩余可使用次数</FONT>
+
+//每日指引
+ERROR_SMT_5801								= <FONT COLOR='#FFFFFF'>已领取该奖励</FONT>
+ERROR_SMT_5802								= <FONT COLOR='#FFFFFF'>活跃度不足，无法领取该奖励</FONT>
+
+//每日签到
+ERROR_SMT_5901								= <FONT COLOR='#FFFFFF'>今日已完成签到</FONT>
+LABEL_SIGN_TIPS   							= <FONT COLOR='#FFED8B'>签到规则：</FONT>\n<FONT COLOR='#FFED8B'>1.未连续完成签到的情况下，系统将自动重置回第1天</FONT>\n<FONT COLOR='#FFED8B'>2.连续完成7天签到后，系统也将重置回第1天</FONT>\n<FONT COLOR='#FFED8B'>3.签到奖励包括银两、礼券、道具礼包</FONT>
+
+//在线奖励
+ERROR_SMT_6201								= <FONT COLOR='#FFFFFF'>在线奖励时间未到</FONT>
+ERROR_SMT_6202								= <FONT COLOR='#FFFFFF'>在线奖励已领取</FONT>
+
+//仙邪战
+ERROR_SMT_6401                                                          = <FONT COLOR='#FFFFFF'>您未参加仙邪战</FONT>
+ERROR_SMT_6402                                                          = <FONT COLOR='#FFFFFF'>准备阶段已超时</FONT>
+ERROR_SMT_6403                                                          = <FONT COLOR='#FFFFFF'>攻击祝福达到上限</FONT>
+ERROR_SMT_6404                                                          = <FONT COLOR='#FFFFFF'>暴击祝福达到上限</FONT>
+
+//神魂
+
+ERROR_SMT_6501					= 神魂已满级，无法祭拜
+ERROR_SMT_6502					= 祭拜次数已达上限
+ERROR_SMT_6503					= 祭拜次数不足
+ERROR_SMT_6504					= 副魂不存在
+ERROR_SMT_6505					= 副魂数量不足
+ERROR_SMT_6506					= 副魂背包已满
+ERROR_SMT_6507					= 副魂等级已达上限
+ERROR_SMT_6508					= 用户没有该副魂
+ERROR_SMT_6509					= 目标副魂槽已装备
+ERROR_SMT_6510					= 目标副魂槽未开启
+ERROR_SMT_6511					= 副魂群组中已有同类副魂
+ERROR_SMT_6512					= 此门派无法装备此类副魂
+ERROR_SMT_6513					= 副魂槽中不存在该副魂
+ERROR_SMT_6514					= 副魂格位未开启
+ERROR_SMT_6515					= 副魂槽已没有可装备的栏位
+ERROR_SMT_6516					= 非同类副魂不可以叠加
+ERROR_SMT_6517					= 数量已超出最大上限
+
+SHENHUN_TIPS_1					= 1:0|2:720|3:1440|4:2880|5:11520|6:25920
+SHENHUN_TIPS_2					= 1:0|2:720|3:1440|4:2880|5:11520|6:25920
+SHENHUN_TIPS_3					= 1:0|2:720|3:1440|4:2880|5:11520|6:25920
+SHENHUN_TIPS_4					= 1:0|2:720|3:1440|4:2880|5:11520|6:25920
+SHENHUN_TIPS_5					= 1:0|2:1440|3:2880|4:5760|5:23040|6:51840
+SHENHUN_TIPS_6					= 1:0|2:360|3:720|4:1440|5:5760|6:12960
+SHENHUN_TIPS_7					= 1:0|2:180|3:360|4:720|5:2880|6:6480
+SHENHUN_TIPS_8					= 1:0|2:180|3:360|4:720|5:2880|6:6480
+SHENHUN_TIPS_9					= 1:0|2:180|3:360|4:720|5:2880|6:6480
+SHENHUN_TIPS_10					= 1:0|2:180|3:360|4:720|5:2880|6:6480
+SHENHUN_TIPS_11					= 1:0|2:180|3:360|4:720|5:2880|6:6480
+SHENHUN_TIPS_12					= 1:0|2:180|3:360|4:720|5:2880|6:6480
+
+//法宝
+ERROR_SMT_7003					= <FONT COLOR='#FFFFFF'>请按序开启</FONT>
+ERROR_SMT_7007					= <FONT COLOR='#FFFFFF'>初始技能不能升级</FONT>
+ERROR_SMT_7008					= <FONT COLOR='#FFFFFF'>初始技能不能刷新</FONT>
+
+//前马帮
+ERROR_SMT_10201							= <FONT COLOR='#FFFFFF'>马匹不处于贸易状态</FONT>
+ERROR_SMT_10202							= <FONT COLOR='#FFFFFF'>围栏不存在</FONT>
+ERROR_SMT_10203							= <FONT COLOR='#FFFFFF'>围栏不处于贸易状态</FONT>
+ERROR_SMT_10204							= <FONT COLOR='#FFFFFF'>角色是不存在</FONT>
+ERROR_SMT_10205							= <FONT COLOR='#FFFFFF'>围栏不可以建造</FONT>
+ERROR_SMT_10206							= <FONT COLOR='#FFFFFF'>围栏不处于建造中</FONT>
+ERROR_SMT_10207							= <FONT COLOR='#FFFFFF'>贸易对象不存在</FONT>
+ERROR_SMT_10208							= <FONT COLOR='#FFFFFF'>没有贸易对象</FONT>
+ERROR_SMT_10209							= <FONT COLOR='#FFFFFF'>马不处于上货状态</FONT>
+ERROR_SMT_10210							= <FONT COLOR='#FFFFFF'>马不处于运输中状态</FONT>
+ERROR_SMT_10211							= <FONT COLOR='#FFFFFF'>该角色没有指定的马匹</FONT>
+ERROR_SMT_10212							= <FONT COLOR='#FFFFFF'>指定的贸易对象没有空闲的围栏</FONT>
+ERROR_SMT_10213							= <FONT COLOR='#FFFFFF'>角色没有操作权限</FONT>
+ERROR_SMT_10214							= <FONT COLOR='#FFFFFF'>马不处于收钱状态</FONT>
+ERROR_SMT_10215							= <FONT COLOR='#FFFFFF'>当前货物不够</FONT>
+ERROR_SMT_10216							= <FONT COLOR='#FFFFFF'>驿站数据不存在</FONT>
+ERROR_SMT_10217							= <FONT COLOR='#FFFFFF'>该马匹没有经过您的驿站,您不可以做当前操作</FONT>
+ERROR_SMT_10218							= <FONT COLOR='#FFFFFF'>您已经刺探过，不可以重复刺探</FONT>
+ERROR_SMT_10219							= <FONT COLOR='#FFFFFF'>该马已经被护送</FONT>
+ERROR_SMT_10220							= <FONT COLOR='#FFFFFF'>当天护送次数已经用完 </FONT>
+ERROR_SMT_10221							= <FONT COLOR='#FFFFFF'>对方不在线不可以进行当前操作</FONT>
+ERROR_SMT_10400							= <FONT COLOR='#FFFFFF'>马帮等级不足</FONT>
+
+//丹药系统
+ERROR_SMT_6101							= <FONT COLOR='#FFFFFF'>丹药栏中已拥有丹药</FONT>
+ERROR_SMT_6102						        = <FONT COLOR='#FFFFFF'>请先服用上一位置的丹药</FONT>
+ERROR_SMT_6103						        = <FONT COLOR='#FFFFFF'>当前材料掉落副本未开启</FONT>
+
+//星劫系统
+ERROR_SMT_6001							= 无需重置
+ERROR_SMT_6002							= 已达到终点
+ERROR_SMT_6003							= 超过最高渡劫记录
+ERROR_SMT_6004							= 只能自动挑战有记录的关卡
+ERROR_SMT_6005							= 重置次数不足
+
+////自动消失警告框 提示内容第二行
+ERROR_SMT_ADD_1						=	2秒后系统自动返回...
+ERROR_SMT_ADD_MB_1				=	请先前往商城购买
+ERROR_SMT_ADD_MB_2				=	请先终止运输路线
+
+ERROR_SMT_10601							=      剑灵最高不能超过限制等级
+ERROR_SMT_10602							=      银两不足无法培育
+ERROR_SMT_10603							=      玄石和礼券不足无法培育
+
+//真灵
+ERROR_SMT_4801							= <FONT COLOR='#FFFFFF'>真灵背包已满无法获取</FONT>
+ERROR_SMT_4802							= <FONT COLOR='#FFFFFF'>该真灵位置没有开启</FONT>
+ERROR_SMT_4803							= <FONT COLOR='#FFFFFF'>位置已满无法继续召唤真灵</FONT>
+ERROR_SMT_4804						        = <FONT COLOR='#FFFFFF'>当前真灵无法召唤</FONT>
+ERROR_SMT_4805						        = <FONT COLOR='#FFFFFF'>当前真灵已存在无法再次召唤</FONT>
+ERROR_SMT_4806					                = <FONT COLOR='#FFFFFF'>临时真灵不存在</FONT>
+ERROR_SMT_4807					                = <FONT COLOR='#FFFFFF'>系统真灵数据不存在</FONT>
+ERROR_SMT_4808					                = <FONT COLOR='#FFFFFF'>该真灵无法拾取</FONT>
+ERROR_SMT_4809					                = <FONT COLOR='#FFFFFF'>已锁定的真灵无法再次锁定</FONT>
+ERROR_SMT_4810					                = <FONT COLOR='#FFFFFF'>未锁定的真灵无法解锁</FONT>
+ERROR_SMT_4811					                = <FONT COLOR='#FFFFFF'>真灵装备栏已满</FONT>
+ERROR_SMT_4812					                = <FONT COLOR='#FFFFFF'>当前门派无法装备此类真灵</FONT>
+ERROR_SMT_4813					                = <FONT COLOR='#FFFFFF'>已装备有同类真灵</FONT>
+ERROR_SMT_4814					                = <FONT COLOR='#FFFFFF'>只能粉碎金色真灵</FONT>
+ERROR_SMT_4815					                = <FONT COLOR='#FFFFFF'>非同种类的真灵无法替换</FONT>
+ERROR_SMT_4816					                = <FONT COLOR='#FFFFFF'>真灵等级已达到上限</FONT>
+ERROR_SMT_4851					                = <FONT COLOR='#FFFFFF'>该真灵位置没有开启。</FONT>
+ERROR_SMT_4852			                                = <FONT COLOR='#FFFFFF'>真灵碎片数量不足。</FONT>
+ERROR_SMT_4853					                = <FONT COLOR='#FFFFFF'>该背包位未开启。</FONT>
+ERROR_SMT_4854					                = <FONT COLOR='#FFFFFF'>已存在同类型真灵。</FONT>
+ERROR_SMT_4855                                                  = <FONT COLOR='#FFFFFF'>该真灵与人物攻击属性不符</FONT>
+
+//前马帮
+//VIP
+ERROR_SMT_4902							= <FONT COLOR='#FFED8B'>今日可购买剩余次数不足。</FONT>
+
+//秘术
+ERROR_SMT_5401					                = <FONT COLOR='#FFFFFF'>用户没有此秘术。</FONT>
+ERROR_SMT_5402					                = <FONT COLOR='#FFFFFF'>系统秘术信息找不到</FONT>
+ERROR_SMT_5403					                = <FONT COLOR='#FFFFFF'>秘术不能超过主角等级</FONT>
+ERROR_SMT_5404					                = <FONT COLOR='#FFFFFF'>秘术已升到顶级</FONT>
+
+//多人副本
+ERROR_SMT_4701					                = <FONT COLOR='#FFFFFF'>没有相关房间信息。</FONT>
+ERROR_SMT_4702					                = <FONT COLOR='#FFFFFF'>房间人数已满。</FONT>
+ERROR_SMT_4703					                = <FONT COLOR='#FFFFFF'>不是队长。</FONT>
+ERROR_SMT_4704					                = <FONT COLOR='#FFFFFF'>小于2人不可以开始战斗。</FONT>
+ERROR_SMT_4705					                = <FONT COLOR='#FFFFFF'>对方不在你的队伍中。</FONT>
+ERROR_SMT_4706					                = <FONT COLOR='#FFFFFF'>没有配置相关多人副本信息。</FONT>
+ERROR_SMT_4707					                = <FONT COLOR='#FFFFFF'>无法上移。</FONT>
+ERROR_SMT_4708					                = <FONT COLOR='#FFFFFF'>无法下移。</FONT>
+ERROR_SMT_4709					                = <FONT COLOR='#FFFFFF'>您已在队伍中。</FONT>
+ERROR_SMT_4710					                = <FONT COLOR='#FFFFFF'>找不到匹配的房间。</FONT>
+ERROR_SMT_4711					                = <FONT COLOR='#FFFFFF'>没有合适的位置。</FONT>
+ERROR_SMT_4712					                = <FONT COLOR='#FFFFFF'>该房间不存在。</FONT>
+ERROR_SMT_4713					                = <FONT COLOR='#FFFFFF'>您已在队伍中。</FONT>
+
+//新法宝
+ERROR_SMT_6802						 	= <FONT COLOR='#FFFFFF'>法宝等级不能超过人物等级</FONT>
+ERROR_SMT_6801						 	= <FONT COLOR='#FFFFFF'>法宝不存在</FONT>
+ERROR_SMT_6803						 	= <FONT COLOR='#FFFFFF'>找不到对应法宝阵法等级信息</FONT>
+ERROR_SMT_6804						 	= <FONT COLOR='#FFFFFF'>等级不能超过法宝等级</FONT>
+ERROR_SMT_6901						 	= <FONT COLOR='#FFFFFF'>用户法宝阵型不存在</FONT>
+ERROR_SMT_6902						 	= <FONT COLOR='#FFFFFF'>锁定的站位不存在</FONT>
+ERROR_SMT_6903						 	= <FONT COLOR='#FFFFFF'>法宝阵法名称有敏感字符</FONT>
+ERROR_SMT_116						 	= <FONT COLOR='#FFFFFF'>灵气不足</FONT>
+ERROR_SMT_117							= <FONT COLOR='#FFFFFF'>残片不足</FONT>
+ERROR_SMT_7001							= <FONT COLOR='#FFFFFF'>指定的法宝技能不存在</FONT>
+ERROR_SMT_7002							= <FONT COLOR='#FFFFFF'>不能超过法宝等级</FONT>
+ERROR_SMT_7003							= <FONT COLOR='#FFFFFF'>法宝技能等级不能越级开启</FONT>
+ERROR_SMT_7004							= <FONT COLOR='#FFFFFF'>属性技能锁定上限</FONT>
+ERROR_SMT_7005							= <FONT COLOR='#FFFFFF'>没有刷新技能不能保存技能</FONT>
+ERROR_SMT_7006							= <FONT COLOR='#FFFFFF'>技能已经是使用状态</FONT>
+ERROR_SMT_7009							= <FONT COLOR='#FFFFFF'>法宝等级不够</FONT>
+//神仙推磨
+ERROR_SMT_7401							= <FONT COLOR='#FFFFFF'>物品不在可售期内</FONT>
+ERROR_SMT_7402							= <FONT COLOR='#FFFFFF'>可购买次数不足</FONT>
+ERROR_SMT_7403							= <FONT COLOR='#FFFFFF'>没有当日的批次信息</FONT>
+//坐骑
+ERROR_SMT_7501							= <FONT COLOR='#FFFFFF'>该坐骑已激活,不可重复激活!</FONT>
+
+//矿脉争夺战
+ERROR_SMT_7601 = <FONT COLOR='#FFFFFF'>该玩家没有队伍</FONT>
+ERROR_SMT_7602 = <FONT COLOR='#FFFFFF'>您已经在队伍中</FONT>
+ERROR_SMT_7603 = <FONT COLOR='#FFFFFF'>密码设置不符合要求</FONT>
+ERROR_SMT_7604 = <FONT COLOR='#FFFFFF'>队伍密码不正确</FONT>
+ERROR_SMT_7605 = <FONT COLOR='#FFFFFF'>创建的队伍已满</FONT>
+ERROR_SMT_7606 = <FONT COLOR='#FFFFFF'>队伍不存在或已解散</FONT>
+ERROR_SMT_7607 = <FONT COLOR='#FFFFFF'>队伍达到指定人数</FONT>
+ERROR_SMT_7608 = <FONT COLOR='#FFFFFF'>队伍没有达到指定人数</FONT>
+ERROR_SMT_7609 = <FONT COLOR='#FFFFFF'>您不满足加入队伍的条件</FONT>
+ERROR_SMT_7610 = <FONT COLOR='#FFFFFF'>队伍已经进入矿脉战</FONT>
+ERROR_SMT_7611 = <FONT COLOR='#FFFFFF'>该队伍没有邀请你</FONT>
+ERROR_SMT_7612 = <FONT COLOR='#FFFFFF'>队伍没有指定玩家</FONT>
+ERROR_SMT_7801 = <FONT COLOR='#FFFFFF'>该队伍不在矿脉战中</FONT>
+ERROR_SMT_7802 = <FONT COLOR='#FFFFFF'>已经加入矿脉战</FONT>
+ERROR_SMT_7803 = <FONT COLOR='#FFFFFF'>矿脉战已经启动</FONT>
+ERROR_SMT_7804 = <FONT COLOR='#FFFFFF'>矿脉战没有启动</FONT>
+ERROR_SMT_7613 = <FONT COLOR='#FFFFFF'>您的战斗力不满足</FONT>
+ERROR_SMT_7614 = <FONT COLOR='#FFFFFF'>对方已经在队伍中</FONT>
+
+//新剑灵
+LABEL_JianLing_Tips_01				= 花费{@0:游戏币}银两培育10次
+LABEL_JianLing_Tips_02				= 花费{@0:游戏币}银两培育剑灵星阶，可在战斗中提高生命、攻击、防御、速度属性
+LABEL_JianLing_Tips_03				= 花费{@0:玄石}玄石或礼券培育10次
+LABEL_JianLing_Tips_04				= 花费{@0:玄石}玄石或礼券培育剑灵星阶，可在战斗中提高生命、攻击、防御、速度属性
+LABEL_ZhuFu_Tips_01					= 消耗{@0:游戏币}银两可祝福{@1:图腾名称}图腾，可在战斗中提升剑灵相应的附加属性
+LABEL_ZhuFu_Tips_02					= 是否确认消耗{@0:游戏币}银两祝福{@1:图腾名称}图腾？
+LABEL_ZhuFu_Tips_03					= 消耗{@0:黄金}玄石或礼券可加速{@1:时间}小时，大大缩减图腾升级时间
+LABEL_ZhuFu_Tips_04					= 是否确认消耗{@0:黄金}玄石或礼券用来加速{@1:时间}小时？
+CONTENT_JL_NAME_1                                       =青龙
+CONTENT_JL_NAME_2                                       =白虎
+CONTENT_JL_NAME_3                                       =朱雀
+CONTENT_JL_NAME_4                                       =玄武
+
+//家族战
+LABEL_SEPT_WAR_INFO                             = 家族战只需用户报名和参加即可无需在线观看。\n家族战结束后个人积分排名奖励可通过邮件领取。\n必须有两个及以上家族参加才能开启家族战。
+
+//收藏礼包&登陆礼包&精彩大礼
+BRILLIANT_GIFT_CLEW_1            = <FONT COLOR='#996600' >小提示:或许你还可以从精彩活动中额外领取一份充值奖励哦！</FONT>
+BRILLIANT_GIFT_CLEW_2            = <FONT COLOR='#FF0000' >小提示:您处于vip体验状态，暂时不能领取奖励！</FONT>
+BRILLIANT_GIFT_CLEW_3            = <FONT COLOR='#996600' >小提示:必须成为黄钻会员才能享受vip特权并领取vip大礼！</FONT>
+BRILLIANT_GIFT_CLEW_4            = <FONT COLOR='#FF9900' >亲！只要在商城消费任意金额，就能领取价值888元的首充大礼哦!</FONT>
+BRILLIANT_GIFT_CLEW_5            = <FONT COLOR='#FF9900' >亲！只有Vip用户，并开通了黄钻会员才能领取奖励！</FONT>
+BRILLIANT_GIFT_CLEW_6            = <FONT COLOR='#FF9900' >亲！您需要开通黄钻会员才能领取奖励！</FONT>
+BRILLIANT_GIFT_CLEW_7            = <FONT COLOR='#FF9900' >亲！您需要成为Vip用户才能领取奖励！</FONT>
+BRILLIANT_GIFT_CLEW_8            = <FONT COLOR='#FF9900' >亲！收藏西游梦后，就可以领取奖励了！</FONT>
+BRILLIANT_GIFT_CLEW_9            = <FONT COLOR='#00CC66' >黄钻等级、VIP等级、主角等级越高获得的银两越多。</FONT>\n<FONT COLOR='#00CC66' >黄钻或年费黄钻 + VIP玩家可以领取。</FONT>
+BRILLIANT_GIFT_CLEW_10           = <FONT COLOR='#00CC66' >黄钻等级、VIP等级、主角等级越高获得的声望越多。</FONT>\n<FONT COLOR='#00CC66' >黄钻或年费黄钻 + VIP玩家可以领取。</FONT>
+BRILLIANT_GIFT_CLEW_11           = <FONT COLOR='#00CC66' >黄钻等级、VIP等级、主角等级越高获得的活力散越多。</FONT>\n<FONT COLOR='#00CC66' >黄钻或年费黄钻 + VIP玩家可以领取。</FONT>
+BRILLIANT_GIFT_CLEW_12           = <FONT COLOR='#00CC66' >黄钻等级、VIP等级、主角等级越高获得的声望越多。</FONT>\n<FONT COLOR='#00CC66' >年费黄钻 + VIP玩家可以领取。</FONT>
+BRILLIANT_GIFT_CLEW_13           = 背包已满，请清理背包！
+BRILLIANT_GIFT_CLEW_14           = 黄钻成长礼包已经全部领取完毕！
+BRILLIANT_GIFT_CLEW_15           = 此功能暂未开放，敬请期待！
+BRILLIANT_GIFT_CLEW_16           = 该礼包当前不可以领取！
+BRILLIANT_GIFT_CLEW_17           = 当前礼包需要黄钻才能领取！
+BRILLIANT_GIFT_CLEW_18           = 当前种类礼包已经全部领取完毕！
+BRILLIANT_GIFT_CLEW_19           = 当前礼包需要成为vip才能领取！
+BRILLIANT_GIFT_CLEW_20           = <FONT COLOR='#FF0000' >您的vip等级已满级！</FONT>
+BRILLIANT_GIFT_CLEW_21           = 西游梦-史上最美的修仙类网页游戏！
+BRILLIANT_GIFT_CLEW_22           = 请使用Ctrl+D进行添加！
+BRILLIANT_GIFT_CLEW_23           = 元芳:  身怀对所有敌人造成恐怖伤害的绝技!使一切都变得轻松!。
+BRILLIANT_GIFT_CLEW_24           = 额外送您
+BRILLIANT_GIFT_CLEW_25           = 60万银两，80点活力，30级紫装图纸
+BRILLIANT_GIFT_CLEW_26           = ，让您赢在起跑线!
+BRILLIANT_GIFT_CLEW_27           = <font size='15' color='#62261d' ><b>① 紫色极品随从:</b></font><font size='15' color='#ff4200' ><b>小龙女</b></font><font size='15' color='#62261d' ><b>(获得后立即伴您征战西游)</b></font>
+BRILLIANT_GIFT_CLEW_28           = <font size='15' color='#62261d' ><b>② 额外送您</b></font><font size='15' color='#ff4200' ><b>60万银两,80点活力,30级紫装图纸,</b></font>\n<font size='15' color='#62261d' ><b>让您赢在起跑线</b></font>
+
+//添加活力
+ADD_HUO_LI_ZHI_1                 = 恭喜您获得系统奖励活力50点\n每日12点与18点在线可自动恢复50点活力
+ADD_HUO_LI_ZHI_2                 = 恭喜您获得系统奖励活力50点\n每日12点与18点在线可自动恢复50点活力
+
+//商城广告
+MARKET_AD_IMAGE                  = 1
+MARKET_EXPLAIN_1                 = 参加每日活动和搏天命可以获得大量令牌！
+MARKET_EXPLAIN_2                 = 在新服开放7日内消费玄石还可以参加活动消费享盛宴领取丰厚奖励！
+
+//==============矿脉战===============
+VEINS_WAR_PROMPT                 = 提示：\n配对战后45秒矿脉会出产\n灵石和银两
+VEINS_WAR_PROMPT_AD              = 秒后新的一轮配队战即将开始，只要战胜对手就可以进入更高级的矿脉
+LING_SHI_PRODU_1_1                 = 秒后出产6点灵石和9000银两
+LING_SHI_PRODU_1_2                 = 秒后出产4点灵石和7200银两
+LING_SHI_PRODU_1_3                 = 秒后出产4点灵石和6600银两
+LING_SHI_PRODU_2_1                 = 秒后出产18点灵石和45000银两
+LING_SHI_PRODU_2_2                 = 秒后出产14点灵石和36000银两
+LING_SHI_PRODU_2_3                 = 秒后出产13点灵石和33000银两
+LING_SHI_PRODU_3_1                 = 秒后出产30点灵石和81000银两
+LING_SHI_PRODU_3_2                 = 秒后出产24点灵石和64800银两
+LING_SHI_PRODU_3_3                 = 秒后出产22点灵石和59400银两
+LING_SHI_PRODU_4_1                 = 秒后出产42点灵石和117000银两
+LING_SHI_PRODU_4_2                 = 秒后出产33点灵石和93600银两
+LING_SHI_PRODU_4_3                 = 秒后出产30点灵石和85800银两
+VEINS_NOTICE_NUMBER              = 10
+VEINS_NOTICE_0                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >矿脉产出的灵石和银两是队伍所有队员平分的，包括邀请的NPC好友！\n</font>
+VEINS_NOTICE_1                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >越高级的矿脉可产出更多的灵石和银两！\n</font>
+VEINS_NOTICE_2                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >灵石可以招募随从，战功可以兑换特殊道具和加强战斗能力！\n</font>
+VEINS_NOTICE_3                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >个人实力很强有足够的自信的玩家可以试着少组点队员，也许可以获得更多的收获！\n</font>
+VEINS_NOTICE_4                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >队员离线、和点击返回组队界面会直接离开队伍，请谨慎！\n</font>
+VEINS_NOTICE_5                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >队长离线会直接导致队伍解散，请谨慎！\n</font>
+VEINS_NOTICE_6                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >队长可通过点击矿脉战界面的"返回重新组队"退出到组队界面进行队伍重组操作！\n</font>
+VEINS_NOTICE_7                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >任何队伍重新进入矿脉战都会从初级矿脉重新开始挑战！\n</font>
+VEINS_NOTICE_8                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >矿脉战过程中取得战斗胜利后是不会恢复队伍成员的生命的！除非失败或者重新进入矿脉战！\n</font>
+VEINS_NOTICE_9                   = <font size='12' color='#C41B09' >小提示：</font><font size='12' color='#8cff37' >矿脉战只要失败就得从初级矿脉重新挑战，但是取得胜利1次就可以向更高级矿脉进发！\n</font>
+
+//==============月卡===============
+MONRH_CARD_1                     = <font size='16' color='#590a04' ><b>王母娘娘为扩大蟠桃园的规模，现需募集发展资金，只要\n您投入，百分百增值，30天就能获得高达</b></font><font size='18' color='#FF0000' ><b>5倍</b></font><font size='16' color='#590a04' ><b>的玄石回报</b></font>\n
+MONRH_CARD_2                     = <font size='16' color='#590a04' ><b>1、每天需要登录游戏、并手动点击\n领取。\n2、基金每天0点更新领取。\n3、基金收益每天只能领取一次，过\n期不领取不会累积，不会顺延到次\n日领取。\n4、投资基金后30天内不能再投资其\n他基金。\n5、投资额度越多的基金每日返回的\n收益越高且回报比例越高。如投资1\n00玄石则每日返回收益10玄石、投\n资300玄石则每日返回收益40玄石、\n投资600玄石则每日返回收益100\n玄石。</b></font>
+MONRH_CARD_0_1                   = 每份100玄石
+MONRH_CARD_0_2                   = 每份300玄石
+MONRH_CARD_0_3                   = 每份600玄石
+
+//==============幸运抽奖===============
+CHOOSEPRIZEHELP                  =<font size='12' color='#CCFFFF' >1. Каждые 24 часа предметы на барабанах автоматически обновляются\n2. Каждый день вам доступно до 10 попыток вращения барабанов\n3. За дополнительные кристаллы вы можете разыграть предметы на внутреннем барабане\n4. За 20 кристаллов вы можете самотоятельно обновлять призы на барабанах</font>
